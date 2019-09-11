@@ -28,7 +28,7 @@ Begin
   a2 := Ar(x1, y1, dx, dy, x3, y3);
   a3 := Ar(dx, dy, x2, y2, x3, y3);
   
-  if abs() <= Eps then
+  if abs(a1+a2+a3 - origAr) <= Eps then
     writeln('Includes')
   else
     writeln('Does not include');
