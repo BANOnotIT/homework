@@ -1,20 +1,36 @@
 program bobrenkoLab03;
 
-var prev, pprev, sum, k, i : integer;
+var cur, prev, sum, k, i, w : integer;
 Begin
-    prev := 1;
-    pprev := 1;
+    prev := 0;
+    sum := 0;
     
-    write('k: ');
+    
+    writeln('Enter k:');
     readln(k);
     
     for i := 0 to k do begin
-      prev := pprev + prev;
-      pprev := pprev + prev;
+      w := prev;
+
+      if i = 0 then
+        cur := 1
+      else begin
+        prev := cur;
+        cur := w + cur;
+      end;
       
-      sum := prev + sum;
+      sum := cur + sum;
     end;
     
-    writeln(sum);
+    writeln(k, 'th factorial sum = ', sum);
     
 End.
+
+{
+    tests:
+        0  -> 0
+        1  -> 1
+        3  -> 4
+        7  -> 33
+        
+}
