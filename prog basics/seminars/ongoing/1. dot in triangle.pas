@@ -1,4 +1,4 @@
-const Eps : Real = 0e-10;
+const Eps : Real = 1e-10;
 
 function Ar(x1, y1, x2, y2, x3, y3 : Real) : Real;
 begin
