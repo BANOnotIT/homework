@@ -7,7 +7,7 @@ Begin
   readln(n);
   
   if n > 20 then begin
-    writeln('Can not work with n > 20!');
+    writeln('Can not work with n > 20! Quit...');
     exit;
   end;
   
@@ -21,5 +21,5 @@ Begin
         sum := sum + 1;
   end;
   
-  writeln('inversions count ', sum);
+  writeln('inversions count: ', sum);
 End.
