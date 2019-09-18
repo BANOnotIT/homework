@@ -16,7 +16,7 @@ Begin
     read(a[i]);
 
   for i = 0 to n - 1 do begin
-    for j = i to n do
+    for j = i + 1 to n do
       if a[i] > a[j] then
         sum := sum + 1;
   end;
