@@ -5,9 +5,9 @@ Begin
     
     readln(x, y);
     
-    if (x <= 0.0) and
+    if (x <= 0) and
        (abs(y) <= sqrt(-x)) and
-       (abs(y) <= (x+1.0)) 
+       (abs(y) <= (x+1)) 
     then
       writeln('inside')
     else
@@ -15,11 +15,3 @@ Begin
        
     
 End.
-
-{
-    tests
-    1. -2   0   ->  ?? -
-    2.  1   0   ->  ?? -
-    3. -.5  0   ->  ?? +
-    4. -.5  -.5 ->  ?? +
-}
