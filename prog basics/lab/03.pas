@@ -9,7 +9,7 @@ Begin
     writeln('Enter k:');
     readln(k);
     
-    for i := 0 to k do begin
+    for i := 0 to k-1 do begin
       w := prev;
 
       if i = 0 then
