@@ -12,12 +12,12 @@ Begin
   end;
   
   { getting array values }
-  for i := 0 to n - 1 do
+  for i := 0 to n -1 do
     readln(a[i]);
 
 
-  for i := 0 to n - 2 do begin
-    for j := i+1 to n - 1 do
+  for i := 0 to n -2 do begin
+    for j := i + 1 to n -1 do
       if a[i] > a[j] then
         sum := sum + 1;
   end;
