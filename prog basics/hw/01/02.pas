@@ -9,15 +9,12 @@ Begin
   w := sqr(w) - 5;
   
   if x > y then
-    if x > w then
-      max := x
-    else
-      max := w
+    max := x
   else
-    if y > w then
-      max := y
-    else
-      max := w;
+    max := y;
+    
+  if w > max then
+    max := w;
       
   writeln('Max = ', res);
   
