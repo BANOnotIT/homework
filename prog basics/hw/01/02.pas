@@ -16,6 +16,6 @@ Begin
   if w > max then
     max := w;
       
-  writeln('Max = ', res);
+  writeln('Max = ', max);
   
 End.
