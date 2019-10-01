@@ -36,7 +36,7 @@ Begin
     
     { pointer moved after read so eof might now work }
     if (curchar = ' ') or EOF(f) then begin
-      if len(word) >= 3 then begin
+      if len(word) > 3 then begin
         for i := 1 to len(word) do
           write(g; word[i]);
         
