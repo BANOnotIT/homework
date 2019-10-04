@@ -16,6 +16,7 @@ function fn1(x : real): real;
 begin
   fn1 := x + cox(x);
 end;
+
 function fn2(x : real): real;
 begin
   fn2 := tan(x + 1)/(x + 1);
@@ -36,6 +37,7 @@ Begin
   case choice 
    1: s := TRAP(fn1, a1, b1, n);
    2: s := TRAP(fn2, a2, b2, n);
+  end;
    
   writeln('Area is ', s);
 End.
