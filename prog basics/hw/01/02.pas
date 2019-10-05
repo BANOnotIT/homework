@@ -8,6 +8,8 @@ Begin
   y := sqr(y) + 5;
   w := sqr(w) - 5;
   
+  { tester }
+
   if x > y then
     max := x
   else
