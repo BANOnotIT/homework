@@ -27,12 +27,3 @@ Begin
     writeln(k, 'th factorial sum = ', sum);
     
 End.
-
-{
-    tests:
-        0  -> 0
-        1  -> 1
-        3  -> 4
-        7  -> 33
-        
-}
