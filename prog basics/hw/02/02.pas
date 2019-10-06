@@ -6,11 +6,20 @@ Begin
   writeln('enter n:');
   readln(n);
   
-  writeln('enter matrix values in a row:');
+  writeln('enter matrix values. all in a row:');
   for i := 1 to n do
     for j := 1 to n do
       read(A[i, j]);
   
+
+  writeln('source matrix:');
+  for i := 1 to n do begin
+    for j := 1 to n do
+      write(A[i, j]:5);
+      
+    writeln; writeln;
+  end;
+
   writeln('enter p and q:');
   readln(p, q);
   
@@ -19,16 +28,9 @@ Begin
     exit;
   end;
       
-  writeln('source matrix:');
-  for i := 1 to n do begin
-    for j := 1 to n do
-      write(A[i, j]:5);
-      
-    writeln;
-  end;
   
   writeln('elements eql r:');
-  writeln('   el    i    j');b 
+  writeln('   el    i    j');
   for i := 1 to n do
     for j := 1 to n do
       if A[p, q] = A[i, j] then
