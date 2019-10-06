@@ -18,4 +18,4 @@ Implementation
     
     trap := trap * h;
   end;
-end.
+End.

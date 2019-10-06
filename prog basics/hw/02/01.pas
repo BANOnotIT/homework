@@ -5,7 +5,6 @@ Var
   swapped : boolean;
 
 Begin
-
   repeat
     writeln('enter charters count:');
     readln(n);
@@ -13,8 +12,7 @@ Begin
   
   writeln('enter charters:');
   for i := 1 to n do
-    read(A[i]);
-    
+    read(A[i]);  
   writeln;
   
   for j := 1 to n - 1 do begin
@@ -31,7 +29,6 @@ Begin
       
     if not swapped then 
       break;
-  
   end;
   
   writeln('sorted result:');

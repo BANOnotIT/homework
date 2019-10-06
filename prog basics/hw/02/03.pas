@@ -1,16 +1,11 @@
-Type
-  cset = set of char;
-
-Const
-  AL : cset = ['a','e','i','o','u','y'];
-
+Type cset = set of char;
+Const AL : cset = ['a','e','i','o','u','y'];
 Var
   genset, curset : cset;
   cur : char;
   skipWord, nextIsStart, firstWord, wordsFound : boolean;
 
 Begin
-
   nextIsStart := true;
   firstWord := true;
   wordsFound := false;
@@ -20,18 +15,14 @@ Begin
 
   repeat
     read(cur);
-    
-    writeln(cur);
 
-    if cur in ['.',' '] then begin
-    
+    if cur in ['.',' '] then begin    
       if not skipWord then
         genset := genset * curset;
       curset := [];
       
       skipWord := false;
       nextIsStart := true;
-      
     end
     else begin
       if nextIsStart then begin
@@ -42,7 +33,6 @@ Begin
       else
         curset := curset + [cur];
     end;
-    
   until cur = '.';
   
   if not wordsFound then

@@ -23,7 +23,6 @@ begin
 end;
 
 Begin
-
   repeat
     writeln('Enter function variant (1 - cos, 2 - tan):');
     readln(choice);
