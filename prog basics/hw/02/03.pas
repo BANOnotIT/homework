@@ -7,24 +7,26 @@ Const
 Var
   genset, curset : cset;
   cur : char;
-  skipWord, nextIsStart, firstWord : boolean;
+  skipWord, nextIsStart, firstWord, wordsFound : boolean;
 
 Begin
 
   nextIsStart := true;
   firstWord := true;
+  wordsFound := false;
+
+  curset := [];
+  genset := AL;
 
   repeat
     read(cur);
     
+    writeln(cur);
+
     if cur in ['.',' '] then begin
     
-      if firstWord then begin
-        genset := curset;
-        firstWord := false;
-      end;
-    
-      genset := genset * curset * AL;
+      if not skipWord then
+        genset := genset * curset;
       curset := [];
       
       skipWord := false;
@@ -34,16 +36,21 @@ Begin
     else begin
       if nextIsStart then begin
         skipWord := cur <> 'k';
+        wordsFound := wordsFound or not skipWord;
         nextIsStart := false;
       end
-      else if not skipWord then
+      else
         curset := curset + [cur];
     end;
     
   until cur = '.';
   
-  for cur := 'a' to 'z' do
-    if cur in genset then
-      writeln(cur);
-
+  if not wordsFound then
+    writeln('No k-words found')
+  else begin
+    writeln('Vowels found in all k-words:');
+    for cur := 'a' to 'z' do
+      if cur in genset then
+        write(cur, ' ');
+  end;
 End.
