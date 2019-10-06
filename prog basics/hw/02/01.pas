@@ -1,13 +1,15 @@
 Var
-  A : array[] of char;
+  A : array[1..255] of char;
   tmp : char;
   i, j, n, k : integer;
   swapped : boolean;
 
 Begin
 
-  writeln('enter charters count:');
-  readln(n);
+  repeat
+    writeln('enter charters count:');
+    readln(n);
+  until (n <= 255) and (n > 0);
   
   writeln('enter charters:');
   for i := 1 to n do
@@ -35,5 +37,5 @@ Begin
   writeln('sorted result:');
   for i := 1 to n do
     write(A[i]);
-  
+  writeln;
 End.
