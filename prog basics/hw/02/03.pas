@@ -1,18 +1,17 @@
 Type cset = set of char;
 Const AL : cset = ['a','e','i','o','u','y'];
-Var
-  genset, curset : cset;
+Var genset, curset : cset;
   cur : char;
-  skipWord, nextIsStart, firstWord, wordsFound : boolean;
+  skipWord, nextIsStart, firstWord, vowelsFound : boolean;
 
 Begin
   nextIsStart := true;
   firstWord := true;
-  wordsFound := false;
-
+  vowelsFound := false;
   curset := [];
   genset := AL;
 
+  writeln('Enter the string ending with dot:');
   repeat
     read(cur);
 
@@ -27,20 +26,19 @@ Begin
     else begin
       if nextIsStart then begin
         skipWord := cur <> 'k';
-        wordsFound := wordsFound or not skipWord;
         nextIsStart := false;
       end
-      else
-        curset := curset + [cur];
+      else curset := curset + [cur];
     end;
   until cur = '.';
-  
-  if not wordsFound then
-    writeln('No k-words found')
-  else begin
-    writeln('Vowels found in all k-words:');
-    for cur := 'a' to 'z' do
-      if cur in genset then
-        write(cur, ' ');
-  end;
+
+  writeln('Vowels found in all k-words:');
+  for cur := 'a' to 'z' do
+    if cur in genset then begin
+      write(cur, ' ');
+      vowelsFound := true;
+    end;
+
+  if vowelsFound then writeln
+  else writeln('no vowels');
 End.
