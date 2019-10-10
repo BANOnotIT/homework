@@ -4,13 +4,14 @@ Var
   startedWithA : boolean;
 
 Begin
-  
+  writeln('Enter chars count:');
   readln(n);
-  
+
+  prev := #0;
+  res := 0;
+  writeln('Enter chars:');
   for i := 1 to n do
   begin
-    prev := cur;
-    
     read(cur);
     
     if (i = 1) or (prev = ' ') then
@@ -21,9 +22,10 @@ Begin
         res := res + 1;
       
       startedWithA := false;
-    end;    
+    end;
+
+    prev := cur;
   end;
 
-  writeln(res);
-
+  writeln('Found ',res,' "A.*E" words.');
 End.
