@@ -1,54 +1,47 @@
+Uses Sysutils;
 Var
   f, g : file of char;
   n, i, j : integer;
-  instr : string;
-  word : string;
+  instr, word : string;
   curchar : char;
   
 Begin
-  assignfile(f; 'F');
-  assignfile(g; 'G');
+  AssignFile(f, 'F'); AssignFile(g, 'G');
+  Rewrite(f); Rewrite(g); { rw }
   
-  rewrite(f); { rw }
-  rewrite(g); { wo }
-  
-  writeln('enter words count:');
+  writeln('Enter words count:');
   readln(n);
   
-  writeln('enter ',n,' words. one per line:')
+  writeln('Enter ',n,' words. one per line:');
   for i := 1 to n do begin
     readln(instr);
+    for j := 1 to length(instr) do
+      write(f, instr[j]);
     
-    for j := 1 to len(instr) do
-      write(f; instr[j]);
-    
-    { insert words separator }
     if n <> i then
-      write(f; ' ');
+      write(f, ' ');
   end;
-  
-  closefile(f); { flush buffer }
-  seek(f; 0);
+  closefile(f); reset(f); { flush buffer }
   
   word := '';
-  while not EOF(f) do begin
-    read(f; curchar);
-    
-    { pointer moved after read so eof might now work }
+  repeat
+    read(f, curchar);
+    if curchar <> ' ' then
+      word := word + curchar;
+
     if (curchar = ' ') or EOF(f) then begin
-      if len(word) > 3 then begin
-        for i := 1 to len(word) do
-          write(g; word[i]);
-        
-        write(g; ' ');
+      if length(word) > 3 then begin
+        for i := 1 to length(word) do
+          write(g, word[i]);
+
+        if not EOF(f) then
+          write(g, ' ');
       end;
     
       word := '';
-    end else
-      word := word + curchar;
-  end;
-  closefile(g); { flush buffer }
+    end;
+  until EOF(f);
+  closefile(g);
   
   writeln('you can check the G file now');
-
 End.
