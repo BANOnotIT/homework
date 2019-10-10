@@ -6,7 +6,7 @@ Begin
   writeln('enter n:');
   readln(n);
   
-  writeln('enter matrix values. all in a row:');
+  writeln('enter matrix ',n*n,' elements. all in a row:');
   for i := 1 to n do
     for j := 1 to n do
       read(A[i, j]);
@@ -15,9 +15,8 @@ Begin
   for i := 1 to n do begin
     for j := 1 to n do
       write(A[i, j]:5);
-      
-    writeln; writeln;
-  end;
+    writeln;
+  end; writeln;
 
   writeln('enter p and q:');
   readln(p, q);
@@ -29,16 +28,19 @@ Begin
   
   writeln('elements eql r:');
   writeln('   el    i    j');
+  writeln('---------------');
   for i := 1 to n do
     for j := 1 to n do
       if A[p, q] = A[i, j] then
-        writeln(A[i, j]:5, i:5, j:5);  
+        writeln(A[i, j]:5, i:5, j:5);
+  writeln;
         
-  writeln('matix without ',p,'th row');
-  for i := 1 to n-1 do begin
+  writeln('matix without row ',p,':');
+  for i := 1 to n do begin
+    if i = p then continue;
+
     for j := 1 to n do
-      write(A[i + (i div p), j]:5);
-      
+      write(A[i, j]:5);   
     writeln;
   end;
 End.
