@@ -14,8 +14,8 @@ Begin
     for j := 1 to m do
       read(A[i, j]);
       
-  for i := 1 to n do
-    Sorting.sort(A, i, m);
+  for i := 0 to n-1 do
+    Sorting.sort(A, i*m, (i+1)*m);
     
   writeln('sorted by rows matrix:');
   for i := 1 to n do begin
