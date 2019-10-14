@@ -1,9 +1,11 @@
 Type
   TElevator = object
-    floor: integer;
-    function getFloor : integer;
-    procedure goTo(floor : integer);
-    procedure Init(floor : integer);
+    private
+      floor: integer;
+    public
+      function getFloor : integer;
+      procedure goTo(floor : integer);
+      procedure Init(floor : integer);
   end;
 
 procedure TElevator.Init(initialFloor : integer);
@@ -25,10 +27,10 @@ Var
   A: TElevator;
 Begin
   A.Init(1);
-  writeln('Test initial value: ', 1 = A.floor);
+  writeln('Test initial value: ', 1 = A.getFloor);
   
   A.goTo(2);
-  writeln('Test goTo procedure: ', 2 = A.floor);
+  writeln('Test goTo procedure: ', 2 = A.getFloor);
   
   A.goTo(3);
   writeln('Test getFloor function: ', 3 = A.getFloor);
