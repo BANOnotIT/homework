@@ -1,50 +1,55 @@
+{$h+} 
+{$mode objfpc} 
+
 Type
   TBlock = object
-    private 
-      width, length, height : float;
+    protected 
+      width, length, height : real;
     public
-      procedure print;
-      procedure Init(w,h,l : float);
-      function getValue : float;
+      procedure print; virtual;
+      constructor init(w,h,l : real);
+      function getValue : real;
   end;
   TBrick = object(TBlock)
-    private
-      mass : float;
+    protected
+      mass : real;
     public
-      function getDensity : float;
+      function getDensity : real;
+      constructor init(w,h,l,m : real);
+      procedure print;
   end;
   
   
-procedure TBlock.Init(w,h,l : float);
+constructor TBlock.init(w,h,l : real);
 begin
   width := w;
-  heigth := h;
+  height := h;
   length := l;
 end;
 
 procedure TBlock.print;
 begin
-  write('width:',width:5:5,' heigth:',heigth:5:5,' length:',length:5:5);
+  write('width:',width:5:5,' height:',height:5:5,' length:',length:5:5);
 end;
 
-function TBlock.getValue : float;
+function TBlock.getValue() : real;
 begin
-  getFloat := width * heigth * length;
+  getValue := width * height * length;
 end;
 
-procedure TBrick.Init(w,h,l,m : float);
+constructor TBrick.init(w,h,l,m : real);
 begin
-  inherited Init(w,h,l)
+  inherited init(w,h,l);
   mass := m;
 end;
 
-procedure TBrick.print;
+procedure TBrick.print();
 begin
   inherited print;
-  write(' mass:',mass);
+  write(' mass:',mass:5:5);
 end;
 
-function TBrick.getDensity : float;
+function TBrick.getDensity : real;
 begin
   getDensity := mass / getValue;
 end;
@@ -53,10 +58,14 @@ Var
   brick : TBrick;
   block : TBlock;
 Begin
-  brick.Init(1,2,3,6);
-  block.Init(3,2,2);
+  brick.init(1,2,3,6);
+  block.init(3,2,2);
+
+
+
+  // writeln(block);
   
-  writeln('TBlock getValue+init test: ',block.getValue = 12);
+  writeln('TBlock getValue+init test: ',block.getValue() = 12);
   
   writeln('TBlock print test (visual) 3,2,2:');
   block.print;
@@ -67,4 +76,4 @@ Begin
   writeln('TBrick print test (visual) 1,2,3,6: ');
   brick.print;
   writeln;
-End;
+End.
