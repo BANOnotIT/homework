@@ -11,18 +11,20 @@ Type
       function getMass : real;
       function getSym : sym;
   end;
+
+  pAtom = ^Atom;
   
   Molecule = object
     private
-      atoms : array of ^Atom;
+      atoms : array of pAtom;
       ratios : array of integer;
     public
-      procedure Init(ats : array of ^Atom);
+      procedure Init(ats : array of pAtom);
       procedure print;
       function getMass : real;
   end;
   
-procedure Molecule.Init;
+procedure Molecule.Init(ats : array of pAtom);
 var
   i, l : integer;
 begin
@@ -51,7 +53,8 @@ var
 begin
   for i := 0 to length(self.atoms)-1 do begin
     write(self.atoms[i]^.getSym);
-    if self.ratios[i]^ <> 1 then
-      write(self.ratios[i]^);
+    if self.ratios[i] <> 1 then
+      write(self.ratios[i]);
   end;
 end;
+
