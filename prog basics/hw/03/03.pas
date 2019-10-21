@@ -56,5 +56,65 @@ begin
     if self.ratios[i] <> 1 then
       write(self.ratios[i]);
   end;
+  writeln;
 end;
 
+function Molecule.getMass : real;
+var
+  i : integer;
+begin
+  for i := 0 to length(atoms) do begin
+    result := result + atoms[i]^.getMass * ratios[i];
+  end;
+end;
+
+procedure Atom.Init(s : sym; m:real);
+begin
+  symbol := s;
+  mass := m;
+end;
+
+function Atom.getSym : sym;
+begin
+  result := symbol;
+end;
+
+function Atom.getMass : real;
+begin
+  result := mass;
+end;
+
+procedure Atom.print;
+begin
+  writeln(symbol, ': ', mass);
+end;
+
+
+Var
+  Fe, Cl : Atom;
+  scheme : array of pAtom;
+  FeCl3 : Molecule;
+  
+Begin
+  
+  Fe.Init('Fe', 55.845);
+  Cl.Init('Cl', 33);
+  
+  setlength(scheme, 4);
+  scheme[0] := @Fe;
+  scheme[1] := @Cl;
+  scheme[2] := @Cl;
+  scheme[3] := @Cl;
+  
+  writeln('test Atom.Init+.getMass: ', Cl.getMass = 33);
+  writeln('test Atom.getSym: ', Cl.getSym = 'Cl');
+  writeln('visual test Atom.print: (Fe: 55.845)');
+  Fe.print;
+  
+  FeCl3.Init(scheme);
+  
+  writeln('visual test Molecule.print: (FeCl3)');
+  fecl3.print;
+  
+  writeln('test Molecule.getMass: ',fecl3.getMass = (33*3+55.845));
+End.
