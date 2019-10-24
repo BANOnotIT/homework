@@ -6,7 +6,7 @@ Type
       mass : real;
       
     public
-      procedure Init(sym : sym; m : real);
+      procedure Init(s : sym; m : real);
       procedure print;
       function getMass : real;
       function getSym : sym;
@@ -34,7 +34,7 @@ begin
   self.ratios[0] := 1;
   l := 1;
   
-  for i := 1 to high(ats)-1 do begin
+  for i := 1 to length(ats)-1 do begin
     if atoms[l-1]^.getSym = ats[i]^.getSym then
       inc(ratios[l-1])
     else begin
@@ -63,8 +63,9 @@ function Molecule.getMass : real;
 var
   i : integer;
 begin
-  for i := 0 to length(atoms) do begin
-    result := result + atoms[i]^.getMass * ratios[i];
+  getMass := 0;
+  for i := 0 to length(atoms)-1 do begin
+    getMass := getMass + (atoms[i]^).getMass * ratios[i];
   end;
 end;
 
@@ -76,12 +77,12 @@ end;
 
 function Atom.getSym : sym;
 begin
-  result := symbol;
+  getSym := symbol;
 end;
 
 function Atom.getMass : real;
 begin
-  result := mass;
+  getMass := mass;
 end;
 
 procedure Atom.print;
@@ -89,24 +90,19 @@ begin
   writeln(symbol, ': ', mass);
 end;
 
-
 Var
   Fe, Cl : Atom;
   scheme : array of pAtom;
   FeCl3 : Molecule;
   
 Begin
-  
   Fe.Init('Fe', 55.845);
-  Cl.Init('Cl', 33);
-  
+  Cl.Init('Cl', 35.45);
   setlength(scheme, 4);
-  scheme[0] := @Fe;
-  scheme[1] := @Cl;
-  scheme[2] := @Cl;
-  scheme[3] := @Cl;
+  scheme[0] := @Fe;  scheme[1] := @Cl;
+  scheme[2] := @Cl;  scheme[3] := @Cl;
   
-  writeln('test Atom.Init+.getMass: ', Cl.getMass = 33);
+  writeln('test Atom.Init+.getMass: ', (Cl.getMass - 35.45) < 1e-5);
   writeln('test Atom.getSym: ', Cl.getSym = 'Cl');
   writeln('visual test Atom.print: (Fe: 55.845)');
   Fe.print;
@@ -116,5 +112,5 @@ Begin
   writeln('visual test Molecule.print: (FeCl3)');
   fecl3.print;
   
-  writeln('test Molecule.getMass: ',fecl3.getMass = (33*3+55.845));
+  writeln('test Molecule.getMass: ',(fecl3.getMass-(35.45*3+55.845)) < 1e-5);
 End.
