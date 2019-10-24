@@ -29,9 +29,9 @@ Begin
   A.Init(1);
   writeln('Test initial value: ', 1 = A.getFloor);
   
-  A.liftTo(2);
-  writeln('Test liftTo procedure: ', 2 = A.getFloor);
-  
   A.liftTo(3);
   writeln('Test getFloor function: ', 3 = A.getFloor);
+
+  A.liftTo(2);
+  writeln('Test liftTo procedure: ', 2 = A.getFloor);
 End.
