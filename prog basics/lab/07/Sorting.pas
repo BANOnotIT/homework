@@ -3,7 +3,7 @@ Interface
   procedure sort(var A : array of integer; s, e : integer);
 
 Implementation
-  procedure sort;
+  procedure sort(var A : array of integer; s, e : integer);
   var 
     swapped : boolean;
     i, j, tmp : integer;
