@@ -8,7 +8,7 @@ Implementation
     swapped : boolean;
     i, j, tmp : integer;
   begin
-    for j := s to e - 1 do begin
+    for j := 1 to e-s - 1 do begin
       swapped := false;
       
       for i := s to e - j do
