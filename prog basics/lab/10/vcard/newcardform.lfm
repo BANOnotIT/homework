@@ -1,0 +1,105 @@
+object CardForm: TCardForm
+  Left = 538
+  Height = 274
+  Top = 273
+  Width = 341
+  Anchors = [akLeft]
+  Caption = 'Добавление записи'
+  ClientHeight = 274
+  ClientWidth = 341
+  LCLVersion = '2.0.4.0'
+  object NameEdit: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = SurnameEdit
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = PhoneEdit
+    Left = 0
+    Height = 27
+    Top = 76
+    Width = 341
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Bottom = 25
+    EditLabel.Height = 17
+    EditLabel.Width = 341
+    EditLabel.Caption = 'Имя'
+    EditLabel.ParentColor = False
+    TabOrder = 1
+  end
+  object PhoneEdit: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = NameEdit
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = AddrEdit
+    Left = 0
+    Height = 27
+    Top = 128
+    Width = 341
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Bottom = 25
+    EditLabel.Height = 17
+    EditLabel.Width = 341
+    EditLabel.Caption = 'Телефон'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+  end
+  object AddrEdit: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = PhoneEdit
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 27
+    Top = 180
+    Width = 341
+    Anchors = [akTop, akLeft, akRight]
+    EditLabel.Height = 17
+    EditLabel.Width = 341
+    EditLabel.Caption = 'Адрес'
+    EditLabel.ParentColor = False
+    TabOrder = 3
+    OnChange = AddrEditChange
+  end
+  object SurnameEdit: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = NameEdit
+    Left = 0
+    Height = 27
+    Top = 24
+    Width = 341
+    Anchors = [akLeft, akRight]
+    BorderSpacing.Bottom = 25
+    EditLabel.Height = 17
+    EditLabel.Width = 341
+    EditLabel.Caption = 'Фамилия'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+  end
+  object AddBtn: TBitBtn
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = AddrEdit
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 67
+    Top = 207
+    Width = 341
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Добавить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = AddBtnClick
+    TabOrder = 4
+  end
+end
