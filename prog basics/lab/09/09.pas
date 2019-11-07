@@ -23,7 +23,7 @@ var
 
 Begin
   repeat
-    writeln('Enter chars count: ');
+    writeln('Enter even chars count: ');
     readln(n);
   until (n > 0) and ((n mod 2) = 0);
 
