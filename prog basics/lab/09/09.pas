@@ -18,7 +18,7 @@ end;
 var
   n, i : integer;
   start, prev, current, half : ^TItem;
-  matches : boolean;
+  matches, found : boolean;
   search : char;
 
 Begin
@@ -62,22 +62,21 @@ Begin
 
 
   current := start^.next;
-  matches := false;
+  found := false;
   prev := start;
   repeat
     if current^.value = search then begin
-      matches := true;
+      found := true;
       prev^.next := current^.next;
     end;
     prev := current;
     current := current^.next;
-  until (current = nil) or matches;
-  if matches then
-    dispose(prev);
+  until (current = nil) or found;
 
-  if not matches then
+  if not found then
     writeln('No such item in list.')
   else begin
+    dispose(prev);
     writeln('List without ',search,':');
     printlist(start^.next);
   end;
