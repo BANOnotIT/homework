@@ -1,3 +1,4 @@
+// tag::a[]
 type
   pItem = ^TItem;
   TItem = record
@@ -13,7 +14,6 @@ begin
   until current = nil;
   writeln;
 end;
-
 
 var
   n, i : integer;
@@ -39,7 +39,7 @@ Begin
 
   // skip a half
   half := start^.next;
-  for i := 1 to n div 2 do 
+  for i := 1 to n div 2 do
     half := half^.next;
 
   current := start^.next;
@@ -52,14 +52,12 @@ Begin
     writeln('Halves of list are equal!')
   else
     writeln('Halves of list are NOT equal!');
-
-
+// end::a[]
+// tag::b[]
   writeln('Enter char to exclude:');
   read(search);
-
   writeln('Entered list:');
   printlist(start^.next);
-
 
   current := start^.next;
   found := false;
@@ -81,5 +79,3 @@ Begin
     printlist(start^.next);
   end;
 End.
-
-
