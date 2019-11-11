@@ -1,0 +1,18 @@
+:and: ⋀
+:or: ⋁
+:impl: →
+:not: ¬
+:eq: ≣
+
+часть 1
+
+__
+a {and} (b {impl} {not}c)  {eq} a{not}b {or} a{not}c
+__
+
+.Значения
+[%header,cols=6*]
+|===
+|a,b,c |{not}b |{not}c |a{not}b |a{not}c |a{not}b {or} a{not}c
+
+|===
