@@ -58,3 +58,6 @@ __
 "a,b,c",{not}a{not}c,bc,{not}a{not}c {or} bc
 include::third.result.csv[]
 |===
+
+.Компонентная схема
+TODO
