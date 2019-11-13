@@ -4,23 +4,24 @@ Interface
 
 Implementation
   procedure sort(var A : array of integer; s, e : integer);
-  var 
+  var
     swapped : boolean;
     i, j, tmp : integer;
   begin
-    for j := 1 to e-s - 1 do begin
+    for j := 1 to e-s  do begin
       swapped := false;
-      
-      for i := s to e - j do
+
+      for i := s to e - j do begin
         if A[i] > A[i + 1] then begin
           swapped := true;
-          
+
           tmp    := A[i];
           A[i]   := A[i + 1];
           A[i+1] := tmp;
         end;
-        
-      if not swapped then 
+      end;
+
+      if not swapped then
         break;
     end;
   end;

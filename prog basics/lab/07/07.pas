@@ -1,15 +1,15 @@
 Uses Sorting;
-Var 
+Var
   A : array of integer;
   n, m, i, j : integer;
-  
+
 Begin
   repeat
     writeln('enter n, m <= 10:');
     readln(n,m);
   until (n <= 10) or (m <= 10);
   setlength(A,n*m);
-  
+
   writeln('enter all elements in a row:');
   for i := 0 to n-1 do
     for j := 0 to m-1 do
