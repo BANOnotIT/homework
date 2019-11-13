@@ -1,4 +1,4 @@
-unit calc;
+unit calc.unit;
 
 {$mode objfpc}{$H+}
 
@@ -51,7 +51,6 @@ begin
      s:=Form1.Edit1.text; { читаем сроку из параметра text Edit1}
      Form1.Edit1.clear; { очищаем Edit1}
      val(s,n,code); { преобразуем строку в число}
-     ShowMessageFmt('%s',n);
      case operation of
           { выполняем операцию}
           '@': sum:=n;
