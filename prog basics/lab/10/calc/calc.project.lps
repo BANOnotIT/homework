@@ -3,15 +3,13 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="4">
       <Unit0>
         <Filename Value="calc.project.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <CursorPos X="10" Y="10"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="calc.unit.pas"/>
@@ -19,29 +17,69 @@
         <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="calc"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="36"/>
-        <CursorPos X="10" Y="40"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="16" Y="51"/>
         <UsageCount Value="20"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="calc.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="43"/>
+        <CursorPos X="23" Y="62"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit1>
+      </Unit2>
+      <Unit3>
+        <Filename Value="/usr/share/lazarus/2.0.4/lcl/include/messagedialogs.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="197"/>
+        <CursorPos Y="213"/>
+        <UsageCount Value="10"/>
+      </Unit3>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="calc.project.lpr"/>
+        <Caret Line="10" Column="19"/>
+      </Position1>
+      <Position2>
+        <Filename Value="calc.project.lpr"/>
+        <Caret Line="10" Column="10"/>
+      </Position2>
+      <Position3>
+        <Filename Value="calc.pas"/>
+        <Caret Line="54" Column="29" TopLine="45"/>
+      </Position3>
+      <Position4>
+        <Filename Value="calc.pas"/>
+        <Caret Line="14" Column="20" TopLine="2"/>
+      </Position4>
+      <Position5>
+        <Filename Value="calc.pas"/>
+        <Caret Line="74" Column="6" TopLine="72"/>
+      </Position5>
+      <Position6>
+        <Filename Value="calc.pas"/>
+        <Caret Line="98" Column="3" TopLine="72"/>
+      </Position6>
+      <Position7>
+        <Filename Value="calc.pas"/>
+        <Caret Line="105" Column="3" TopLine="80"/>
+      </Position7>
+      <Position8>
+        <Filename Value="calc.pas"/>
+        <Caret Line="57" Column="21" TopLine="43"/>
+      </Position8>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>
     </RunParams>
   </ProjectSession>
-  <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="unit1.pas"/>
-        <Line Value="49"/>
-      </Item1>
-    </BreakPoints>
-  </Debugging>
 </CONFIG>
