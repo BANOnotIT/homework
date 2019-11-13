@@ -36,6 +36,7 @@ Begin
     prev^.next := current;
     prev := current;
   end;
+  ReadLn(search);
 
   // skip a half
   half := start^.next;
@@ -55,7 +56,7 @@ Begin
 // end::a[]
 // tag::b[]
   writeln('Enter char to exclude:');
-  read(search);
+  readln(search);
   writeln('Entered list:');
   printlist(start^.next);
 
@@ -69,12 +70,11 @@ Begin
     end;
     prev := current;
     current := current^.next;
-  until (current = nil) or found;
+  until (current = nil);
 
   if not found then
     writeln('No such item in list.')
   else begin
-    dispose(prev);
     writeln('List without ',search,':');
     printlist(start^.next);
   end;
