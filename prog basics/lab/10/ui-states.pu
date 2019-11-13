@@ -1,0 +1,23 @@
+skinparam monochrome true
+skinparam classBackgroundColor white
+skinparam shadowing false
+skinparam stateBackgdoundColor white
+
+hide empty description
+
+[*] -> Main : Запуск приложения
+
+state "Основное окно" as Main {
+  state "Список карточек" as List
+  state "Поиск карточек" as Search
+  [*] -> List
+  Search -> List
+  List -> Search
+}
+
+state "Окно создания\nновой формы" as Create
+
+Main --> Create : Нажатие кнопки \n "Добавить"
+Create --> Main : Закрытие окна \n или сохранение результата
+
+Main -> [*] : Закрытие окна

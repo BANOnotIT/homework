@@ -1,0 +1,37 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam usecaseBackgroundColor transparent
+
+Пользователь as user
+
+(Файл) as file
+(Процедура фильтрации \n карточек) as render
+(Добавление записи) as concat
+
+
+rectangle "Форма добавления" {
+  (Поля ввода) as createForm
+}
+
+rectangle "Основная форма" {
+  (Кнопка \n Добавить) as openbtn
+  (Поле поиска) as search
+  (Список карточек) as list
+}
+
+createForm -> concat : Вызов
+openbtn -> createForm : Открытие
+
+search -> render : Вызов
+render -> list : Изменение
+
+concat -> file : Запись
+file -> render : Чтение
+
+user -> createForm : Ввод данных для создания карточки
+user -> search : Ввод данных для поиска
+user -> openbtn : Нажатие
+user <- list  : Показ карточек
+@enduml
