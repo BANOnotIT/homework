@@ -1,49 +1,58 @@
-:and: ⋀
-:or: ⋁
+= Бобренко Иван -- ИУ6-12Б
+
+:and: *
+:or: +
 :impl: ➞
 :not: ¬
 :eq: ≡
 
-== Задача №1
+
+[cols=2*,frame=no,grid=no]
+|===
+a|
+== Задача 1
 __
 ( a {and} (b -> {not}c) ) {eq} ( a{not}b {or} a{not}c )
 __
 
-
-.Решение
-[%header%autowidth,cols=6*^,grid=no,frame=no,format=csv]
-|===
+[%header,cols=6*^,frame=no,format=csv]
+:===
 "a,b,c",{not}b,{not}c,a{not}b,a{not}c,a{not}b {or} a{not}c
 include::first.result.csv[]
-|===
+:===
 
 .Ответ
 __
 f~1~(1,0,0) = f~2~(1,0,1) = f~3~(1,1,0) = 1
 __
-
-== Задача №2
+a|
+== Задача 2
 __
 ( a -> {not}b -> (c {or} {not}d) ) {eq} ( ab {or} c {or} {not}d )
 __
-
-.Решение
-[%header%autowidth,cols=4*^,grid=no,frame=no,format=csv]
-|===
-"a,b,c,d",{not}d,a{and}b,ab {or} c {or} {not}d
+[%header,cols=4*^,frame=no,format=csv]
+:===
+"a,b,c,d",{not}d,ab,ab {or} c {or} {not}d
 include::second.result.csv[]
-|===
+:===
 .Ответ
 __
 f~1~(0,0,0,1) = f~2~(0,1,0,1) = f~3~(1,0,0,1) = 0
 __
+|===
 
-== Задание №3
+<<<
+
+
+
+== Задание 3
+[cols=2*,grid=no,frame=no]
+|===
+a|
 __
 *P* = f~1~(0,0,0) = f~2~(0,1,0) = f~3~(0,1,1) = f~4~(1,1,1) = 1
 __
 
-.Приведение к нормальной дизъюнктивной форме
 --
 {not}a{not}b{not}c {or} {not}ab{not}c {or} {not}abc {or} abc = 1
 
@@ -52,12 +61,15 @@ __
 Конечная форма:
 **{not}a{not}c {or} bc = 1**
 --
-.Проверка конечной формулы
-[%header%autowidth,cols=4*^,grid=no,frame=no,format=csv]
-|===
-"a,b,c",{not}a{not}c,bc,{not}a{not}c {or} bc
-include::third.result.csv[]
-|===
+
 
 .Компонентная схема
-TODO
+image::hw02.component_scheme.png[alt]
+
+a|
+[%header,cols=4*^,frame=no,format=csv]
+:===
+"a,b,c",{not}a{not}c,bc,{not}a{not}c {or} bc
+include::third.result.csv[]
+:===
+|===
