@@ -8,6 +8,7 @@ int main() {
     } while (n >= m);
 
     int a[n][m];
+    printf("\n\nВведите метрицу по 1 элементу на ячейку:\n");
     for (int i = 0; i < n; i++)
         for (int j = 0; j < m; j++)
             scanf("%d", &a[i][j]);
