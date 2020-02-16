@@ -1,0 +1,37 @@
+object Form4: TForm4
+  Left = 760
+  Height = 163
+  Top = 435
+  Width = 138
+  Caption = 'Сумма товаров'
+  ClientHeight = 163
+  ClientWidth = 138
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 7
+    Height = 17
+    Top = 24
+    Width = 34
+    Caption = 'Дата'
+    ParentColor = False
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 7
+    Height = 25
+    Top = 56
+    Width = 123
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 0
+    Text = 'MaskEdit1'
+    SpaceChar = '_'
+  end
+  object Button1: TButton
+    Left = 7
+    Height = 38
+    Top = 113
+    Width = 123
+    Caption = 'Посчитать'
+    TabOrder = 1
+  end
+end
