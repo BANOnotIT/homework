@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="612px" preserveAspectRatio="none" style="width:2631px;height:612px;" version="1.1" viewBox="0 0 2631 612" width="2631px" zoomAndPan="magnify"><defs/><g><!--MD5=[28bc8372cea68317940193e2b6f3af2e]
+cluster Главное окно--><rect fill="#FFFFFF" height="230.5" style="stroke: #000000; stroke-width: 1.5;" width="212" x="2408" y="199.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="2458" y="214.4951">Главное окно</text><!--MD5=[efef695497324269048a9c18d537ea99]
+cluster Окно товара в магазине--><rect fill="#FFFFFF" height="120" style="stroke: #000000; stroke-width: 1.5;" width="993" x="540" y="195"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="195" x="939" y="209.9951">Окно товара в магазине</text><!--MD5=[0b2837b6e98196467fd73a282b223ba4]
+cluster Окно количества телефонов--><rect fill="#FFFFFF" height="291" style="stroke: #000000; stroke-width: 1.5;" width="494" x="22" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="238" x="150" y="38.9951">Окно количества телефонов</text><!--MD5=[0b130ebb1972db71eb40b8e754bae63a]
+cluster Окно поступления товаров--><rect fill="#FFFFFF" height="122" style="stroke: #000000; stroke-width: 1.5;" width="821" x="1562" y="479"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="222" x="1861.5" y="493.9951">Окно поступления товаров</text><!--MD5=[0d3fed414588bf9d1b3b1c638bcc9450]
+cluster Окно графика поступлениятовара--><rect fill="#FFFFFF" height="115" style="stroke: #000000; stroke-width: 1.5;" width="697" x="1557" y="197.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="281" x="1765" y="212.4951">Окно графика поступлениятовара</text><ellipse cx="2514.1728" cy="273.8346" fill="#FFFFFF" rx="89.6728" ry="20.3346" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="2437.6728" y="278.483">Генеральный запрос</text><ellipse cx="2514.0262" cy="396.0052" fill="#FFFFFF" rx="78.0262" ry="18.0052" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="2451.0262" y="400.6537">Таблица товаров</text><ellipse cx="904.8518" cy="274.0704" fill="#FFFFFF" rx="88.3518" ry="20.0704" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="150" x="829.8518" y="278.7188">Поле выбора товара</text><ellipse cx="668.8717" cy="273.8743" fill="#FFFFFF" rx="112.3717" ry="24.8743" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="203" x="567.3717" y="278.5228">Поле ввода производителя</text><ellipse cx="1204.2481" cy="273.8496" fill="#FFFFFF" rx="102.2481" ry="22.8496" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="181" x="1113.7481" y="278.498">Запрос производителей</text><ellipse cx="1451.8237" cy="273.8647" fill="#FFFFFF" rx="64.8237" ry="15.3647" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="1405.3237" y="278.5132">Поле ответа</text><ellipse cx="385.8004" cy="274.0601" fill="#FFFFFF" rx="113.3004" ry="25.0601" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="205" x="283.3004" y="278.7085">Запрос количества товаров</text><ellipse cx="376.0617" cy="105.2123" fill="#FFFFFF" rx="124.0617" ry="27.2123" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="228" x="262.0617" y="109.8608">Таблица товаров и количества</text><ellipse cx="101.1001" cy="273.92" fill="#FFFFFF" rx="62.6001" ry="14.92" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="87" x="57.6001" y="278.5685">Поле суммы</text><ellipse cx="1960.0271" cy="558.8054" fill="#FFFFFF" rx="117.0271" ry="25.8054" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="213" x="1853.5271" y="563.4539">Запрос цены товаров с даты</text><ellipse cx="1656.0262" cy="559.0052" fill="#FFFFFF" rx="78.0262" ry="18.0052" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="126" x="1593.0262" y="563.6537">Поле ввода даты</text><ellipse cx="2281.1635" cy="559.1327" fill="#FFFFFF" rx="86.1635" ry="19.6327" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="2208.6635" y="563.7811">Поле вывода суммы</text><ellipse cx="1959.8822" cy="274.0764" fill="#FFFFFF" rx="100.8822" ry="22.5764" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="178" x="1870.8822" y="278.7249">Запрос товара по датам</text><ellipse cx="2204.1127" cy="274.0236" fill="#FFFFFF" rx="34.1127" ry="14.5236" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="2182.1127" y="278.6721">Холст</text><ellipse cx="1661.8518" cy="274.0704" fill="#FFFFFF" rx="88.3518" ry="20.0704" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="150" x="1586.8518" y="278.7188">Поле выбора товара</text><ellipse cx="1960.2007" cy="395.9401" fill="#FFFFFF" rx="65.2007" ry="15.4401" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="1913.2007" y="400.5886">База Данных</text><ellipse cx="1661.9496" cy="104.9899" fill="#FFFFFF" rx="105.4496" ry="23.4899" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="1567.9496" y="109.6384">Запрос названий товаров</text><!--MD5=[67dd3b02f64772dd1e9e438e291f25a4]
+link titleBrandQuery to db--><path d="M1761.85,112.587 C1922.14,124.187 2222.18,150.531 2254,187 C2293.74,232.546 2291.31,275.447 2254,323 C2225.29,359.588 2095.74,380.001 2018.51,389.115 " fill="none" id="titleBrandQuery-db" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="2284" y="278.5669">управление</text><!--MD5=[acc0bf7712a77063de9da9153352e328]
+link query to db--><path d="M2472.35,292.223 C2450.03,301.419 2422.04,312.894 2397,323 C2369.06,334.273 2363.18,340.507 2334,348 C2226.72,375.551 2097.82,387.216 2022.78,391.958 " fill="none" id="query-db" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="2379" y="344.0669">управление</text><!--MD5=[5787b2f0feed5c6a9e16c45442c64ffe]
+link query to productsGrid--><path d="M2514,294.547 C2514,317.659 2514,355.76 2514,377.797 " fill="none" id="query-productsGrid" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="2515" y="344.0669">управление</text><!--MD5=[b5a724cca6b2ef30fa78e190cc831963]
+link titleBrandQuery to products1Field--><path d="M1556.87,107.189 C1365.41,110.341 975.236,121.689 929,162 C904.582,183.29 901.622,222.978 902.634,248.676 " fill="none" id="titleBrandQuery-&gt;products1Field" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="902.904,253.936,906.4358,244.7422,902.6468,248.9426,898.4464,245.1536,902.904,253.936" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="930" y="175.0669">наполнение</text><!--MD5=[f4eeed070843eab430293909f016c14d]
+link products1Field to producerQuery--><path d="M993.9,274 C1026.09,274 1062.79,274 1096.42,274 " fill="none" id="products1Field-&gt;producerQuery" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1101.79,274,1092.79,270,1096.79,274,1092.79,278,1101.79,274" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1011.75" y="267.0669">изменение</text><!--MD5=[e92b8a063bfdc3dc4852ddc407c81a8e]
+link producerQuery to db--><path d="M1259.19,293.486 C1290.99,303.52 1331.88,315.392 1369,323 C1560.12,362.173 1790.69,382.722 1898.64,390.814 " fill="none" id="producerQuery-db" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="1499" y="344.0669">управление</text><!--MD5=[55ec6183d47e25ecb7993198d8efa731]
+link producerField to producerQuery--><path d="M695.436,249.447 C720.112,228.314 759.039,199.337 799,187 C861.428,167.728 1031.36,163.34 1093,185 C1128.25,197.386 1160.59,226.203 1181.16,247.712 " fill="none" id="producerField-&gt;producerQuery" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1184.61,251.367,1181.3507,242.0731,1181.1817,247.7274,1175.5273,247.5584,1184.61,251.367" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1020" y="175.0669">изменение</text><!--MD5=[2a63383d59c185880ecb612a3ccf4f1c]
+link producerQuery to responseText--><path d="M1306.3,274 C1331.61,274 1358.16,274 1381.56,274 " fill="none" id="producerQuery-&gt;responseText" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1386.81,274,1377.81,270,1381.81,274,1377.81,278,1386.81,274" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="1324.5" y="267.0669">Ответ</text><!--MD5=[65cb9cfbb6978c8e8b425c54ca2175b7]
+link costField to titleBrandCountQuery--><path d="M163.544,274 C193.921,274 231.463,274 267.001,274 " fill="none" id="costField-&gt;titleBrandCountQuery" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="272.229,274,263.229,270,267.229,274,263.229,278,272.229,274" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="182" y="267.0669">изменение</text><!--MD5=[ccda8a464bb447c8c72be8f3eab8f580]
+link titleBrandCountGrid to titleBrandCountQuery--><path d="M377.562,132.094 C379.48,164.11 382.704,217.949 384.562,248.984 " fill="none" id="titleBrandCountGrid-titleBrandCountQuery" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="382" y="175.0669">управление</text><!--MD5=[9d072b95cee5c344b684adaa78890c4f]
+link titleBrandCountQuery to db--><path d="M441.121,295.882 C470.112,305.913 506.502,317.029 540,323 C805.796,370.38 1654.17,389.36 1895.44,393.88 " fill="none" id="titleBrandCountQuery-db" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="744" y="344.0669">управление</text><!--MD5=[6bc1f5a676bb85a492130dda05d95d63]
+link dateField to sumQuery--><path d="M1734.29,559 C1765.81,559 1802.92,559 1837.83,559 " fill="none" id="dateField-&gt;sumQuery" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1842.97,559,1833.97,555,1837.97,559,1833.97,563,1842.97,559" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1752.5" y="552.0669">изменение</text><!--MD5=[786b327395234edc9f13b63970d7a5d0]
+link db to sumQuery--><path d="M1960,411.572 C1960,439.051 1960,498.819 1960,532.89 " fill="none" id="db-sumQuery" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="1961" y="459.0669">управление</text><!--MD5=[28d0c40d14240afcfc8477104675595f]
+link sumQuery to sumText--><path d="M2077.25,559 C2114.29,559 2154.66,559 2189.61,559 " fill="none" id="sumQuery-&gt;sumText" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="2194.73,559,2185.73,555,2189.73,559,2185.73,563,2194.73,559" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="2095.5" y="552.0669">Заполнение</text><!--MD5=[df3cb4c3ffa2040928df42f1fbf16739]
+link titleBrandQuery to titleBrandField--><path d="M1662,128.522 C1662,159.831 1662,216.287 1662,248.577 " fill="none" id="titleBrandQuery-&gt;titleBrandField" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1662,253.929,1666,244.929,1662,248.929,1658,244.929,1662,253.929" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="1663" y="175.0669">наполнение</text><!--MD5=[bd6054e79379401744f6bb8e77e24239]
+link titleBrandField to titleBrandDateQuery--><path d="M1750.6,274 C1782.93,274 1819.82,274 1853.54,274 " fill="none" id="titleBrandField-&gt;titleBrandDateQuery" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="1858.92,274,1849.92,270,1853.92,274,1849.92,278,1858.92,274" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1768.75" y="267.0669">изменение</text><!--MD5=[1a8b06d118201289adb913bff1a27b24]
+link titleBrandDateQuery to db--><path d="M1960,296.731 C1960,320.911 1960,359.321 1960,380.24 " fill="none" id="titleBrandDateQuery-db" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="1961" y="344.0669">управление</text><!--MD5=[f06254581bedb298219064f9fde15897]
+link titleBrandDateQuery to canvas--><path d="M2061.01,274 C2097.54,274 2136.66,274 2164.73,274 " fill="none" id="titleBrandDateQuery-&gt;canvas" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="2169.84,274,2160.84,270,2164.84,274,2160.84,278,2169.84,274" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="2079.5" y="267.0669">изменение</text><!--MD5=[f0c90ebed431d472d9522c31f9d87368]
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam usecaseBackgroundColor transparent
+
+(База Данных) as db
+(Запрос названий товаров) as titleBrandQuery
+titleBrandQuery - - db : управление
+
+
+rectangle "Главное окно" {
+  (Генеральный запрос) as query
+  (Таблица товаров) as productsGrid
+}
+query - - db : управление
+query - - productsGrid : управление
+
+
+rectangle "Окно товара в магазине"{
+    (Поле выбора товара) as products1Field
+    (Поле ввода производителя) as producerField
+    (Запрос производителей) as producerQuery
+    (Поле ответа) as responseText
+}
+titleBrandQuery - -> products1Field : наполнение
+products1Field -> producerQuery : изменение
+producerQuery - - db : управление
+producerField -> producerQuery : изменение
+producerQuery -> responseText : Ответ
+
+
+rectangle "Окно количества телефонов"{
+    (Запрос количества товаров) as titleBrandCountQuery
+    (Таблица товаров и количества) as titleBrandCountGrid
+    (Поле суммы) as costField
+}
+costField -> titleBrandCountQuery : изменение
+titleBrandCountGrid - - titleBrandCountQuery : управление
+titleBrandCountQuery - - db : управление
+
+rectangle "Окно поступления товаров" {
+    (Запрос цены товаров с даты) as sumQuery
+    (Поле ввода даты) as dateField
+    (Поле вывода суммы) as sumText
+}
+dateField -> sumQuery : изменение
+db - - sumQuery : управление
+sumQuery -> sumText : Заполнение
+
+
+rectangle "Окно графика поступлениятовара" {
+    (Запрос товара по датам) as titleBrandDateQuery
+    (Холст) as canvas
+    (Поле выбора товара) as titleBrandField
+}
+titleBrandQuery - -> titleBrandField : наполнение
+titleBrandField -> titleBrandDateQuery : изменение
+titleBrandDateQuery - - db : управление
+titleBrandDateQuery -> canvas : изменение
+@enduml
+
+PlantUML version 1.2020.01beta16(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
