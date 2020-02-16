@@ -28,11 +28,11 @@ int main() {
     string strbuf;
     cout << "Enter first number:" << endl;
     cin >> strbuf;
-    auto firstPart(parse(strbuf));
+    auto left = parse(strbuf);
 
     cout << "Enter second number:" << endl;
     cin >> strbuf;
-    auto secondPart(parse(strbuf));
+    auto right = parse(strbuf);
 
     char op;
     cout << "Enter operator (+, -, *):" << endl;
@@ -40,19 +40,19 @@ int main() {
 
     switch (op) {
         case '+': {
-            cout << "Result: " << (firstPart + secondPart) << endl;
+            cout << "Result: " << left + right << endl;
             break;
         }
         case '-': {
-            cout << "Result: " << (firstPart - secondPart) << endl;
+            cout << "Result: " << left - right << endl;
             break;
         }
         case '*': {
-            cout << "Result: " << (firstPart * secondPart) << endl;
+            cout << "Result: " << left * right << endl;
             break;
         }
         default:
-            cout << "Invalid operator";
+            cout << "Invalid operator" << endl;
             break;
     }
 
