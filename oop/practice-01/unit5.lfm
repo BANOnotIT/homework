@@ -7,15 +7,6 @@ object Form5: TForm5
   ClientHeight = 240
   ClientWidth = 320
   LCLVersion = '2.0.6.0'
-  object ComboBox1: TComboBox
-    Left = 0
-    Height = 27
-    Top = 0
-    Width = 184
-    ItemHeight = 0
-    TabOrder = 0
-    Text = 'ComboBox1'
-  end
   object Chart1: TChart
     Left = 0
     Height = 208
@@ -41,6 +32,9 @@ object Form5: TForm5
     Title.Text.Strings = (
       'TAChart'
     )
+    object Chart1LineSeries1: TLineSeries
+      Source = DbChartSource1
+    end
   end
   object Button1: TButton
     Left = 245
@@ -48,9 +42,57 @@ object Form5: TForm5
     Top = 0
     Width = 75
     Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 232
     TabOrder = 2
+    Text = 'Edit1'
   end
   object DbChartSource1: TDbChartSource
+    DataSource = DataSource1
+    FieldX = 'receiptDate'
+    FieldY = 'amount'
+    left = 152
+    top = 112
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'amount'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'receiptDate'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end>
+    Database = Form1.SQLite3Connection1
+    Transaction = Form1.SQLTransaction1
+    SQL.Strings = (
+      'select amount, receiptDate'
+      'from products'
+      'where title = :title'
+      'order by receiptDate'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'title'
+        ParamType = ptInput
+      end>
+    left = 64
+    top = 66
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
     left = 112
+    top = 74
   end
 end

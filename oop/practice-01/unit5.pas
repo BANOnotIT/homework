@@ -5,8 +5,8 @@ unit Unit5;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, TADbSource,
-  TAGraph;
+  Classes, SysUtils, sqldb, DB, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  TADbSource, TAGraph, TASeries;
 
 type
 
@@ -15,8 +15,12 @@ type
   TForm5 = class(TForm)
     Button1: TButton;
     Chart1: TChart;
-    ComboBox1: TComboBox;
+    Chart1LineSeries1: TLineSeries;
+    DataSource1: TDataSource;
     DbChartSource1: TDbChartSource;
+    Edit1: TEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
   private
 
   public
@@ -29,6 +33,16 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm5 }
+
+procedure TForm5.Button1Click(Sender: TObject);
+begin
+  SQLQuery1.Close;
+  SQLQuery1.ParamByName('title').AsString := edit1.Text;
+  SQLQuery1.Open;
+  DbChartSource1.Reset;
+end;
 
 end.
 

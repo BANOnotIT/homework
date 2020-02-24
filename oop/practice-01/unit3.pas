@@ -5,7 +5,8 @@ unit Unit3;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, DBGrids, StdCtrls;
+  Classes, SysUtils, DB, sqldb, Forms, Controls, Graphics, Dialogs, DBGrids,
+  StdCtrls;
 
 type
 
@@ -13,9 +14,12 @@ type
 
   TForm3 = class(TForm)
     Button1: TButton;
+    DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     Edit1: TEdit;
     Label1: TLabel;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
   private
 
   public
@@ -28,6 +32,15 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm3 }
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  SQLQuery1.Close;
+  SQLQuery1.ParamByName('cost').AsInteger := StrToInt(Edit1.Text);
+  SQLQuery1.Open;
+end;
 
 end.
 

@@ -1,39 +1,26 @@
 object Form1: TForm1
   AnchorSideLeft.Side = asrCenter
-  Left = 548
+  Left = 525
   Height = 545
-  Top = 267
+  Top = 280
   Width = 824
   Caption = 'Товары'
   ClientHeight = 545
   ClientWidth = 824
+  OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   LCLVersion = '2.0.6.0'
   object DBGrid1: TDBGrid
     Left = 0
     Height = 472
     Top = 0
-    Width = 648
+    Width = 824
+    AutoFillColumns = True
     Color = clWindow
     Columns = <>
+    DataSource = DataSource1
+    Flat = True
     TabOrder = 0
-  end
-  object DBEdit1: TDBEdit
-    Left = 648
-    Height = 25
-    Top = 97
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 2
-  end
-  object Button1: TButton
-    Left = 648
-    Height = 32
-    Top = 0
-    Width = 176
-    Caption = 'Удалить'
-    TabOrder = 1
   end
   object Label1: TLabel
     Left = 16
@@ -51,6 +38,7 @@ object Form1: TForm1
     Width = 167
     Caption = '2. Приобрести на сумму'
     ParentColor = False
+    OnClick = Label2Click
   end
   object Label3: TLabel
     Left = 366
@@ -59,6 +47,7 @@ object Form1: TForm1
     Width = 110
     Caption = '3. Общая сумма'
     ParentColor = False
+    OnClick = Label3Click
   end
   object Label4: TLabel
     Left = 505
@@ -67,111 +56,91 @@ object Form1: TForm1
     Width = 158
     Caption = '4. График поступления'
     ParentColor = False
+    OnClick = Label4Click
   end
-  object Label5: TLabel
-    Left = 648
-    Height = 17
-    Top = 80
-    Width = 67
-    Caption = 'Название'
-    ParentColor = False
-  end
-  object Label6: TLabel
-    Left = 648
-    Height = 17
-    Top = 129
-    Width = 46
-    Caption = 'Марка'
-    ParentColor = False
-    OnClick = Label6Click
-  end
-  object DBEdit2: TDBEdit
-    Left = 648
+  object DBNavigator1: TDBNavigator
+    Left = 240
     Height = 25
-    Top = 146
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 3
+    Top = 480
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 1
   end
-  object Label7: TLabel
-    Left = 648
-    Height = 17
-    Top = 177
-    Width = 126
-    Caption = 'Дата поступления'
-    ParentColor = False
-    OnClick = Label6Click
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/banonotit/Projects/BMSTU/oop/practice-01/DB.sqlite3'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    left = 8
+    top = 480
   end
-  object DBEdit3: TDBEdit
-    Left = 648
-    Height = 25
-    Top = 194
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 4
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLite3Connection1
+    left = 40
+    top = 480
   end
-  object Label8: TLabel
-    Left = 648
-    Height = 17
-    Top = 225
-    Width = 83
-    Caption = 'Количество'
-    ParentColor = False
-    OnClick = Label6Click
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'title'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'brand'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'receiptDate'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'amount'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'cost'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'producer'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from products'
+    )
+    Params = <>
+    UpdateMode = upWhereAll
+    left = 72
+    top = 480
   end
-  object DBEdit4: TDBEdit
-    Left = 648
-    Height = 25
-    Top = 242
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 5
-  end
-  object Label9: TLabel
-    Left = 648
-    Height = 17
-    Top = 264
-    Width = 36
-    Caption = 'Цена'
-    ParentColor = False
-    OnClick = Label6Click
-  end
-  object DBEdit5: TDBEdit
-    Left = 648
-    Height = 25
-    Top = 290
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 6
-  end
-  object DBEdit6: TDBEdit
-    Left = 648
-    Height = 25
-    Top = 338
-    Width = 176
-    CharCase = ecNormal
-    MaxLength = 0
-    TabOrder = 7
-  end
-  object Label10: TLabel
-    Left = 648
-    Height = 17
-    Top = 321
-    Width = 50
-    Caption = 'Страна'
-    ParentColor = False
-    OnClick = Label6Click
-  end
-  object Button2: TButton
-    Left = 648
-    Height = 30
-    Top = 370
-    Width = 173
-    Caption = 'Добавить'
-    TabOrder = 8
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 104
+    top = 480
   end
 end

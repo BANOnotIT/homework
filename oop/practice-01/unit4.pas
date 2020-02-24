@@ -5,8 +5,8 @@ unit Unit4;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  MaskEdit;
+  Classes, SysUtils, sqldb, Forms, Controls, Graphics, Dialogs, ExtCtrls,
+  StdCtrls, MaskEdit;
 
 type
 
@@ -16,6 +16,8 @@ type
     Button1: TButton;
     Label1: TLabel;
     MaskEdit1: TMaskEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
   private
 
   public
@@ -28,6 +30,16 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm4 }
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+  SQLQuery1.Close;
+  SQLQuery1.ParamByName('date').AsString := MaskEdit1.Text;
+  SQLQuery1.Open;
+  ShowMessage(SQLQuery1.fields[0].AsString);
+end;
 
 end.
 

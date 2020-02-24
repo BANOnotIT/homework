@@ -23,7 +23,7 @@ object Form4: TForm4
     CharCase = ecNormal
     MaxLength = 0
     TabOrder = 0
-    Text = 'MaskEdit1'
+    TextHint = 'YYYYMMDD'
     SpaceChar = '_'
   end
   object Button1: TButton
@@ -32,6 +32,24 @@ object Form4: TForm4
     Top = 113
     Width = 123
     Caption = 'Посчитать'
+    OnClick = Button1Click
     TabOrder = 1
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = Form1.SQLite3Connection1
+    Transaction = Form1.SQLTransaction1
+    SQL.Strings = (
+      'select sum(cost*amount) from products'
+      'where receiptDate>:date'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'date'
+        ParamType = ptInput
+      end>
+    left = 26
+    top = 10
   end
 end
