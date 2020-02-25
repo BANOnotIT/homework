@@ -13,7 +13,6 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    CheckBox1: TCheckBox;
     ColorBox1: TColorBox;
     LabeledEdit1: TLabeledEdit;
     PaintBox1: TPaintBox;
@@ -55,7 +54,7 @@ procedure TForm1.PaintBox1MouseDown(Sender: TObject; Button: TMouseButton;
 var
   ss: integer;
 begin
-  if CheckBox1.Checked then
+  if button = mbRight then
     Lines := zip.Create(x, y, PaintBox1.Canvas)
   else
     Lines := line.Create(x, y, PaintBox1.Canvas);
