@@ -1,0 +1,61 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam usecaseBackgroundColor transparent
+
+[*] --> Main
+Main -up-> [*]
+
+state "Главная страница" as Main {
+  state "Просмотр" as  main1
+  state "Изменённые данные" as changed
+
+  [*] --> main1
+  main1 --> changed : Добавление
+  main1 --> changed : Удаление
+  main1 --> changed : Изменение
+  changed --> main1 : Сохранение
+}
+
+state "Наличие товара" as Existence
+state "Товар в наличии" as Exists
+state "Нет в наличии" as NotExists
+
+Existence --> Existence : Изменение параметров
+
+Existence --> Exists : Нажатие кнопки
+Exists --> Existence : закрытие окна
+
+Existence --> NotExists : Нажатие кнопки
+NotExists --> Existence : закрытие окна
+
+state "Приобретение" as Purchase
+Purchase --> Purchase : Изменение цены
+Purchase --> Purchase : Поиск
+
+state "Сумма товаров с даты" as SumDate
+state "Сумма товаров" as Sum
+SumDate --> SumDate : изменение даты
+SumDate --> Sum : Нажатие кнопки
+Sum --> SumDate : закрытие окна
+
+
+state "Поступление товаров" as Graph
+Graph --> Graph : Изменение названия
+Graph --> Graph : Перестроение
+
+Main --> Existence : Переход
+Existence --> Main : закрытие окна
+
+Main --> Purchase : Переход
+Purchase --> Main : закрытие окна
+
+Main --> SumDate : Переход
+SumDate --> Main : закрытие окна
+
+Main --> Graph : Переход
+Graph --> Main : закрытие окна
+
+@enduml
