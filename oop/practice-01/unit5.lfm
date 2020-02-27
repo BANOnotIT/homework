@@ -41,7 +41,7 @@ object Form5: TForm5
     Height = 25
     Top = 0
     Width = 75
-    Caption = 'Button1'
+    Caption = 'Построить'
     OnClick = Button1Click
     TabOrder = 1
   end
