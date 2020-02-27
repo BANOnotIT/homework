@@ -37,10 +37,10 @@ object Form5: TForm5
     end
   end
   object Button1: TButton
-    Left = 245
+    Left = 232
     Height = 25
     Top = 0
-    Width = 75
+    Width = 88
     Caption = 'Построить'
     OnClick = Button1Click
     TabOrder = 1
@@ -57,8 +57,8 @@ object Form5: TForm5
     DataSource = DataSource1
     FieldX = 'receiptDate'
     FieldY = 'amount'
-    left = 152
-    top = 112
+    left = 280
+    top = 88
   end
   object SQLQuery1: TSQLQuery
     FieldDefs = <    
@@ -87,12 +87,12 @@ object Form5: TForm5
         Name = 'title'
         ParamType = ptInput
       end>
-    left = 64
-    top = 66
+    left = 288
+    top = 40
   end
   object DataSource1: TDataSource
     DataSet = SQLQuery1
-    left = 112
-    top = 74
+    left = 256
+    top = 40
   end
 end

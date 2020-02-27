@@ -44,8 +44,8 @@ object Form3: TForm3
   end
   object DataSource1: TDataSource
     DataSet = SQLQuery1
-    left = 424
-    top = 96
+    left = 72
+    top = 208
   end
   object SQLQuery1: TSQLQuery
     FieldDefs = <>
@@ -62,7 +62,7 @@ object Form3: TForm3
         Name = 'cost'
         ParamType = ptInput
       end>
-    left = 336
-    top = 104
+    left = 40
+    top = 208
   end
 end

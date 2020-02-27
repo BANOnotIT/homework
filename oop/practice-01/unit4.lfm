@@ -49,7 +49,6 @@ object Form4: TForm4
         Name = 'date'
         ParamType = ptInput
       end>
-    left = 26
-    top = 10
+    left = 110
   end
 end
