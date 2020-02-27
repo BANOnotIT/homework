@@ -1,0 +1,1843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="application/ecmascript"
+   contentStyleType="text/css"
+   height="505px"
+   preserveAspectRatio="none"
+   style="width:1956px;height:505px;"
+   version="1.1"
+   viewBox="0 0 1956 505"
+   width="1956px"
+   zoomAndPan="magnify"
+   id="svg440"
+   sodipodi:docname="vlc.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata444">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview442"
+     showgrid="false"
+     inkscape:zoom="0.98773006"
+     inkscape:cx="759.34538"
+     inkscape:cy="159.20673"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g438" />
+  <defs
+     id="defs2" />
+  <g
+     id="g438"
+     transform="translate(2.5056175,0.71589072)">
+    <!--MD5=[ae3043e4946927a80a0707b405b7a60e]
+cluster SQLdb-->
+    <polygon
+       points="600,394 607,416.2969 1037,416.2969 1037,493 543,493 543,394 "
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       id="polygon4" />
+    <line
+       style="stroke:#000000;stroke-width:1.5"
+       x1="543"
+       x2="607"
+       y1="416.29691"
+       y2="416.29691"
+       id="line6" />
+    <text
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="51"
+       x="547"
+       y="408.99509"
+       id="text8"
+       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">SQLdb</text>
+    <!--MD5=[1d4074767623d186950af90f45c8e318]
+cluster Data Access-->
+    <polygon
+       points="1453,394 1460,416.2969 1496,416.2969 1496,493 1350,493 1350,394 "
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       id="polygon10" />
+    <line
+       style="stroke:#000000;stroke-width:1.5"
+       x1="1350"
+       x2="1460"
+       y1="416.29691"
+       y2="416.29691"
+       id="line12" />
+    <text
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="97"
+       x="1354"
+       y="408.99509"
+       id="text14"
+       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">Data Access</text>
+    <!--MD5=[f5f116dc58cc19a7badb71052e99e23a]
+cluster Chart-->
+    <polygon
+       points="1569,394 1576,416.2969 1934,416.2969 1934,493 1520,493 1520,394 "
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       id="polygon16" />
+    <line
+       style="stroke:#000000;stroke-width:1.5"
+       x1="1520"
+       x2="1576"
+       y1="416.29691"
+       y2="416.29691"
+       id="line18" />
+    <text
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="43"
+       x="1524"
+       y="408.99509"
+       id="text20"
+       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">Chart</text>
+    <!--MD5=[55f2d2d905c8892d22f614531055084b]
+cluster Data Controls-->
+    <polygon
+       points="1174,394 1181,416.2969 1326,416.2969 1326,493 1061,493 1061,394 "
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       id="polygon22" />
+    <line
+       style="stroke:#000000;stroke-width:1.5"
+       x1="1061"
+       x2="1181"
+       y1="416.29691"
+       y2="416.29691"
+       id="line24" />
+    <text
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="107"
+       x="1065"
+       y="408.99509"
+       id="text26"
+       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">Data Controls</text>
+    <!--MD5=[2e6d97d694018e9a008ec809a9b48e65]
+cluster Standard-->
+    <polygon
+       points="146,394 153,416.2969 519,416.2969 519,493 69,493 69,394 "
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
+       id="polygon28" />
+    <line
+       style="stroke:#000000;stroke-width:1.5"
+       x1="69"
+       x2="153"
+       y1="416.29691"
+       y2="416.29691"
+       id="line30" />
+    <text
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="71"
+       x="73"
+       y="408.99509"
+       id="text32"
+       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">Standard</text>
+    <!--MD5=[033fe8fe3d626603c9d1638b95f97644]
+class TSQLQuery-->
+    <rect
+       height="48"
+       id="TSQLQuery"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="98"
+       x="559"
+       y="429" />
+    <circle
+       cx="574"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse35"
+       r="11" />
+    <path
+       d="m 576.3438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path37"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="66"
+       x="588"
+       y="449.1543"
+       id="text39"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TSQLQuery</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="560"
+       x2="656"
+       y1="461"
+       y2="461"
+       id="line41" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="560"
+       x2="656"
+       y1="469"
+       y2="469"
+       id="line43" />
+    <!--MD5=[ba880abdf21b5e3d75bdcd55dec95dea]
+class TSQLTransaction-->
+    <rect
+       height="48"
+       id="TSQLTransaction"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="136"
+       x="692"
+       y="429" />
+    <circle
+       cx="707"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse46"
+       r="11" />
+    <path
+       d="m 709.3438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path48"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="104"
+       x="721"
+       y="449.1543"
+       id="text50"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TSQLTransaction</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="693"
+       x2="827"
+       y1="461"
+       y2="461"
+       id="line52" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="693"
+       x2="827"
+       y1="469"
+       y2="469"
+       id="line54" />
+    <!--MD5=[16d7146fb0f86d345fa11e11ce5898e0]
+class TSQLite3Connection-->
+    <rect
+       height="48"
+       id="TSQLite3Connection"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="157"
+       x="863.5"
+       y="429" />
+    <circle
+       cx="878.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse57"
+       r="11" />
+    <path
+       d="m 880.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path59"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="125"
+       x="892.5"
+       y="449.1543"
+       id="text61"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TSQLite3Connection</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="864.5"
+       x2="1019.5"
+       y1="461"
+       y2="461"
+       id="line63" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="864.5"
+       x2="1019.5"
+       y1="469"
+       y2="469"
+       id="line65" />
+    <!--MD5=[23c8f83a477460b63b6a0bd818201aa9]
+class TDataSource-->
+    <rect
+       height="48"
+       id="TDataSource"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="113"
+       x="1366.5"
+       y="429" />
+    <circle
+       cx="1381.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse68"
+       r="11" />
+    <path
+       d="m 1383.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path70"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="81"
+       x="1395.5"
+       y="449.1543"
+       id="text72"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TDataSource</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1367.5"
+       x2="1478.5"
+       y1="461"
+       y2="461"
+       id="line74" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1367.5"
+       x2="1478.5"
+       y1="469"
+       y2="469"
+       id="line76" />
+    <!--MD5=[7854a9b7b90d59b931aa69f27760ebf6]
+class TChart-->
+    <rect
+       height="48"
+       id="TChart"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="73"
+       x="1536.5"
+       y="429" />
+    <circle
+       cx="1551.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse79"
+       r="11" />
+    <path
+       d="m 1553.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path81"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="41"
+       x="1565.5"
+       y="449.1543"
+       id="text83"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TChart</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1537.5"
+       x2="1608.5"
+       y1="461"
+       y2="461"
+       id="line85" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1537.5"
+       x2="1608.5"
+       y1="469"
+       y2="469"
+       id="line87" />
+    <!--MD5=[ee16d723f361d73fb593bdfab603d2aa]
+class TLineSeries-->
+    <rect
+       height="48"
+       id="TLineSeries"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="103"
+       x="1814.5"
+       y="429" />
+    <circle
+       cx="1829.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse90"
+       r="11" />
+    <path
+       d="m 1831.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path92"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="71"
+       x="1843.5"
+       y="449.1543"
+       id="text94"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TLineSeries</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1815.5"
+       x2="1916.5"
+       y1="461"
+       y2="461"
+       id="line96" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1815.5"
+       x2="1916.5"
+       y1="469"
+       y2="469"
+       id="line98" />
+    <!--MD5=[f0b8a9bb25580a29a9f4526a8b4297e2]
+class TDbChartSource-->
+    <rect
+       height="48"
+       id="TDbChartSource"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="134"
+       x="1645"
+       y="429" />
+    <circle
+       cx="1660"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse101"
+       r="11" />
+    <path
+       d="m 1662.3438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path103"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="102"
+       x="1674"
+       y="449.1543"
+       id="text105"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TDbChartSource</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1646"
+       x2="1778"
+       y1="461"
+       y2="461"
+       id="line107" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1646"
+       x2="1778"
+       y1="469"
+       y2="469"
+       id="line109" />
+    <!--MD5=[5346c3dac428abdac79c999d290d25d4]
+class TDBGrid-->
+    <rect
+       height="48"
+       id="TDBGrid"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="81"
+       x="1077.5"
+       y="429" />
+    <circle
+       cx="1092.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse112"
+       r="11" />
+    <path
+       d="m 1094.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path114"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="49"
+       x="1106.5"
+       y="449.1543"
+       id="text116"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TDBGrid</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1078.5"
+       x2="1157.5"
+       y1="461"
+       y2="461"
+       id="line118" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1078.5"
+       x2="1157.5"
+       y1="469"
+       y2="469"
+       id="line120" />
+    <!--MD5=[7d18e3d41e8f1d6455e2c262ad71daaf]
+class TDBNavigator-->
+    <rect
+       height="48"
+       id="TDBNavigator"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="116"
+       x="1194"
+       y="429" />
+    <circle
+       cx="1209"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse123"
+       r="11" />
+    <path
+       d="m 1211.3438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path125"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="84"
+       x="1223"
+       y="449.1543"
+       id="text127"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TDBNavigator</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1195"
+       x2="1309"
+       y1="461"
+       y2="461"
+       id="line129" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1195"
+       x2="1309"
+       y1="469"
+       y2="469"
+       id="line131" />
+    <!--MD5=[a8ba1436edf5b1d0f0ae6152207038fb]
+class TMaskEdit-->
+    <rect
+       height="48"
+       id="TMaskEdit"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="95"
+       x="85.5"
+       y="429" />
+    <circle
+       cx="100.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse134"
+       r="11" />
+    <path
+       d="m 102.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path136"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="63"
+       x="114.5"
+       y="449.1543"
+       id="text138"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TMaskEdit</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="86.5"
+       x2="179.5"
+       y1="461"
+       y2="461"
+       id="line140" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="86.5"
+       x2="179.5"
+       y1="469"
+       y2="469"
+       id="line142" />
+    <!--MD5=[2a8bf9e9c000630777d637d1df0a53e1]
+class TButton-->
+    <rect
+       height="48"
+       id="TButton"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="81"
+       x="323.5"
+       y="429" />
+    <circle
+       cx="338.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse145"
+       r="11" />
+    <path
+       d="m 340.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path147"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="49"
+       x="352.5"
+       y="449.1543"
+       id="text149"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TButton</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="324.5"
+       x2="403.5"
+       y1="461"
+       y2="461"
+       id="line151" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="324.5"
+       x2="403.5"
+       y1="469"
+       y2="469"
+       id="line153" />
+    <!--MD5=[3f624ce5fed19c38cfc8d0c14e453add]
+class TLabel-->
+    <rect
+       height="48"
+       id="TLabel"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="72"
+       x="216"
+       y="429" />
+    <circle
+       cx="231"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse156"
+       r="11" />
+    <path
+       d="m 233.3438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path158"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="40"
+       x="245"
+       y="449.1543"
+       id="text160"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TLabel</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="217"
+       x2="287"
+       y1="461"
+       y2="461"
+       id="line162" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="217"
+       x2="287"
+       y1="469"
+       y2="469"
+       id="line164" />
+    <!--MD5=[aff457ba9bb64c760267d27428a95435]
+class TEdit-->
+    <rect
+       height="48"
+       id="TEdit"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="63"
+       x="439.5"
+       y="429" />
+    <circle
+       cx="454.5"
+       cy="445"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse167"
+       r="11" />
+    <path
+       d="m 456.8438,440.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path169"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="31"
+       x="468.5"
+       y="449.1543"
+       id="text171"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TEdit</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="440.5"
+       x2="501.5"
+       y1="461"
+       y2="461"
+       id="line173" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="440.5"
+       x2="501.5"
+       y1="469"
+       y2="469"
+       id="line175" />
+    <!--MD5=[3f044bc0de839b8714e58d65f980f596]
+class TForm1-->
+    <rect
+       height="252.875"
+       id="TForm1"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="410"
+       x="857"
+       y="116" />
+    <circle
+       cx="1034.75"
+       cy="132"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse178"
+       r="11" />
+    <path
+       d="m 1037.0938,127.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path180"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="46"
+       x="1055.25"
+       y="136.1543"
+       id="text182"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm1</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="858"
+       x2="1266"
+       y1="148"
+       y2="148"
+       id="line184" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="158"
+       x="863"
+       y="162.2104"
+       id="text186"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DataSource1: TDataSource;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="106"
+       x="863"
+       y="175.01511"
+       id="text188"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DBGrid1: TDBGrid;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="166"
+       x="863"
+       y="187.81979"
+       id="text190"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DBNavigator1: TDBNavigator;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="863"
+       y="200.6245"
+       id="text192"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label1: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="863"
+       y="213.4292"
+       id="text194"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label2: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="863"
+       y="226.2339"
+       id="text196"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label3: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="863"
+       y="239.0386"
+       id="text198"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label4: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="240"
+       x="863"
+       y="251.84331"
+       id="text200"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLite3Connection1: TSQLite3Connection;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="140"
+       x="863"
+       y="264.64789"
+       id="text202"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLQuery1: TSQLQuery;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="206"
+       x="863"
+       y="277.45261"
+       id="text204"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLTransaction1: TSQLTransaction;</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="858"
+       x2="1266"
+       y1="284.04691"
+       y2="284.04691"
+       id="line206" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="398"
+       x="863"
+       y="298.25729"
+       id="text208"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure FormCloseQuery(Sender: TObject; var CanClose: boolean);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="233"
+       x="863"
+       y="311.06201"
+       id="text210"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure FormCreate(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="229"
+       x="863"
+       y="323.8667"
+       id="text212"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Label1Click(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="229"
+       x="863"
+       y="336.67139"
+       id="text214"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Label2Click(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="229"
+       x="863"
+       y="349.4761"
+       id="text216"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Label3Click(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="229"
+       x="863"
+       y="362.28079"
+       id="text218"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Label4Click(Sender: TObject);</text>
+    <!--MD5=[5418e71ce304a10b20c475baa88454ea]
+class TForm-->
+    <rect
+       height="48"
+       id="TForm"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="70"
+       x="663"
+       y="8" />
+    <circle
+       cx="678"
+       cy="24"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse221"
+       r="11" />
+    <path
+       d="m 680.3438,19.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path223"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="38"
+       x="692"
+       y="28.154301"
+       id="text225"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="664"
+       x2="732"
+       y1="40"
+       y2="40"
+       id="line227" />
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="664"
+       x2="732"
+       y1="48"
+       y2="48"
+       id="line229" />
+    <!--MD5=[95bc717c6e29b097116c304bfc4fbee4]
+class TForm2-->
+    <rect
+       height="163.2422"
+       id="TForm2"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="249"
+       x="289.5"
+       y="161" />
+    <circle
+       cx="386.75"
+       cy="177"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse232"
+       r="11" />
+    <path
+       d="m 389.0938,172.6719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path234"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="46"
+       x="407.25"
+       y="181.1543"
+       id="text236"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm2</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="290.5"
+       x2="537.5"
+       y1="193"
+       y2="193"
+       id="line238" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="100"
+       x="295.5"
+       y="207.2104"
+       id="text240"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Button1: TButton;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="295.5"
+       y="220.01511"
+       id="text242"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label1: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="112"
+       x="295.5"
+       y="232.81979"
+       id="text244"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">producerEdit: TEdit;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="82"
+       x="295.5"
+       y="245.6245"
+       id="text246"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">titleEdit: TEdit;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="295.5"
+       y="258.4292"
+       id="text248"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label2: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="140"
+       x="295.5"
+       y="271.23389"
+       id="text250"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLQuery1: TSQLQuery;</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="290.5"
+       x2="537.5"
+       y1="277.82809"
+       y2="277.82809"
+       id="line252" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="236"
+       x="295.5"
+       y="292.0386"
+       id="text254"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Button1Click(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="237"
+       x="295.5"
+       y="304.84329"
+       id="text256"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Edit1Change(Sender: TObject);</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="229"
+       x="295.5"
+       y="317.64789"
+       id="text258"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Label1Click(Sender: TObject);</text>
+    <!--MD5=[31fc0ce0e6f9d7d438be86879e303985]
+class TForm3-->
+    <rect
+       height="137.6328"
+       id="TForm3"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="248"
+       x="574"
+       y="173.5" />
+    <circle
+       cx="670.75"
+       cy="189.5"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse261"
+       r="11" />
+    <path
+       d="m 673.0938,185.1719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path263"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="46"
+       x="691.25"
+       y="193.6543"
+       id="text265"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm3</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="575"
+       x2="821"
+       y1="205.5"
+       y2="205.5"
+       id="line267" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="100"
+       x="580"
+       y="219.7104"
+       id="text269"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Button1: TButton;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="158"
+       x="580"
+       y="232.51511"
+       id="text271"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DataSource1: TDataSource;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="106"
+       x="580"
+       y="245.31979"
+       id="text273"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DBGrid1: TDBGrid;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="68"
+       x="580"
+       y="258.12451"
+       id="text275"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Edit1: TEdit;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="580"
+       y="270.9292"
+       id="text277"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label1: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="140"
+       x="580"
+       y="283.73389"
+       id="text279"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLQuery1: TSQLQuery;</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="575"
+       x2="821"
+       y1="290.32809"
+       y2="290.32809"
+       id="line281" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="236"
+       x="580"
+       y="304.5386"
+       id="text283"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Button1Click(Sender: TObject);</text>
+    <!--MD5=[6a2c4e7dd26f5ba2a99058f01bc29427]
+class TForm4-->
+    <rect
+       height="112.0234"
+       id="TForm4"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="248"
+       x="6"
+       y="186.5" />
+    <circle
+       cx="102.75"
+       cy="202.5"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse286"
+       r="11" />
+    <path
+       d="m 105.0938,198.1719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.0937,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.0312,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.0938,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path288"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="46"
+       x="123.25"
+       y="206.6543"
+       id="text290"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm4</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="7"
+       x2="253"
+       y1="218.5"
+       y2="218.5"
+       id="line292" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="100"
+       x="12"
+       y="232.7104"
+       id="text294"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Button1: TButton;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="86"
+       x="12"
+       y="245.51511"
+       id="text296"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Label1: TLabel;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="126"
+       x="12"
+       y="258.31979"
+       id="text298"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">MaskEdit1: TMaskEdit;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="140"
+       x="12"
+       y="271.12451"
+       id="text300"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLQuery1: TSQLQuery;</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="7"
+       x2="253"
+       y1="277.71881"
+       y2="277.71881"
+       id="line302" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="236"
+       x="12"
+       y="291.9292"
+       id="text304"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Button1Click(Sender: TObject);</text>
+    <!--MD5=[9d4a7bbdf4fec5d05b49040df82a5478]
+class TForm5-->
+    <rect
+       height="150.4375"
+       id="TForm5"
+       style="fill:#ffffff;stroke:#383838;stroke-width:1.5"
+       width="248"
+       x="1302"
+       y="167.5" />
+    <circle
+       cx="1398.75"
+       cy="183.5"
+       style="fill:#c2c2c2;stroke:#383838;stroke-width:1"
+       id="ellipse307"
+       r="11" />
+    <path
+       d="m 1401.0938,179.1719 0.1718,0.0781 c 0.2188,-0.3125 0.4219,-0.4062 0.7188,-0.4062 0.2969,0 0.5781,0.1406 0.7344,0.4062 0.094,0.1563 0.1093,0.2813 0.1093,0.7188 v 1.4218 c 0,0.4219 -0.031,0.6094 -0.1406,0.7657 -0.1719,0.2187 -0.4375,0.3593 -0.7031,0.3593 -0.2188,0 -0.4531,-0.1093 -0.5938,-0.25 -0.1406,-0.125 -0.1718,-0.25 -0.2343,-0.6562 -0.094,-0.4063 -0.2657,-0.625 -0.75,-0.9063 -0.4688,-0.25 -1.0782,-0.4062 -1.6563,-0.4062 -1.7344,0 -2.9844,1.3125 -2.9844,3.0937 v 1.0938 c 0,1.7031 1.2969,2.7969 3.3438,2.7969 0.7656,0 1.4531,-0.125 1.875,-0.3907 0.1875,-0.0937 0.1875,-0.0937 0.6406,-0.5781 0.1875,-0.1875 0.3906,-0.2656 0.6094,-0.2656 0.4687,0 0.8594,0.3906 0.8594,0.8437 0,0.3907 -0.3282,0.8438 -0.9063,1.25 -0.75,0.5469 -1.9062,0.8438 -3.125,0.8438 -2.8906,0 -5,-1.8906 -5,-4.4688 v -1.125 c 0,-2.7187 2,-4.7968 4.625,-4.7968 0.875,0 1.4688,0.1406 2.4063,0.5781 z"
+       id="path309"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="12"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="46"
+       x="1419.25"
+       y="187.6543"
+       id="text311"
+       style="font-size:12px;font-family:sans-serif;fill:#000000">TForm5</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1303"
+       x2="1549"
+       y1="199.5"
+       y2="199.5"
+       id="line313" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="100"
+       x="1308"
+       y="213.7104"
+       id="text315"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Button1: TButton;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="88"
+       x="1308"
+       y="226.51511"
+       id="text317"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Chart1: TChart;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="184"
+       x="1308"
+       y="239.31979"
+       id="text319"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Chart1LineSeries1: TLineSeries;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="158"
+       x="1308"
+       y="252.1245"
+       id="text321"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DataSource1: TDataSource;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="198"
+       x="1308"
+       y="264.9292"
+       id="text323"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">DbChartSource1: TDbChartSource;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="68"
+       x="1308"
+       y="277.73389"
+       id="text325"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">Edit1: TEdit;</text>
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="140"
+       x="1308"
+       y="290.5386"
+       id="text327"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">SQLQuery1: TSQLQuery;</text>
+    <line
+       style="stroke:#383838;stroke-width:1.5"
+       x1="1303"
+       x2="1549"
+       y1="297.13281"
+       y2="297.13281"
+       id="line329" />
+    <text
+       font-size="11"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="236"
+       x="1308"
+       y="311.34329"
+       id="text331"
+       style="font-size:11px;font-family:sans-serif;fill:#000000">procedure Button1Click(Sender: TObject);</text>
+    <!--MD5=[f542232bf661b7f025c0256b5a74ff01]
+reverse link TForm to TForm1-->
+    <path
+       d="m 715.5,76.013 c 0,0 0,62.987 0,62.987 0,0 66.619,0 141.435,0"
+       id="TForm&lt;-TForm1"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="715.5,56.013 722.5,76.013 708.5,76.013 "
+       style="fill:none;stroke:#383838;stroke-width:1"
+       id="polygon334" />
+    <!--MD5=[317668eb155e49ef1ff73d62e6ded9a8]
+reverse link TForm1 to TDataSource-->
+    <path
+       d="m 1280.02,344 c 0,0 142.98,0 142.98,0 0,0 0,52.697 0,84.8094"
+       id="TForm1&lt;-TDataSource"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1273.02,348 1279.02,344 1273.02,340 1267.02,344 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon337" />
+    <!--MD5=[a2a2436c8e6a54ae55413075cb955e36]
+reverse link TForm1 to TDBGrid-->
+    <path
+       d="m 1131.5,382.2 c 0,0 0,46.6899 0,46.6899"
+       id="TForm1&lt;-TDBGrid"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1127.5,375.2 1131.5,381.2 1135.5,375.2 1131.5,369.2 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon340" />
+    <!--MD5=[a1b560341e4d8fff82d189a305f15d04]
+reverse link TForm1 to TDBNavigator-->
+    <path
+       d="m 1230.5,382.2 c 0,0 0,46.6899 0,46.6899"
+       id="TForm1&lt;-TDBNavigator"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1226.5,375.2 1230.5,381.2 1234.5,375.2 1230.5,369.2 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon343" />
+    <!--MD5=[1323634137948658680a514d801de1cc]
+reverse link TForm1 to TLabel-->
+    <path
+       d="m 843.919,344 c 0,0 -564.419,0 -564.419,0 0,0 0,52.697 0,84.8094"
+       id="TForm1&lt;-TLabel"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="850.919,340 844.919,344 850.919,348 856.919,344 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon346" />
+    <text
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="8"
+       x="840.75177"
+       y="344.7438"
+       id="text348"
+       style="font-size:13px;font-family:sans-serif;fill:#000000"
+       transform="translate(0,-7.1589072)">4</text>
+    <!--MD5=[cb02c7a7b445cd66e63a3efd5e310fd4]
+reverse link TForm1 to TSQLite3Connection-->
+    <path
+       d="m 942,382.2 c 0,0 0,46.6899 0,46.6899"
+       id="TForm1&lt;-TSQLite3Connection"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="938,375.2 942,381.2 946,375.2 942,369.2 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon351" />
+    <!--MD5=[153e1724b751a19204ae5dfb10999b01]
+reverse link TForm1 to TSQLQuery-->
+    <path
+       d="m 843.746,350 c 0,0 -210.46,0 -210.46,0 0,0 0,48.407 0,78.8511"
+       id="TForm1&lt;-TSQLQuery"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="850.746,346 844.746,350 850.746,354 856.746,350 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon354" />
+    <!--MD5=[fb86c008132d6b7c1f97b64dee209f58]
+reverse link TForm1 to TSQLTransaction-->
+    <path
+       d="m 843.86,357 c 0,0 -54.36,0 -54.36,0 0,0 0,43.336 0,71.7751"
+       id="TForm1&lt;-TSQLTransaction"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="850.86,353 844.86,357 850.86,361 856.86,357 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon357" />
+    <!--MD5=[01b29bfac830723efb1c1b2904bc2c72]
+reverse link TForm to TForm2-->
+    <path
+       d="m 680.5,76.001 c 0,0 0,91.999 0,91.999 0,0 -72.474,0 -141.833,0"
+       id="TForm&lt;-TForm2"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="680.5,56.001 687.5,76.001 673.5,76.001 "
+       style="fill:none;stroke:#383838;stroke-width:1"
+       id="polygon360" />
+    <!--MD5=[fd5d9ce31d5903a281cfb293e25d4364]
+reverse link TForm2 to TLabel-->
+    <path
+       d="m 276.236,312 c 0,0 -13.736,0 -13.736,0 0,0 0,76.447 0,116.7612"
+       id="TForm2&lt;-TLabel"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="283.236,308 277.236,312 283.236,316 289.236,312 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon363" />
+    <text
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="8"
+       x="273.3894"
+       y="312.84171"
+       id="text365"
+       style="font-size:13px;font-family:sans-serif;fill:#000000"
+       transform="translate(-4.2953443,-4.6532897)">2</text>
+    <!--MD5=[25097ed2e2e913f2146abdc2374a3591]
+reverse link TForm2 to TButton-->
+    <path
+       d="m 355.9,337.186 c 0,0 0,91.6108 0,91.6108"
+       id="TForm2&lt;-TButton"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="351.9,330.186 355.9,336.186 359.9,330.186 355.9,324.186 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon368" />
+    <!--MD5=[24c5942ad45d5252b145097525b50647]
+reverse link TForm2 to TEdit-->
+    <path
+       d="m 455.25,337.186 c 0,0 0,91.6108 0,91.6108"
+       id="TForm2&lt;-TEdit"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="451.25,330.186 455.25,336.186 459.25,330.186 455.25,324.186 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon371" />
+    <text
+       font-size="13"
+       lengthAdjust="spacingAndGlyphs"
+       textLength="8"
+       x="450.5676"
+       y="344.19119"
+       id="text373"
+       style="font-size:13px;font-family:sans-serif;fill:#000000"
+       transform="translate(6.4430165,11.454251)">2</text>
+    <!--MD5=[7c93b20ec3372b8b644086ef40da1378]
+reverse link TForm2 to TSQLQuery-->
+    <path
+       d="m 551.746,318 c 0,0 17.254,0 17.254,0 0,0 0,72.034 0,110.8647"
+       id="TForm2&lt;-TSQLQuery"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="544.746,322 550.746,318 544.746,314 538.746,318 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon376" />
+    <!--MD5=[589173a08e2ba1f0f570715a1ed67906]
+reverse link TForm to TForm3-->
+    <path
+       d="m 698,76.147 c 0,0 0,97.15 0,97.15"
+       id="TForm&lt;-TForm3"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="698,56.147 705,76.147 691,76.147 "
+       style="fill:none;stroke:#383838;stroke-width:1"
+       id="polygon379" />
+    <!--MD5=[45f776a6848ccce18a817f851b8df6c5]
+reverse link TForm3 to TButton-->
+    <path
+       d="m 597.714,324.561 c 0,0 0,67.439 0,67.439 0,0 -225.614,0 -225.614,0 0,0 0,19.8406 0,36.8912"
+       id="TForm3&lt;-TButton"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="593.714,317.561 597.714,323.561 601.714,317.561 597.714,311.561 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon382" />
+    <!--MD5=[dd68531ccd9ab661e94de589e94d8590]
+reverse link TForm3 to TDataSource-->
+    <path
+       d="m 757,324.72 c 0,0 0,52.28 0,52.28 0,0 637.75,0 637.75,0 0,0 0,29.688 0,51.9531"
+       id="TForm3&lt;-TDataSource"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="753,317.72 757,323.72 761,317.72 757,311.72 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon385" />
+    <!--MD5=[a5ef38b6e8ccd3fee72ef2bc22ff84c1]
+reverse link TForm3 to TDBGrid-->
+    <path
+       d="m 724.5,324.592 c 0,0 0,59.408 0,59.408 0,0 380,0 380,0 0,0 0,24.97 0,44.8671"
+       id="TForm3&lt;-TDBGrid"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="720.5,317.592 724.5,323.592 728.5,317.592 724.5,311.592 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon388" />
+    <!--MD5=[7ae21ddad8ba710039d18a36a91d79ea]
+reverse link TForm3 to TEdit-->
+    <path
+       d="m 609.571,324.786 c 0,0 0,82.214 0,82.214 0,0 -138.571,0 -138.571,0 0,0 0,10.7925 0,21.9222"
+       id="TForm3&lt;-TEdit"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="605.571,317.786 609.571,323.786 613.571,317.786 609.571,311.786 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon391" />
+    <!--MD5=[0c3364634fbd25db011b394edbd29744]
+reverse link TForm3 to TLabel-->
+    <path
+       d="m 585.857,324.676 c 0,0 0,12.324 0,12.324 0,0 -314.857,0 -314.857,0 0,0 0,57.988 0,91.9647"
+       id="TForm3&lt;-TLabel"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="581.857,317.676 585.857,323.676 589.857,317.676 585.857,311.676 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon394" />
+    <!--MD5=[23002fcffd3290199d66b72f71d82498]
+reverse link TForm3 to TSQLQuery-->
+    <path
+       d="m 621.429,324.717 c 0,0 0,104.2029 0,104.2029"
+       id="TForm3&lt;-TSQLQuery"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="617.429,317.717 621.429,323.717 625.429,317.717 621.429,311.717 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon397" />
+    <!--MD5=[7a2ad2b818d1a42ee497f08985d05ecd]
+reverse link TForm to TForm4-->
+    <path
+       d="m 642.898,32 c 0,0 -512.898,0 -512.898,0 0,0 0,92.009 0,154.366"
+       id="TForm&lt;-TForm4"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="662.898,32 642.898,39 642.898,25 "
+       style="fill:none;stroke:#383838;stroke-width:1"
+       id="polygon400" />
+    <!--MD5=[be3da3910cc212079282b6ad2acb86fc]
+reverse link TForm4 to TButton-->
+    <path
+       d="m 235,311.517 c 0,0 0,51.483 0,51.483 0,0 104.7,0 104.7,0 0,0 0,39.223 0,65.8817"
+       id="TForm4&lt;-TButton"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="231,304.517 235,310.517 239,304.517 235,298.517 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon403" />
+    <!--MD5=[4e252a5bcc616046886d95862459f229]
+reverse link TForm4 to TLabel-->
+    <path
+       d="m 225.5,311.634 c 0,0 0,117.3155 0,117.3155"
+       id="TForm4&lt;-TLabel"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="221.5,304.634 225.5,310.634 229.5,304.634 225.5,298.634 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon406" />
+    <!--MD5=[b27e4df9e82cccff6bfc8eee3d94abc1]
+reverse link TForm4 to TMaskEdit-->
+    <path
+       d="m 133,311.634 c 0,0 0,117.3155 0,117.3155"
+       id="TForm4&lt;-TMaskEdit"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="129,304.634 133,310.634 137,304.634 133,298.634 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon409" />
+    <!--MD5=[f19693f978036884a7b1e60f537ac5a5]
+reverse link TForm4 to TSQLQuery-->
+    <path
+       d="m 244.5,311.548 c 0,0 0,19.452 0,19.452 0,0 319.5,0 319.5,0 0,0 0,62.342 0,97.8967"
+       id="TForm4&lt;-TSQLQuery"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="240.5,304.548 244.5,310.548 248.5,304.548 244.5,298.548 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon412" />
+    <!--MD5=[7d7cf127b47bcf0200a0a2bbf82668e7]
+reverse link TForm to TForm5-->
+    <path
+       d="m 753.113,32 c 0,0 672.887,0 672.887,0 0,0 0,74.944 0,135.396"
+       id="TForm&lt;-TForm5"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="733.113,32 753.113,25 753.113,39 "
+       style="fill:none;stroke:#383838;stroke-width:1"
+       id="polygon415" />
+    <!--MD5=[38e00142512f4c68383f3d8005923f37]
+reverse link TForm5 to TButton-->
+    <path
+       d="m 1338.25,330.541 c 0,0 0,68.459 0,68.459 0,0 -949.95,0 -949.95,0 0,0 0,15.4652 0,29.843"
+       id="TForm5&lt;-TButton"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1334.25,323.541 1338.25,329.541 1342.25,323.541 1338.25,317.541 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon418" />
+    <!--MD5=[1442ebbb7c9c4da6daf77de94797c54e]
+reverse link TForm5 to TChart-->
+    <path
+       d="m 1543.25,330.604 c 0,0 0,98.0039 0,98.0039"
+       id="TForm5&lt;-TChart"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1539.25,323.604 1543.25,329.604 1547.25,323.604 1543.25,317.604 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon421" />
+    <!--MD5=[a212862311037d1743481f9170855b3a]
+reverse link TForm5 to TLineSeries-->
+    <path
+       d="m 1563.03,218 c 0,0 302.97,0 302.97,0 0,0 0,150.694 0,210.736"
+       id="TForm5&lt;-TLineSeries"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1556.03,222 1562.03,218 1556.03,214 1550.03,218 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon424" />
+    <!--MD5=[f259ce8417c8ca26390f653afa781f56]
+reverse link TForm5 to TDataSource-->
+    <path
+       d="m 1451.25,330.604 c 0,0 0,98.0039 0,98.0039"
+       id="TForm5&lt;-TDataSource"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1447.25,323.604 1451.25,329.604 1455.25,323.604 1451.25,317.604 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon427" />
+    <!--MD5=[ab8c0fc1e3adf6b4bb0adc1d18250f50]
+reverse link TForm5 to TDbChartSource-->
+    <path
+       d="m 1563.2,268 c 0,0 148.8,0 148.8,0 0,0 0,110.668 0,160.8145"
+       id="TForm5&lt;-TDbChartSource"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1556.2,272 1562.2,268 1556.2,264 1550.2,268 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon430" />
+    <!--MD5=[f6f664b2e947e1d0fed2ae9f1a071575]
+reverse link TForm5 to TEdit-->
+    <path
+       d="m 1304.67,330.722 c 0,0 0,83.278 0,83.278 0,0 -817.92,0 -817.92,0 0,0 0,6.9412 0,14.9669"
+       id="TForm5&lt;-TEdit"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <polygon
+       points="1300.67,323.722 1304.67,329.722 1308.67,323.722 1304.67,317.722 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon433" />
+    <!--MD5=[cb45f1cd679c335b2862c71eb71a3f95]
+reverse link TForm5 to TSQLQuery-->
+    <path
+       d="M 1318.0684,330.584 V 422 l -672.9254,0 v 6.8799"
+       id="TForm5&lt;-TSQLQuery"
+       style="fill:none;stroke:#383838;stroke-width:1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <polygon
+       points="1307.33,329.584 1311.33,323.584 1307.33,317.584 1303.33,323.584 "
+       style="fill:#383838;stroke:#383838;stroke-width:1"
+       id="polygon436"
+       transform="translate(11.096306)" />
+    <!--MD5=[e3df5ea828e651beb3c8192f8d66d503]
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam classBackgroundColor transparent
+skinparam linetype polyline
+skinparam linetype ortho
+
+package SQLdb {
+  class TSQLQuery
+  class TSQLTransaction
+  class TSQLite3Connection
+}
+
+package "Data Access" {
+  class TDataSource
+}
+
+package Chart {
+  class TChart
+  class TLineSeries
+  class TDbChartSource
+}
+
+package "Data Controls" {
+  class TDBGrid
+  class TDBNavigator
+}
+
+package "Standard" {
+  class TMaskEdit
+  class TButton
+  class TLabel
+  class TEdit
+}
+
+class TForm1 extends TForm {
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    SQLite3Connection1: TSQLite3Connection;
+    SQLQuery1: TSQLQuery;
+    SQLTransaction1: TSQLTransaction;
+    procedure FormCloseQuery(Sender: TObject; var CanClose: boolean);
+    procedure FormCreate(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure Label2Click(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
+    procedure Label4Click(Sender: TObject);
+}
+TForm1 *- - TDataSource
+TForm1 *- - TDBGrid
+TForm1 *- - TDBNavigator
+TForm1 "4" *- TLabel
+TForm1 *- - TSQLite3Connection
+TForm1 *- - TSQLQuery
+TForm1 *- - TSQLTransaction
+
+
+
+class TForm2 extends TForm {
+    Button1: TButton;
+    Label1: TLabel;
+    producerEdit: TEdit;
+    titleEdit: TEdit;
+    Label2: TLabel;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+}
+TForm2 "2" *- TLabel
+TForm2 *- - TButton
+TForm2 "2" *- - TEdit
+TForm2 *- - TSQLQuery
+
+
+
+class TForm3 extends TForm{
+    Button1: TButton;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    Edit1: TEdit;
+    Label1: TLabel;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm3 *- - TButton
+TForm3 *- - TDataSource
+TForm3 *- - TDBGrid
+TForm3 *- - TEdit
+TForm3 *- TLabel
+TForm3 *- - TSQLQuery
+
+
+
+class TForm4 extends TForm{
+    Button1: TButton;
+    Label1: TLabel;
+    MaskEdit1: TMaskEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm4 *- - TButton
+TForm4 *- TLabel
+TForm4 *- - TMaskEdit
+TForm4 *- - TSQLQuery
+
+
+
+class TForm5 extends TForm{
+    Button1: TButton;
+    Chart1: TChart;
+    Chart1LineSeries1: TLineSeries;
+    DataSource1: TDataSource;
+    DbChartSource1: TDbChartSource;
+    Edit1: TEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm5 *- - TButton
+TForm5 *- - TChart
+TForm5 *- - TLineSeries
+TForm5 *- - TDataSource
+TForm5 *- - TDbChartSource
+TForm5 *- - TEdit
+TForm5 *- - TSQLQuery
+@enduml
+
+PlantUML version 1.2020.02beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

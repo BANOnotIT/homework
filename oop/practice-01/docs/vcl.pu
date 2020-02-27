@@ -1,0 +1,130 @@
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam classBackgroundColor transparent
+skinparam linetype polyline
+skinparam linetype ortho
+
+package SQLdb {
+  class TSQLQuery
+  class TSQLTransaction
+  class TSQLite3Connection
+}
+
+package "Data Access" {
+  class TDataSource
+}
+
+package Chart {
+  class TChart
+  class TLineSeries
+  class TDbChartSource
+}
+
+package "Data Controls" {
+  class TDBGrid
+  class TDBNavigator
+}
+
+package "Standard" {
+  class TMaskEdit
+  class TButton
+  class TLabel
+  class TEdit
+}
+
+class TForm1 extends TForm {
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    SQLite3Connection1: TSQLite3Connection;
+    SQLQuery1: TSQLQuery;
+    SQLTransaction1: TSQLTransaction;
+    procedure FormCloseQuery(Sender: TObject; var CanClose: boolean);
+    procedure FormCreate(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure Label2Click(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
+    procedure Label4Click(Sender: TObject);
+}
+TForm1 *-- TDataSource
+TForm1 *-- TDBGrid
+TForm1 *-- TDBNavigator
+TForm1 "4" *- TLabel
+TForm1 *-- TSQLite3Connection
+TForm1 *-- TSQLQuery
+TForm1 *-- TSQLTransaction
+
+
+
+class TForm2 extends TForm {
+    Button1: TButton;
+    Label1: TLabel;
+    producerEdit: TEdit;
+    titleEdit: TEdit;
+    Label2: TLabel;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+}
+TForm2 "2" *- TLabel
+TForm2 *-- TButton
+TForm2 "2" *-- TEdit
+TForm2 *-- TSQLQuery
+
+
+
+class TForm3 extends TForm{
+    Button1: TButton;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    Edit1: TEdit;
+    Label1: TLabel;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm3 *-- TButton
+TForm3 *-- TDataSource
+TForm3 *-- TDBGrid
+TForm3 *-- TEdit
+TForm3 *- TLabel
+TForm3 *-- TSQLQuery
+
+
+
+class TForm4 extends TForm{
+    Button1: TButton;
+    Label1: TLabel;
+    MaskEdit1: TMaskEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm4 *-- TButton
+TForm4 *- TLabel
+TForm4 *-- TMaskEdit
+TForm4 *-- TSQLQuery
+
+
+
+class TForm5 extends TForm{
+    Button1: TButton;
+    Chart1: TChart;
+    Chart1LineSeries1: TLineSeries;
+    DataSource1: TDataSource;
+    DbChartSource1: TDbChartSource;
+    Edit1: TEdit;
+    SQLQuery1: TSQLQuery;
+    procedure Button1Click(Sender: TObject);
+}
+TForm5 *-- TButton
+TForm5 *-- TChart
+TForm5 *-- TLineSeries
+TForm5 *-- TDataSource
+TForm5 *-- TDbChartSource
+TForm5 *-- TEdit
+TForm5 *-- TSQLQuery
