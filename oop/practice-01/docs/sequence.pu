@@ -1,0 +1,27 @@
+skinparam monochrome true
+skinparam shadowing false
+
+actor Пользователь as user
+participant "Форма" as form
+participant SQLite
+participant "Файловая система" as fs
+
+
+user->form: Ввод страны производителя
+user->form: Ввод названия товара
+user->form: Нажатие кнопки "Есть?"
+activate form
+
+form->SQLite: Запрос
+activate SQLite
+
+SQLite->fs: Чтение файла
+activate fs
+fs->SQLite: Содержимое
+deactivate fs
+
+SQLite->form: Результат запроса
+deactivate SQLite
+
+form->user: Ответ "есть" или "нет"
+deactivate form
