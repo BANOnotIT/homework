@@ -51,7 +51,7 @@ object Form5: TForm5
     Top = 0
     Width = 232
     TabOrder = 2
-    Text = 'Edit1'
+    Text = 'iPhone'
   end
   object DbChartSource1: TDbChartSource
     DataSource = DataSource1
