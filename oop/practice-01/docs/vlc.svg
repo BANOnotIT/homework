@@ -18,7 +18,10 @@
    zoomAndPan="magnify"
    id="svg440"
    sodipodi:docname="vlc.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/home/banonotit/Projects/BMSTU/oop/practice-01/docs/vlc.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <metadata
      id="metadata444">
     <rdf:RDF>
@@ -43,8 +46,8 @@
      inkscape:window-height="1025"
      id="namedview442"
      showgrid="false"
-     inkscape:zoom="0.98773006"
-     inkscape:cx="759.34538"
+     inkscape:zoom="0.89672802"
+     inkscape:cx="756.0821"
      inkscape:cy="159.20673"
      inkscape:window-x="0"
      inkscape:window-y="27"
