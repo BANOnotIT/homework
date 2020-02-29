@@ -44,7 +44,7 @@ int main() {
     }
 
     printf("\n\nВывод змейки:\n");
-    for (int z = 0; z <= n * m / 2; ++z) {
+    for (int z = 0; z < n * m / 2 ; ++z) {
         int i = z / m;
         int j = z % m;
 
