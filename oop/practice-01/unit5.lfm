@@ -2,16 +2,16 @@ object Form5: TForm5
   Left = 772
   Height = 240
   Top = 370
-  Width = 320
+  Width = 662
   Caption = 'Поступление товаров'
   ClientHeight = 240
-  ClientWidth = 320
+  ClientWidth = 662
   LCLVersion = '2.0.6.0'
   object Chart1: TChart
     Left = 0
     Height = 208
     Top = 32
-    Width = 320
+    Width = 656
     AxisList = <    
       item
         Marks.LabelBrush.Style = bsClear
@@ -20,6 +20,8 @@ object Form5: TForm5
         Title.LabelBrush.Style = bsClear
       end    
       item
+        Intervals.MaxLength = 100
+        Intervals.NiceSteps = '0.3|0.5|2.0'
         Alignment = calBottom
         Marks.LabelBrush.Style = bsClear
         Minors = <>
@@ -37,7 +39,7 @@ object Form5: TForm5
     end
   end
   object Button1: TButton
-    Left = 232
+    Left = 568
     Height = 25
     Top = 0
     Width = 88
@@ -49,7 +51,7 @@ object Form5: TForm5
     Left = 0
     Height = 25
     Top = 0
-    Width = 232
+    Width = 552
     TabOrder = 2
     Text = 'iPhone'
   end
