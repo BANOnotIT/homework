@@ -19,8 +19,11 @@ type
     DataSource1: TDataSource;
     DbChartSource1: TDbChartSource;
     Edit1: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
     SQLQuery1: TSQLQuery;
     procedure Button1Click(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
   private
 
   public
@@ -42,6 +45,11 @@ begin
   SQLQuery1.ParamByName('title').AsString := edit1.Text;
   SQLQuery1.Open;
   DbChartSource1.Reset;
+end;
+
+procedure TForm5.Label1Click(Sender: TObject);
+begin
+
 end;
 
 end.

@@ -1,16 +1,16 @@
 object Form5: TForm5
   Left = 772
-  Height = 240
-  Top = 370
-  Width = 662
+  Height = 283
+  Top = 345
+  Width = 656
   Caption = 'Поступление товаров'
-  ClientHeight = 240
-  ClientWidth = 662
+  ClientHeight = 283
+  ClientWidth = 656
   LCLVersion = '2.0.6.0'
   object Chart1: TChart
     Left = 0
     Height = 208
-    Top = 32
+    Top = 48
     Width = 656
     AxisList = <    
       item
@@ -54,6 +54,24 @@ object Form5: TForm5
     Width = 552
     TabOrder = 2
     Text = 'iPhone'
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 17
+    Top = 26
+    Width = 36
+    Caption = 'Цена'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 608
+    Height = 17
+    Top = 256
+    Width = 34
+    Caption = 'Дата'
+    ParentColor = False
+    OnClick = Label1Click
   end
   object DbChartSource1: TDbChartSource
     DataSource = DataSource1
