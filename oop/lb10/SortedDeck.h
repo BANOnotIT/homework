@@ -26,15 +26,20 @@ private:
 
 template<class T>
 void SortedDeck<T>::sort() {
+    if (this->start == nullptr)
+        return;
+
     El<T> *tmp = this->start;
     this->start = this->end = nullptr;
 
     push(tmp->val, true);
 
-    while (tmp = tmp->next) {
+    tmp = tmp->next;
+    while (tmp) {
         delete tmp->prev;
 
-        push(tmp->val);
+        pushOrdered(tmp->val);
+        tmp = tmp->next;
     }
 }
 
@@ -50,13 +55,26 @@ bool SortedDeck<T>::grater(const std::string &a, const std::string &b) {
 
 template<class T>
 void SortedDeck<T>::pushOrdered(T val) {
-    if (this->start == nullptr) {
-        push(val, true);
-        return;
-    }
+    if (this->start == nullptr || grater(this->start->val, val))
+        return push(val, true);
 
     auto *tmp = this->start;
+    while (tmp != nullptr && grater(val, tmp->val))
+        tmp = tmp->next;
 
+    if (tmp == nullptr)
+        return push(val, false);
+
+    else {
+        auto *a = new El<T>;
+        a->val = val;
+
+        // prepare
+        a->prev = tmp->prev;
+        a->next = tmp;
+        // insert
+        tmp->prev = a->prev->next = a;
+    }
 }
 
 
