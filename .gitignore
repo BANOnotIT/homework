@@ -3,3 +3,5 @@
 *.ppu
 test.pdf
 lib/
+**/cmake-build-debug/
+**/.idea/
