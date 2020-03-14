@@ -26,17 +26,19 @@ int main() {
     int stat[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     auto cur = start;
-    while (cur != nullptr) {
+    while (cur != nullptr && cur->next != nullptr) {
         sum += cur->val;
         stat[cur->val]++;
 
-        cout << cur->val << endl;
+        cout << cur->val << " : ";
 
         cur = cur->next;
     }
+    cout << endl;
 
     cout << "Sum: " << sum << endl << endl;
-    cout<<"Table"<<endl;
+
+    cout << "Table" << endl;
     cout.flush();
 
     for (int i = 0; i < 10; ++i)
