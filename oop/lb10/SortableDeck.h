@@ -4,15 +4,15 @@
 // Created by banonotit on 13.03.2020.
 //
 
-#ifndef LB10_SORTEDDECK_H
-#define LB10_SORTEDDECK_H
+#ifndef LB10_SORTABLEDECK_H
+#define LB10_SORTABLEDECK_H
 
 
 #include "Deck.h"
 #include <string>
 
 template<typename T>
-class SortedDeck : Deck<T> {
+class SortableDeck : Deck<T> {
 public:
     void sort();
 
@@ -25,7 +25,7 @@ private:
 };
 
 template<class T>
-void SortedDeck<T>::sort() {
+void SortableDeck<T>::sort() {
     if (this->start == nullptr)
         return;
 
@@ -44,17 +44,17 @@ void SortedDeck<T>::sort() {
 }
 
 template<class T>
-bool SortedDeck<T>::grater(int a, int b) {
+bool SortableDeck<T>::grater(int a, int b) {
     return a > b;
 }
 
 template<class T>
-bool SortedDeck<T>::grater(const std::string &a, const std::string &b) {
+bool SortableDeck<T>::grater(const std::string &a, const std::string &b) {
     return a.compare(b) > 0;
 }
 
 template<class T>
-void SortedDeck<T>::pushOrdered(T val) {
+void SortableDeck<T>::pushOrdered(T val) {
     if (this->start == nullptr || grater(this->start->val, val))
         return push(val, true);
 
@@ -78,4 +78,4 @@ void SortedDeck<T>::pushOrdered(T val) {
 }
 
 
-#endif //LB10_SORTEDDECK_H
+#endif //LB10_SORTABLEDECK_H
