@@ -18,15 +18,15 @@ type
     constructor Create(shape: TShape);
   end;
 
-  Line = class(Figure)
+  I = class(Figure)
     constructor Create(shape: TShape);
   end;
 
-  Triangle = class(Figure)
+  T = class(Figure)
     constructor Create(shape: TShape);
   end;
 
-  Diamond = class(Figure)
+  H = class(Figure)
     constructor Create(shape: TShape);
   end;
 
@@ -54,13 +54,10 @@ begin
   prev := rotate(origin, points[1], rad);
   canvas.MoveTo(prev);
 
-  for i := 1 to length(points) + 1 do
+  for i := 2 to length(points) do
   begin
-    cur := rotate(origin, points[(i mod length(points)) + 1], rad);
+    cur := rotate(origin, points[i], rad);
     Canvas.LineTo(cur);
-
-    prev := cur;
-
   end;
 
 end;
@@ -68,41 +65,52 @@ end;
 constructor Figure.Create(shape: TShape);
 begin
   canvas := shape.Canvas;
-  origin := TPoint.Create(Round(shape.Width / 2), Round(shape.Width / 2));
 end;
 
-constructor Line.Create(shape: TShape);
+constructor I.Create(shape: TShape);
 begin
   inherited Create(shape);
-  SetLength(points, 2);
-  points[1] := TPoint.Create(Round(shape.Width / 2), 0);
-  points[2] := TPoint.Create(Round(shape.Width / 2), shape.Height);
+  SetLength(points, 6);
+
+  points[1] := Point(35, 20);
+  points[2] := Point(65, 20);
+  points[3] := Point(50, 20);
+  points[4] := Point(50, 60);
+  points[5] := Point(35, 60);
+  points[6] := Point(65, 60);
+
+  origin := Point(50, 60);
 end;
 
-constructor Triangle.Create(shape: TShape);
-var
-  half, threeq, s: longint;
+constructor T.Create(shape: TShape);
 begin
   inherited Create(shape);
-  SetLength(points, 3);
-  half := Round(shape.Width / 2);
-  threeq := Round(3 * shape.Width / 4);
-  points[1] := TPoint.Create(half, 0);
-  points[2] := TPoint.Create(half - 10, threeq);
-  points[3] := TPoint.Create(half + 10, threeq);
+  SetLength(points, 7);
+
+  points[1] := Point(35, 25);
+  points[2] := Point(35, 20);
+  points[3] := Point(65, 20);
+  points[4] := Point(65, 25);
+  points[5] := Point(65, 20);
+  points[6] := Point(50, 20);
+  points[7] := Point(50, 60);
+
+  origin := Point(50, 60);
 end;
 
-constructor Diamond.Create(shape: TShape);
-var
-  half: longint;
+constructor H.Create(shape: TShape);
 begin
   inherited Create(shape);
-  SetLength(points, 4);
-  half := Round(shape.Width / 2);
-  points[1] := TPoint.Create(half, 0);
-  points[2] := TPoint.Create(half - 10, half);
-  points[3] := TPoint.Create(half, shape.Width);
-  points[4] := TPoint.Create(half + 10, half);
+  SetLength(points, 6);
+
+  points[1] := Point(30, 20);
+  points[2] := Point(30, 60);
+  points[3] := Point(30, 40);
+  points[4] := Point(50, 40);
+  points[5] := Point(50, 60);
+  points[6] := Point(50, 20);
+
+  origin := Point(30, 40);
 end;
 
 end.

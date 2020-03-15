@@ -17,6 +17,7 @@ type
     Shape3: TShape;
     Timer1: TTimer;
     procedure FormCreate(Sender: TObject);
+    procedure Shape2ChangeBounds(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
 
 
@@ -24,9 +25,10 @@ type
 
 var
   Form1: TForm1;
-  li: Line;
-  tri: Triangle;
-  diam: Diamond;
+  li: I;
+  tri: T;
+  diam: H;
+  ti : integer;
 
 implementation
 
@@ -36,19 +38,28 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  li := Line.Create(shape1);
-  tri := Triangle.Create(Shape2);
-  diam := Diamond.Create(shape3);
+  li := I.Create(shape1);
+  tri := T.Create(Shape2);
+  diam := H.Create(shape3);
+end;
+
+procedure TForm1.Shape2ChangeBounds(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
-  li.rad := li.rad + 0.5;
+  li.rad := sin(ti / 3);
   li.paint;
-  tri.rad := tri.rad + 0.3;
+
+  tri.rad := 0.2 * sin(ti / 2);
   tri.Paint;
-  diam.rad := diam.rad + 0.1;
+
+  diam.rad := 1.7 * sin(ti/5);
   diam.paint;
+
+  inc(ti);
 end;
 
 end.
