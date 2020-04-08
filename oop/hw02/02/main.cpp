@@ -40,19 +40,15 @@ int main() {
                         cout << "Enter replacement:" << endl;
                         cin >> tmp;
                         result.append(tmp);
-
                         // skip until next space
                         while (i + 1 < len && input[i + 1] != ' ')
                             i++;
-
                         break;
                     }
                     case 'e':
-
                         // skip after next space
                         while (i < len && input[i] != ' ')
                             i++;
-
                         break;
                     default:
                         result.push_back(input[i]);
