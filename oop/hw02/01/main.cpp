@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -22,12 +22,12 @@ int main() {
     auto end = (unsigned int) pow(10, n) - 1;
 
     auto count = 0;
-    for (auto i = start; i < end; ++i)
+    for (auto i = start; i <= end; ++i)
         if (isArmstrong(i, n)) {
             cout << i << endl;
             count++;
         }
 
-    if (count)cout << "Total count: " << count << endl;
+    cout << "Total count: " << count << endl;
 }
 
