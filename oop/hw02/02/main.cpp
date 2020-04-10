@@ -46,7 +46,7 @@ int main() {
                         break;
                     }
                     case 'e':
-                        // skip after next space
+                        // skip after next word
                         while (i < len && input[i] != ' ')
                             i++;
                         break;
@@ -60,6 +60,8 @@ int main() {
             if (input[i] == ' ') {
                 words++;
                 nextIsWord = true;
+            } else {
+                nextIsWord = false;
             }
 //            words += (nextIsWord = (input[i] == ' '));
         }
