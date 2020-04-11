@@ -2,11 +2,37 @@
 === Часть 2.1. Функции
 Число из n цифр является числом Армстронга, если сумма цифр этого числа, возведенных в степень n, равна самому этому числу. Например: 153 = 1*1*1 + 5*5*5 + 3*3*3. Написать программу, определяющую все числа Армстронга, состоящие из n цифр (n вводится с клавиатуры). Вывести на печать сами числа их количество. При программировании использовать функции.
 
+[frame=no,cols=2*]
+|===
+a|
 .Код решения
 [source,cpp]
 ----
 include::01/main.cpp[]
 ----
+a|
+.Результаты работы
+----
+Enter N: 1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Total count: 9
+
+Enter N: 3
+153
+370
+371
+407
+Total count: 4
+----
+|===
 
 .Схема алгоритма
 image::01/schema.png[]
@@ -19,17 +45,55 @@ image::01/schema.png[]
 ----
 include::02/main.cpp[]
 ----
+[cols=2*, frame=no]
+|===
+a|
+.Схема алгоритма
+image::02/schema.png[]
+a|
+.Результаты работы
+----
+Enter string or leave empty:
+leave leave leave creplace
+leave erase leave creplace
 
-// .Схема алгоритма
-// image::02/schema.png[]
+Enter replacement:
+first
+Enter replacement:
+second
+
+Source lines:
+leave leave leave creplace
+leave erase leave creplace
+
+Result lines:
+leave leave leave first
+leave leave second
+----
+|===
+
+
 
 === Часть 2.3. Файлы
 Организовать программным способом файл F, состоящий из символьных строк. Переписать в файл G строки файла F, записав символы этих строк в обратном порядке и удалив символы e,E,r,t,U. При возникновении непредвиденных ситуаций выдать соответствующие сообщения. Вывести на экран оба файла.
+
+
 
 .Код решения
 [source,cpp]
 ----
 include::03/main.cpp[]
+----
+.Результат работы
+----
+[[F file]]
+tester
+12345 tEs7
+Undefined behaviour
+[[G file]]
+s
+7s 54321
+uoivahb dnifdn
 ----
 
 .Схема алгоритма
