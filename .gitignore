@@ -1,7 +1,7 @@
 *.o
 *.bak
 *.ppu
-test.pdf
+README.pdf
 lib/
 **/cmake-build-debug/
 **/.idea/
