@@ -5,3 +5,4 @@ README.pdf
 lib/
 **/cmake-build-debug/
 **/.idea/
+build-**/
