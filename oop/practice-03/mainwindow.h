@@ -1,8 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "checkwindow.h"
 #include "editablephonesmodel.h"
 
+#include <QKeyEvent>
 #include <QMainWindow>
 #include <QSqlDatabase>
 
@@ -21,5 +23,10 @@ public:
 private:
     Ui::MainWindow *ui;
     EditablePhonesModel *phonesModel;
+
+protected:
+    void keyPressEvent(QKeyEvent *event);
+private slots:
+    void on_pushButton_clicked();
 };
 #endif // MAINWINDOW_H
