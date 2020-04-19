@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     checkwindow.cpp \
+    counterwindow.cpp \
     editablephonesmodel.cpp \
     initDb.cpp \
     main.cpp \
@@ -24,15 +25,19 @@ SOURCES += \
 
 HEADERS += \
     checkwindow.h \
+    counterwindow.h \
     editablephonesmodel.h \
     initDb.h \
     mainwindow.h
 
 FORMS += \
     checkwindow.ui \
+    counterwindow.ui \
     mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES +=

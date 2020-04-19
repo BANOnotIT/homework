@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "initDb.h"
 #include "checkwindow.h"
+#include "counterwindow.h"
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -12,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , phonesModel(new EditablePhonesModel(parent))
+    , check(new CheckWindow(parent))
+    , count(new CounterWindow(parent))
 {
     ui->setupUi(this);
     initDb();
@@ -46,6 +49,12 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 
 void MainWindow::on_pushButton_clicked()
 {
-    CheckWindow *win = new CheckWindow(this);
-    win->show();
+//    CheckWindow *win = new CheckWindow(this);
+    check->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+//    CounterWindow *win = new CounterWindow(this);
+    count->show();
 }

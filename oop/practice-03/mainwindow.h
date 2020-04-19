@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "checkwindow.h"
+#include "counterwindow.h"
 #include "editablephonesmodel.h"
 
 #include <QKeyEvent>
@@ -24,9 +25,13 @@ private:
     Ui::MainWindow *ui;
     EditablePhonesModel *phonesModel;
 
+    CheckWindow *check;
+    CounterWindow *count;
+
 protected:
     void keyPressEvent(QKeyEvent *event);
 private slots:
     void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 };
 #endif // MAINWINDOW_H

@@ -27,5 +27,6 @@ void CheckWindow::on_pushButton_clicked()
     query.addBindValue(producer);
     query.exec();
 
-    QMessageBox::information(this,QObject::tr("result"), QObject::tr(query.next() ? "exists" : "does not exist"));
+    auto result = query.next() ? CheckWindow::tr( "exists" ) : CheckWindow::tr("does not exist");
+    QMessageBox::information(this,CheckWindow::tr("result"), result);
 }
