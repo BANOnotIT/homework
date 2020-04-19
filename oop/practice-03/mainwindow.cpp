@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     , phonesModel(new EditablePhonesModel(parent))
     , check(new CheckWindow(parent))
     , count(new CounterWindow(parent))
+    , summary(new SummaryWindow(parent))
 {
     ui->setupUi(this);
     initDb();
@@ -44,17 +45,19 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
         auto s = phonesModel->rowCount() - 1;
         ui->tableView->selectRow(s);
     }
-
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-//    CheckWindow *win = new CheckWindow(this);
     check->show();
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-//    CounterWindow *win = new CounterWindow(this);
     count->show();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    summary->show();
 }

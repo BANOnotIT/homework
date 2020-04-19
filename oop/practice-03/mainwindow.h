@@ -4,6 +4,7 @@
 #include "checkwindow.h"
 #include "counterwindow.h"
 #include "editablephonesmodel.h"
+#include "summarywindow.h"
 
 #include <QKeyEvent>
 #include <QMainWindow>
@@ -27,11 +28,14 @@ private:
 
     CheckWindow *check;
     CounterWindow *count;
+    SummaryWindow *summary;
 
 protected:
     void keyPressEvent(QKeyEvent *event);
 private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
+    void on_pushButton_3_clicked();
+
 };
 #endif // MAINWINDOW_H

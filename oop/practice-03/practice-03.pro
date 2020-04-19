@@ -21,19 +21,22 @@ SOURCES += \
     editablephonesmodel.cpp \
     initDb.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    summarywindow.cpp
 
 HEADERS += \
     checkwindow.h \
     counterwindow.h \
     editablephonesmodel.h \
     initDb.h \
-    mainwindow.h
+    mainwindow.h \
+    summarywindow.h
 
 FORMS += \
     checkwindow.ui \
     counterwindow.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    summarywindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
