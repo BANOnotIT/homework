@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CounterWindow</class>
- <widget class="QMainWindow" name="CounterWindow">
+ <class>ChartWindow</class>
+ <widget class="QMainWindow" name="ChartWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,26 +11,23 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Count table</string>
+   <string>Receipt chart</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLineEdit" name="costEdit"/>
+       <widget class="QLineEdit" name="lineEdit"/>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>Count</string>
+         <string>Draw</string>
         </property>
        </widget>
       </item>
      </layout>
-    </item>
-    <item>
-     <widget class="QTableView" name="tableView"/>
     </item>
    </layout>
   </widget>

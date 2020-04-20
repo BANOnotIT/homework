@@ -3,6 +3,7 @@
 #include "initDb.h"
 #include "checkwindow.h"
 #include "counterwindow.h"
+#include "chartwindow.h"
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -16,17 +17,29 @@ MainWindow::MainWindow(QWidget *parent)
     , check(new CheckWindow(parent))
     , count(new CounterWindow(parent))
     , summary(new SummaryWindow(parent))
+    , chart(new ChartWindow(parent))
 {
     ui->setupUi(this);
     initDb();
+
     ui->tableView->setModel(phonesModel);
+
     phonesModel->refresh();
+
+    chart->setWindowModality(Qt::ApplicationModal);
+    count->setWindowModality(Qt::ApplicationModal);
+    summary->setWindowModality(Qt::ApplicationModal);
+    check->setWindowModality(Qt::ApplicationModal);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
     delete phonesModel;
+    delete chart;
+    delete count;
+    delete summary;
+    delete check;
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
@@ -60,4 +73,9 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_3_clicked()
 {
     summary->show();
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    chart->show();
 }

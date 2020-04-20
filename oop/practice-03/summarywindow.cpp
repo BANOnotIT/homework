@@ -25,10 +25,6 @@ void SummaryWindow::on_pushButton_clicked()
     query.bindValue(":date", ui->lineEdit->text());
     query.exec();
 
-    auto a = query.lastError();
-    auto b = query.executedQuery();
-
-    auto s = query.next();
-
+query.next();
     ui->label->setText(query.value(0).toString());
 }
