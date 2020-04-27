@@ -2,7 +2,6 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QTextEdit>
-
 #include "texteditor.h"
 
 TextEditor::TextEditor(QWidget *parent)
@@ -25,7 +24,6 @@ TextEditor::TextEditor(QWidget *parent)
           this, SLOT(logInput()));
   connect(btn, SIGNAL(clicked()),
           this, SLOT(logConverted()));
-
 }
 
 void TextEditor::logInput()
@@ -36,10 +34,11 @@ void TextEditor::logInput()
 
 void TextEditor::logConverted()
 {
+  auto t = input->text();
   if (shouldBeUpper)
-      output->append(tr("upper: %1").arg(input->text()).toUpper());
+    output->append(tr("upper: %1").arg(t).toUpper());
   else
-    output->append(tr("lower: %1").arg(input->text()).toLower());
+    output->append(tr("lower: %1").arg(t).toLower());
 
   shouldBeUpper ^= 1;
 }

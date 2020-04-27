@@ -19,10 +19,12 @@
 #define BKSP 30
 #define CLR 31
 #define CLR_ALL 32
+// tag::defs[]
 #define PWR 33
 #define LG 34
 #define SIN 35
 #define COS 36
+// end::defs[]
 // количество кнопок в группе, отображаемой в виде сетки
 #define GRID_KEYS 16
 /// Описатель кнопки
@@ -57,12 +59,15 @@ void InitBtnDescrArray()
   _btnDescr.push_back( BtnDescr("+", PLUS) );
   _btnDescr.push_back( BtnDescr("<-",BKSP) );
   _btnDescr.push_back( BtnDescr("CE",CLR) );
+  // tag::btns[]
   _btnDescr.push_back( BtnDescr("C", CLR_ALL) );
   _btnDescr.push_back( BtnDescr("=", EQ) );
+
   _btnDescr.push_back( BtnDescr("x^y", PWR) );
   _btnDescr.push_back( BtnDescr("log_y(x)", LG) );
   _btnDescr.push_back( BtnDescr("sin", SIN) );
   _btnDescr.push_back( BtnDescr("cos", COS) );
+  // end::btns[]
 }
 // количество кнопок в группе, отображаемой в виде сетки
 #define GRID_KEYS 16
@@ -80,9 +85,12 @@ CalcForm::CalcForm( QWidget * parent)
   // создаем схемы выравнивания
   QGridLayout *gridLayout = new QGridLayout();
   QHBoxLayout *bccKeysLayout = new QHBoxLayout();
+  // tag::layout[]
   QHBoxLayout *mainKeysLayout = new QHBoxLayout();
   QVBoxLayout *dlgLayout = new QVBoxLayout();
+
   QVBoxLayout *additionalLayout = new QVBoxLayout();
+  // end::layout[]
 
   // Заполняем форму кнопками из _btnDescr
   for (int i = 0; i < _btnDescr.size(); i++) {
@@ -107,7 +115,7 @@ CalcForm::CalcForm( QWidget * parent)
         gridLayout->addWidget(button, i / 4, i % 4);
       else if( i < GRID_KEYS + 3) // кнопка из верхнего блока - в bccKeysLayout
         bccKeysLayout->addWidget(button);
-      // tag:elseif[]
+      // tag::elseif[]
       else if (i == GRID_KEYS + 3)
         { // кнопка "=" - помещаем в блок mainKeysLayout после gridLayout и additionalLayout
           mainKeysLayout->addLayout(additionalLayout);
@@ -117,7 +125,7 @@ CalcForm::CalcForm( QWidget * parent)
       else {
           additionalLayout->addWidget(button);
         }
-      // end:elseif[]
+      // end::elseif[]
     }
   // связываем сигнал из m_pSignalMapper о нажатии со слотом clicked
   // нашего класса
@@ -141,7 +149,7 @@ void CalcForm::clicked(int id)
         setNumEdit( getNumEdit() * -1.0 ); break;
       };
 
-      // tag:unary[]
+      // tag::unary[]
 
     case SIN:
       {
@@ -152,7 +160,7 @@ void CalcForm::clicked(int id)
         setNumEdit(qCos(getNumEdit()));break;
       }
 
-      // end:unary[]
+      // end::unary[]
 
     case DOT: // добавление десятичной точки
       {
@@ -253,14 +261,14 @@ void CalcForm::calcPrevOp( int curOp )
         m_Val = num;
         break;
       }
-      // tag:bin[]
+      // tag::bin[]
     case PWR : {
         m_Val = qPow(m_Val, num); break;
       }
     case LG: {
         m_Val = qLn(m_Val) / qLn(num);break;
       }
-      // end:bin[]
+      // end::bin[]
     }
   m_Op = curOp; // запомнить результат текущей операции
   setNumEdit( m_Val ); // отобразить результат
