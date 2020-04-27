@@ -26,7 +26,7 @@ void CounterWindow::on_pushButton_clicked()
     QSqlQuery query;
     query.prepare("SELECT title, brand, min((:cost / cost), amount) as maxCount "
                   "FROM products "
-                  "WHERE cost < :cost");
+                  "WHERE cost <= :cost");
     auto cost = ui->costEdit->text().toUInt();
     query.bindValue(":cost",cost);
 
