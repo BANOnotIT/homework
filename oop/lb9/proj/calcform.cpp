@@ -253,12 +253,14 @@ void CalcForm::calcPrevOp( int curOp )
         m_Val = num;
         break;
       }
+      // tag:bin[]
     case PWR : {
         m_Val = qPow(m_Val, num); break;
       }
     case LG: {
         m_Val = qLn(m_Val) / qLn(num);break;
       }
+      // end:bin[]
     }
   m_Op = curOp; // запомнить результат текущей операции
   setNumEdit( m_Val ); // отобразить результат
