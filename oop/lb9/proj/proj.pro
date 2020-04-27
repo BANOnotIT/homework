@@ -16,14 +16,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-#    calcform.cpp \
+    calcform.cpp \
     dialogex2.cpp \
     doubleform.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-#    calcform.h \
+    calcform.h \
     dialogex2.h \
     doubleform.h \
     mainwindow.h

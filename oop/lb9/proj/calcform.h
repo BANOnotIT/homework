@@ -1,22 +1,33 @@
-#ifndef CALCFORM_H
-#define CALCFORM_H
-
-#include <QWidget>
-
-namespace Ui {
-  class CalcForm;
-}
-
-class CalcForm : public QWidget
+#ifndef _CALC_DIALOG_H_
+#define _CALC_DIALOG_H_
+#include <QDialog>
+#include <QLineEdit>
+#include <QSignalMapper>
+/// Класс, реализующий калькулятор
+class CalcForm: public QWidget
 {
-  Q_OBJECT
-
+ Q_OBJECT
 public:
-  explicit CalcForm(QWidget *parent = nullptr);
-  ~CalcForm();
+ CalcForm( QWidget * parent = 0);
+ virtual ~CalcForm(){};
+protected:
+ QSignalMapper * m_pSignalMapper;
+ QLineEdit * m_pLineEdit;
+ double m_Val; ///< Значение, с которым будет выполнена операция
+ int m_Op; ///< Код нажатой операции
+ bool m_bPerf;///< Операция была выполнена. Надо очистить поле ввода
+ void initNum();///< Инициализировать переменные, связанные с вычислениями
+ double getNumEdit(); ///< Получить число из m_pLineEdit
+ void setNumEdit( double ); ///< Отобразить число в m_pLineEdit
+ /// Вычислить предыдущую операцию
+ ///(в бинарных операциях был введен второй операнд)
+ void calcPrevOp( int curOp );
 
-private:
-  Ui::CalcForm *ui;
+ /// Проверить, была ли выполнена операция при нажатии на цифровую клавишу
+ /// Если операция выполнена, значит m_pLineEdit необходимо очистить
+ void checkOpPerf();
+ private slots:
+ /// Слот для обработки нажатий всех кнопок
+ void clicked(int id);
 };
-
-#endif // CALCFORM_H
+#endif
