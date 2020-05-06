@@ -51,8 +51,8 @@ int main() {
         if (i % 2) j = m - 1 - j;
 
 
-        printf("%d\n", a[i][j]);
+        printf("%d - ", a[i][j]);
         if (i != (n - i - 1) || j != (m - j - 1))
-            printf("%d\n", a[n - i - 1][m - j - 1]);
+            printf("%d - ", a[n - i - 1][m - j - 1]);
     }
 }

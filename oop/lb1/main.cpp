@@ -13,5 +13,5 @@ int main() {
         prev = tmp;
     }
 
-    printf("Факториал %d > %d", cur, a);
+    printf("%d > %d", cur, a);
 }
