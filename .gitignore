@@ -6,3 +6,4 @@ lib/
 **/cmake-build-debug/
 **/.idea/
 build-**/
+**/diag-*.png
