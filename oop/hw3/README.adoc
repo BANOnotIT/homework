@@ -1,12 +1,177 @@
-== Задание 3. Программирование на С++ с использованием классов
+// == Задание 3. Программирование на С++ с использованием классов
+
 === Часть 3.1. Композиция
 Разработать и реализовать диаграмму классов для описанных объектов предметной области, используя механизм композиции. Протестировать все методы каждого класса. Все поля классов должны быть скрытыми (private) или защищенными (protected). Методы не должны содержать операций ввода/вывода, за исключением процедуры, единственной задачей которой является вывод информации об объекте на экран.
 Объект – гриб. Поля: название, вес, тип (съедобный, несъедобный, условно съедобный). Методы: процедура инициализации, процедура вывода значений полей на экран и функции, возвращающие значения полей по запросу.
 Объект – корзина грибника, в которой лежат грибы. Методы объекта должны позволять: инициализировать объект, добавлять гриб в корзину, убирать гриб из корзины, выводить на экран список собранных грибов с их параметрами и определять, во сколько раз станет легче корзина, если выбросить из нее все несъедобные грибы.
 В отчете привести диаграмму разработанных классов и объектную декомпозицию.
 
+[frame=no,grid=no,cols=2]
+|===
+a|
+.Диаграмма классов
+plantuml::1/classes.pu[]
+a|
+.Объектная декомпозиция
+[plantuml]
+....
+
+skinparam monochrome true
+skinparam shadowing false
+
+(Корзинка) as basket
+(Гриб) as mashroom
+Пользователь as usr
+
+basket 0-- mashroom : содержит
+basket --> mashroom : полчает массу
+basket --> mashroom : получает ядовитость
+
+usr --> basket : добавляет Гриб
+usr --> basket : удаляет Гриб
+usr --> basket : узнаёт съедобную массу
+....
+|===
+
+[grid=no,frame=no,cols=2]
+|===
+a|
+.Вывод тестирующей программы
+----
+Поганка : (0.255, poison level: 1)
+== Корзинка ==
+Поганка : (0.255, poison level: 1)
+Мухомор : (0.1, poison level: 2)
+Опиаты : (0.4, poison level: 0)
+== Станет легче в ==
+0.86755
+== Корзинка с хорошими грибами ==
+Поганка : (0.255, poison level: 1)
+Опиаты : (0.4, poison level: 0)
+----
+a|
+.Код тестирующей программы
+----
+Mushroom mushroom1("Поганка", .255, Partly);
+Mushroom mushroom2("Мухомор", .1, Deadly);
+Mushroom mushroom3("Опиаты", .4, None);
+
+mushroom1.print();
+
+Basket basket;
+
+std::cout << "== Корзинка ==" << std::endl;
+basket.add(mushroom1);
+basket.add(mushroom2);
+basket.add(mushroom3);
+
+basket.print();
+
+std::cout << "== Станет легче в ==" << std::endl;
+std::cout << basket.poisonedRatio() << std::endl;
+
+basket.remove(1);
+std::cout << "== Корзинка с хорошими грибами ==" << std::endl;
+basket.print();
+----
+|===
+
 === Часть 3.2. Qt. Полиморфное наследование
 Разработать программу, содержащую описание трех графических объектов:
 отрезок, равнобедренный треугольник, стрелка компаса (ромб с короткой диагональю).
 Реализуя механизм полиморфизма, привести объекты в одновременное вращение вокруг их геометрических центров с различными угловыми скоростями.
 В отчете привести диаграмму используемых классов Qt и разработанных классов, граф состояний пользовательского интерфейса и объектную декомпозицию.
+
+.Диаграмма классов предметной области
+[plantuml]
+....
+skinparam classBackgroundColor transparent
+skinparam shadowing false
+skinparam monochrome true
+skinparam linetype polyline
+
+set namespaceSeparator ::
+
+class Figure {
+  explicit Figure(QWidget *parent, float speed, float ssize);
+  void setup()
+  void paintEvent(QPaintEvent *event)
+
+  {abstract} QVector<QPoint> getPoints()
+
+  float ssize
+  QPainterPath path
+  float speed
+  int start
+
+}
+
+Qt::QWidget <|-- Figure
+
+
+class Compas {
+  Qt::QVector<QPoint> getPoints()
+}
+
+class Line {
+  Qt::QVector<QPoint> getPoints()
+}
+
+class Triangle {
+  Qt::QVector<QPoint> getPoints()
+}
+
+Figure <|- Line
+Figure <|- Triangle
+Figure <|- Compas
+
+class MainWindow {
+
+  Ui::MainWindow *ui
+
+  Qt::QTimer *ticker
+
+  Line *line;
+  Triangle *triangle;
+  Compas *compass;
+
+}
+
+MainWindow <|- Qt::QMainWindow
+
+MainWindow *- Line
+MainWindow *- Triangle
+MainWindow *- Compas
+MainWindow *- Qt::QTimer
+....
+
+.Диаграмма состояний интерфейса
+[plantuml]
+....
+skinparam shadowing false
+skinparam monochrome true
+
+state "Главное окно" as win
+
+[*] -right-> win
+win --> win : Цикл таймера
+....
+
+.Объектная декомпозиция
+[plantuml]
+....
+skinparam monochrome true
+skinparam shadowing false
+
+(Таймер) as timer
+(Стрелка) as compas
+(Линия) as line
+(Треугольник) as triangle
+
+timer --> line : тик
+timer -left-> compas : тик
+timer -right-> triangle : тик
+
+....
+
+**Вывод**: Я научился пользоваться композицией и агрегацией классов в C++, а также научился пользоваться библиотекой QT

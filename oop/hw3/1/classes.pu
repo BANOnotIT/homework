@@ -1,0 +1,28 @@
+@startuml
+
+skinparam monochrome true
+skinparam shadowing false
+skinparam classBackgroundColor transparent
+
+class Mushroom {
+    Poisoness poisoned
+    float mass
+    std::string title
+
+    void print()
+    Mushroom(std::string title, float massa, Poisoness poison)
+    float getMass()
+    Poisoness getPoisoned()
+}
+class Basket {
+    std::vector<Mushroom> mushrooms
+
+    Basket()
+
+    void add(Mushroom mushroom)
+    void remove(int position)
+    float poisonedRatio()
+    void print() const;
+}
+
+Basket o-- Mushroom
