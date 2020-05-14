@@ -1,4 +1,94 @@
-== Лабораторная работа 7. Простые объекты
+= Лабораторная работа 7. Простые объекты
+
+== Задание
 Описать класс, включающий заданные поля и методы, двумя способами: без конструктора и с конструктором. Протестировать все методы класса. Поля класса должны быть скрытыми (private) или защищенными (protected). Методы не должны содержать операций ввода/вывода, за исключением процедуры, единственной задачей которой является вывод информации об объекте на экран.
 Объект – звезда. Поля: название, температура в кельвинах. Методы: инициализирующая процедура, процедура вывода на экран значений полей и функция, определяющая цвет звезды по ее температуре.
 В отчете привести диаграмму разработанных классов и объектную декомпозицию.
+
+
+.Общая объектная декомпозиция
+[plantuml]
+....
+skinparam classBackgroundColor transparent
+skinparam shadowing false
+skinparam monochrome true
+skinparam linetype polyline
+
+(Консоль) as console
+(Звезда) as star
+Программист as usr
+
+usr -> star : Инициализация
+star -> console : Вывод на экран
+....
+
+[frame=no,grid=no,cols=2]
+|===
+a|
+.Диаграмма классов без конструктора
+[plantuml]
+....
+skinparam classBackgroundColor transparent
+skinparam shadowing false
+skinparam monochrome true
+skinparam linetype polyline
+
+set namespaceSeparator ::
+
+class StarBear {
+    std::string name;
+    uint kelvin;
+
+    void initialize(string initName, uint temp);
+
+    void print();
+    string getColor();
+}
+
+StarBear o-- std::string
+....
+
+a|
+.Диаграмма классов с конструктором
+[plantuml]
+....
+skinparam classBackgroundColor transparent
+skinparam shadowing false
+skinparam monochrome true
+skinparam linetype polyline
+
+set namespaceSeparator ::
+
+class Star {
+    std::string name;
+    uint kelvin;
+
+    Star(string name, uint kelvin);
+
+    void print();
+    string getColor();
+}
+
+Star o-- std::string
+....
+|===
+
+[frame=no,grid=no,cols=2]
+|===
+a|
+.Код тестирующей программы
+[source,cpp]
+----
+include::main.cpp[]
+----
+a|
+.Результат работы тестирующей программы
+----
+1
+Star sun (5778K,yellow)
+1
+Star Arcturus (4286K,orange)
+----
+|===
+
+**Вывод**: я научился создавать и использовать простые объекты в C++.
