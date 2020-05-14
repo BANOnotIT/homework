@@ -13,11 +13,10 @@ class Frame : Rect {
 private:
     int gut;
 public:
-    std::tuple<int, int> getFullSize();
-
     Frame(int w, int h, int g);
 
-    void print() override;
+    std::tuple<int, int> getFullSize();
+    void print();
 };
 
 

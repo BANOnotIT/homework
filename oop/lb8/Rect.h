@@ -13,8 +13,7 @@ public:
     Rect(int a, int b);
 
     int getArea();
-
-    virtual void print();
+    void print();
 };
 
 
