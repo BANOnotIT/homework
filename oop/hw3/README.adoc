@@ -145,6 +145,9 @@ MainWindow *- Compas
 MainWindow *- Qt::QTimer
 ....
 
+[frame=no,grid=no,cols=2]
+|===
+a|
 .Диаграмма состояний интерфейса
 [plantuml]
 ....
@@ -156,6 +159,11 @@ state "Главное окно" as win
 [*] -right-> win
 win --> win : Цикл таймера
 ....
+
+a|
+.Результат работы
+image::form.png[]
+|===
 
 .Объектная декомпозиция
 [plantuml]
@@ -171,7 +179,55 @@ skinparam shadowing false
 timer --> line : тик
 timer -left-> compas : тик
 timer -right-> triangle : тик
-
 ....
+
+==== Реализация методов классов
+
+
+[cols=3,frame=no,grid=no]
+|===
+
+a|
+.line.cpp
+[source,cpp]
+----
+include::2/line.cpp[]
+----
+
+a|
+.triangle.cpp
+[source,cpp]
+----
+include::2/triangle.cpp[]
+----
+
+a|
+.compas.cpp
+[source,cpp]
+----
+include::2/compas.cpp[]
+----
+
+|===
+
+[grid=no,frame=no,cols=2]
+|===
+a|
+
+.figure.cpp
+[source,cpp]
+----
+include::2/animatedpainer.cpp[]
+----
+a|
+
+.mainwindow.cpp
+[source,cpp]
+----
+include::2/mainwindow.cpp[]
+----
+|===
+
+
 
 **Вывод**: Я научился пользоваться композицией и агрегацией классов в C++, а также научился пользоваться библиотекой QT

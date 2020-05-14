@@ -12,8 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
   , triangle(new Triangle(parent,.15))
   , compass(new Compas(parent,.10))
 {
-//  ui->setupUi(this);
-
   line->setup();
   triangle->setup();
   compass->setup();
@@ -28,11 +26,9 @@ MainWindow::MainWindow(QWidget *parent)
   tmp->setLayout(a);
   setCentralWidget(tmp);
 
-
   connect(ticker,SIGNAL(timeout()),line,SLOT(update()));
   connect(ticker,SIGNAL(timeout()),triangle,SLOT(update()));
   connect(ticker,SIGNAL(timeout()),compass,SLOT(update()));
-
 
   ticker->start();
 }
@@ -41,4 +37,3 @@ MainWindow::~MainWindow()
 {
   delete ui;
 }
-
