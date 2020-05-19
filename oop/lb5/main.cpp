@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
@@ -8,7 +7,6 @@ int main() {
     cin >> text;
 
     bool f(false), s(false), r(false);
-
     bool *cur;
 
     for (int i = 0; i < text.length(); ++i) {
@@ -28,11 +26,11 @@ int main() {
 
         if (!*cur) {
             *cur = true;
-            cout << text[i + 1] << " -> " << static_cast<void *>(&text[i + 1]) << endl;
+            void *ptr = &text[i + 1];
+            cout << text[i + 1] << " -> " << ptr << endl;
 
             if (f && s && r) break;
         }
     }
-
     return 0;
 }
