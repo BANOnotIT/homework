@@ -9,7 +9,7 @@ int main() {
 
     bool f(false), s(false), r(false);
 
-    bool *cur = nullptr;
+    bool *cur;
 
     for (int i = 0; i < text.length(); ++i) {
         switch (text[i]) {
@@ -23,15 +23,15 @@ int main() {
                 cur = &r;
                 break;
             default:
-                cur = nullptr;
+                continue;
         }
 
-        if (cur != nullptr && !*cur) {
+        if (!*cur) {
             *cur = true;
             cout << text[i + 1] << " -> " << static_cast<void *>(&text[i + 1]) << endl;
-        }
 
-        if (f && s && r) break;
+            if (f && s && r) break;
+        }
     }
 
     return 0;
