@@ -1,0 +1,17 @@
+:leveloffset: +1
+
+:imagesdir: ./practice-01/
+
+include::practice-01/README.adoc[]
+
+<<<
+
+:imagesdir: ./practice-02/
+
+include::practice-02/README.adoc[]
+
+<<<
+
+:imagesdir: ./practice-03/
+
+include::practice-03/README.adoc[]
