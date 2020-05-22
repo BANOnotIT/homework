@@ -1,10 +1,5 @@
-//
-// Created by banonotit on 16.02.2020.
-//
-
 #ifndef PRACTICE02_NEW_COMPLEXNUMBER_H
 #define PRACTICE02_NEW_COMPLEXNUMBER_H
-
 
 #include <ostream>
 
@@ -23,6 +18,5 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const ComplexNumber &me);
 
 };
-
 
 #endif //PRACTICE02_NEW_COMPLEXNUMBER_H

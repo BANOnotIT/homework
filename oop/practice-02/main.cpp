@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 ComplexNumber parse(const std::string &in) {
     stringstream iss(in);
     vector <string> parts;
