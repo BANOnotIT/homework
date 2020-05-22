@@ -22,10 +22,6 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Edit1Change(Sender: TObject);
     procedure Label1Click(Sender: TObject);
-  private
-
-  public
-
   end;
 
 var

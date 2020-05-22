@@ -30,10 +30,6 @@ type
     procedure Label2Click(Sender: TObject);
     procedure Label3Click(Sender: TObject);
     procedure Label4Click(Sender: TObject);
-  private
-
-  public
-
   end;
 
 var
@@ -49,8 +45,6 @@ implementation
 
 { TForm1 }
 
-
-
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   checkForm := TForm2.Create(Self);
@@ -62,9 +56,7 @@ end;
 
 procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: boolean);
 begin
-
   SQLQuery1.ApplyUpdates;
-  //SQLQuery1.Close;
   SQLTransaction1.Commit;
 end;
 
@@ -87,6 +79,5 @@ procedure TForm1.Label4Click(Sender: TObject);
 begin
   graphForm.Show;
 end;
-
 
 end.
