@@ -9,6 +9,7 @@ footer:
   border-width: 0
   verso:
     left-content: ' '
+    right-content: '{page-number}'
   recto:
     left-content: ' '
-    right-content: ' '
+#    right-content: ' '
