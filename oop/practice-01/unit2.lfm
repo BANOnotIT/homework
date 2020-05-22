@@ -48,10 +48,8 @@ object Form2: TForm2
     Width = 162
     Caption = 'Страна производитель'
     ParentColor = False
-    OnClick = Label1Click
   end
   object SQLQuery1: TSQLQuery
-    IndexName = 'DEFAULT_ORDER'
     FieldDefs = <    
       item
         Name = 'title'

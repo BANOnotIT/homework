@@ -20,8 +20,6 @@ type
     Label2: TLabel;
     SQLQuery1: TSQLQuery;
     procedure Button1Click(Sender: TObject);
-    procedure Edit1Change(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
   end;
 
 var
@@ -33,19 +31,7 @@ implementation
 
 { TForm2 }
 
-procedure TForm2.Edit1Change(Sender: TObject);
-begin
-
-end;
-
-procedure TForm2.Label1Click(Sender: TObject);
-begin
-
-end;
-
 procedure TForm2.Button1Click(Sender: TObject);
-var
-  a: integer;
 begin
   SQLQuery1.Close;
 

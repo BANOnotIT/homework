@@ -23,11 +23,6 @@ type
     Label2: TLabel;
     SQLQuery1: TSQLQuery;
     procedure Button1Click(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
-  private
-
-  public
-
   end;
 
 var
@@ -47,10 +42,4 @@ begin
   DbChartSource1.Reset;
 end;
 
-procedure TForm5.Label1Click(Sender: TObject);
-begin
-
-end;
-
 end.
-

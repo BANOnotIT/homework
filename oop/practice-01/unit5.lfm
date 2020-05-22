@@ -12,13 +12,13 @@ object Form5: TForm5
     Height = 208
     Top = 48
     Width = 656
-    AxisList = <    
+    AxisList = <
       item
         Marks.LabelBrush.Style = bsClear
         Minors = <>
         Title.LabelFont.Orientation = 900
         Title.LabelBrush.Style = bsClear
-      end    
+      end
       item
         Intervals.MaxLength = 100
         Intervals.NiceSteps = '0.3|0.5|2.0'
@@ -62,7 +62,6 @@ object Form5: TForm5
     Width = 36
     Caption = 'Цена'
     ParentColor = False
-    OnClick = Label1Click
   end
   object Label2: TLabel
     Left = 608
@@ -71,7 +70,6 @@ object Form5: TForm5
     Width = 34
     Caption = 'Дата'
     ParentColor = False
-    OnClick = Label1Click
   end
   object DbChartSource1: TDbChartSource
     DataSource = DataSource1
@@ -81,12 +79,12 @@ object Form5: TForm5
     top = 88
   end
   object SQLQuery1: TSQLQuery
-    FieldDefs = <    
+    FieldDefs = <
       item
         Name = 'amount'
         DataType = ftInteger
         Precision = -1
-      end    
+      end
       item
         Name = 'receiptDate'
         DataType = ftString
@@ -101,7 +99,7 @@ object Form5: TForm5
       'where title = :title'
       'order by receiptDate'
     )
-    Params = <    
+    Params = <
       item
         DataType = ftUnknown
         Name = 'title'

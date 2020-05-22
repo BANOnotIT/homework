@@ -18,10 +18,6 @@ type
     MaskEdit1: TMaskEdit;
     SQLQuery1: TSQLQuery;
     procedure Button1Click(Sender: TObject);
-  private
-
-  public
-
   end;
 
 var
@@ -41,6 +37,4 @@ begin
   ShowMessage(SQLQuery1.fields[0].AsString);
 end;
 
-
 end.
-
