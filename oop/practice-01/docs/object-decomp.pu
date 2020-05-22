@@ -1,6 +1,5 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam shadowing false
 skinparam usecaseBackgroundColor transparent
@@ -19,10 +18,10 @@ query -- productsGrid : управление
 
 
 rectangle "Окно товара в магазине"{
-    (Поле выбора товара) as products1Field
-    (Поле ввода производителя) as producerField
-    (Запрос производителей) as producerQuery
-    (Поле ответа) as responseText
+  (Поле выбора товара) as products1Field
+  (Поле ввода производителя) as producerField
+  (Запрос производителей) as producerQuery
+  (Поле ответа) as responseText
 }
 titleBrandQuery --> products1Field : наполнение
 products1Field --> producerQuery : изменение
@@ -32,33 +31,32 @@ producerQuery --> responseText : Ответ
 
 
 rectangle "Окно количества телефонов"{
-    (Запрос количества товаров) as titleBrandCountQuery
-    (Таблица товаров и количества) as titleBrandCountGrid
-    (Поле суммы) as costField
+  (Запрос количества товаров) as titleBrandCountQuery
+  (Таблица товаров и количества) as titleBrandCountGrid
+  (Поле суммы) as costField
 }
 costField --> titleBrandCountQuery : изменение
 titleBrandCountGrid -- titleBrandCountQuery : управление
 titleBrandCountQuery -- db : управление
 
 rectangle "Окно поступления товаров" {
-    (Запрос цены товаров с даты) as sumQuery
-    (Поле ввода даты) as dateField
-    (Поле вывода суммы) as sumText
+  (Запрос цены товаров с даты) as sumQuery
+  (Поле ввода даты) as dateField
+  (Поле вывода суммы) as sumText
 }
 dateField --> sumQuery : изменение
 db -- sumQuery : управление
 sumQuery --> sumText : Заполнение
 
 
-rectangle "Окно графика поступлениятовара" {
-    (Запрос товара по датам) as titleBrandDateQuery
-    (Холст) as canvas
-    (Поле выбора товара) as titleBrandField
+rectangle "Окно графика поступления товара" {
+  (Запрос товара по датам) as titleBrandDateQuery
+  (Холст) as canvas
+  (Поле выбора товара) as titleBrandField
 }
 titleBrandQuery --> titleBrandField : наполнение
 titleBrandField --> titleBrandDateQuery : изменение
 titleBrandDateQuery -- db : управление
 titleBrandDateQuery --> canvas : изменение
-
 
 @enduml
