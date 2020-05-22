@@ -7,7 +7,6 @@
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
-#include <QDebug>
 #include <QKeyEvent>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -44,19 +43,20 @@ MainWindow::~MainWindow()
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    qDebug() << event->modifiers() << event->key();
-    if(event->modifiers() & Qt::ShiftModifier && event->key()==Qt::Key_Delete)
-    {
-        int rowId = ui->tableView->currentIndex().row();
-        auto r = phonesModel->deleteRow(rowId);
-        phonesModel->refresh();
-    }
-    else if (event->modifiers() & Qt::ShiftModifier && event->key()==Qt::Key_Insert)
-    {
-        phonesModel->insertEmptyRow();
-        phonesModel->refresh();
-        auto s = phonesModel->rowCount() - 1;
-        ui->tableView->selectRow(s);
+    if(event->modifiers() & Qt::ShiftModifier) {
+        if(event->key()==Qt::Key_Delete)
+        {
+            int rowId = ui->tableView->currentIndex().row();
+            auto r = phonesModel->deleteRow(rowId);
+	    phonesModel->refresh();
+        }
+        else if (event->key()==Qt::Key_Insert)
+        {
+            phonesModel->insertEmptyRow();
+            phonesModel->refresh();
+            auto s = phonesModel->rowCount() - 1;
+            ui->tableView->selectRow(s);
+        }
     }
 }
 

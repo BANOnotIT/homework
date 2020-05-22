@@ -1,7 +1,6 @@
 #include "editablephonesmodel.h"
 #include <QSqlQuery>
 #include <QSqlError>
-#include <QDebug>
 
 const char* fields[6]  {
    "title", "brand", "receiptDate", "amount", "cost", "producer"
@@ -59,7 +58,6 @@ bool EditablePhonesModel::deleteRow(int rowId)
 
 bool EditablePhonesModel::insertEmptyRow()
 {
-    qDebug()  << "inserting";
     QSqlQuery query("INSERT INTO products (title, brand, receiptDate, amount, cost, producer)"
                     "VALUES ('', '', '', 0, 0, '')");
     return query.exec();

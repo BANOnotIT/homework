@@ -8,7 +8,6 @@
 #include <QtCharts/QDateTimeAxis>
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
-#include <QtCore/QDebug>
 #include <QtCharts/QValueAxis>
 #include <QSqlError>
 
@@ -58,8 +57,6 @@ void ChartWindow::on_pushButton_clicked()
         QDateTime time;
         time.setDate(QDate::fromString(query.value(1).toString(), "yyyyMMdd"));
         series->append(time.toMSecsSinceEpoch(), query.value(0).toInt());
-
-        qDebug()<<query.value(0).toInt()<<query.value(1).toString() << time.toString() << QDate::fromString(query.value(1).toString(), "yyyyMMdd").toString();
     }
     chart->removeAxis(axisX);
     chart->removeAxis(axisY);
@@ -77,7 +74,4 @@ void ChartWindow::on_pushButton_clicked()
     axisY->setTitleText("Sunspots count");
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
-
-
-    qDebug() << series;
 }

@@ -1,0 +1,92 @@
+skinparam monochrome true
+skinparam shadowing false
+skinparam classBackgroundColor transparent
+skinparam linetype polyline
+skinparam linetype ortho
+
+set namespaceSeparator ::
+
+class MainWindow {
+
+    -Ui::MainWindow *ui
+    -EditablePhonesModel *phonesModel
+
+    -CheckWindow *check
+    -CounterWindow *count
+    -SummaryWindow *summary
+    -ChartWindow *chart
+
+    #void keyPressEvent(QKeyEvent *event)
+
+__ private slots __
+    -void on_pushButton_clicked()
+    -void on_pushButton_2_clicked()
+    -void on_pushButton_3_clicked()
+
+    -void on_pushButton_4_clicked()
+}
+
+Qt::QMainWindow <|-- MainWindow
+Qt::QKeyEvent <.. MainWindow
+Qt::Sql::QSqlDatabase <.. MainWindow
+
+class EditablePhonesModel {
+    +Qt::ItemFlags flags(const QModelIndex &index) const override;
+    +bool setData(const QModelIndex &index, const QVariant &value, int role) override;
+    +void refresh();
+    +bool deleteRow(int rowId);
+    +bool insertEmptyRow();
+    -bool setField(int prodcutId, int field, const QVariant &value);
+}
+
+Qt::Sql::QSqlQueryModel <|-- EditablePhonesModel
+Qt::QVariant <.. EditablePhonesModel
+Qt::QModelIndex <.. EditablePhonesModel
+EditablePhonesModel --* "1" MainWindow
+
+class ChartWindow {
+    -Ui::ChartWindow *ui;
+    -QChart *chart;
+    -QChartView *chartView;
+    -QDateTimeAxis *axisX;
+    -QValueAxis *axisY;
+
+__ private slots __
+    -void on_pushButton_clicked();
+}
+
+Qt::QMainWindow <|-- ChartWindow
+Qt::Chart::QChart --* "1" ChartWindow
+Qt::Chart::QChartView --* "1" ChartWindow
+Qt::Chart::QValueAxis --* "1" ChartWindow
+Qt::Chart::QDateTimeAxis --* "1" ChartWindow
+ChartWindow --* "1" MainWindow
+
+class CounterWindow {
+    -Ui::CounterWindow *ui;
+    -QSqlQueryModel *model;
+__ private slots__
+    void on_pushButton_clicked();
+}
+
+Qt::QMainWindow <|-- CounterWindow
+Qt::Sql::QSqlQueryModel --* "1" CounterWindow
+CounterWindow --* "1" MainWindow
+
+class SummaryWindow {
+    -Ui::SummaryWindow *ui
+__ private slots __
+    -void on_pushButton_clicked()
+}
+
+Qt::QMainWindow <|-- SummaryWindow
+SummaryWindow --* "1" MainWindow
+
+class CheckWindow {
+    -Ui::CheckWindow *ui
+__ private slots __
+    -void on_pushButton_clicked()
+}
+
+Qt::QMainWindow <|-- CheckWindow
+CheckWindow --* "1" MainWindow
