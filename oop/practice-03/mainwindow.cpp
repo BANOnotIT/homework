@@ -43,21 +43,23 @@ MainWindow::~MainWindow()
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    if(event->modifiers() & Qt::ShiftModifier) {
-        if(event->key()==Qt::Key_Delete)
-        {
-            int rowId = ui->tableView->currentIndex().row();
-            auto r = phonesModel->deleteRow(rowId);
-	    phonesModel->refresh();
-        }
-        else if (event->key()==Qt::Key_Insert)
-        {
-            phonesModel->insertEmptyRow();
-            phonesModel->refresh();
-            auto s = phonesModel->rowCount() - 1;
-            ui->tableView->selectRow(s);
-        }
+  if(event->modifiers() & Qt::ShiftModifier) {
+    switch (event->key()) {
+      case Qt::Key_Delete:{
+        int rowId = ui->tableView->currentIndex().row();
+        auto r = phonesModel->deleteRow(rowId);
+        phonesModel->refresh();
+        break;
+      }
+      case Qt::Key_Insert:{
+        phonesModel->insertEmptyRow();
+        phonesModel->refresh();
+        auto s = phonesModel->rowCount() - 1;
+        ui->tableView->selectRow(s);
+        break
+      }
     }
+  }
 }
 
 void MainWindow::on_pushButton_clicked()

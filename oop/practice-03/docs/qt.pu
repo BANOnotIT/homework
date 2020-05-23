@@ -42,7 +42,7 @@ class EditablePhonesModel {
 Qt::Sql::QSqlQueryModel <|-- EditablePhonesModel
 Qt::QVariant <.. EditablePhonesModel
 Qt::QModelIndex <.. EditablePhonesModel
-EditablePhonesModel --* "1" MainWindow
+EditablePhonesModel --*  MainWindow
 
 class ChartWindow {
     -Ui::ChartWindow *ui;
@@ -56,11 +56,11 @@ __ private slots __
 }
 
 Qt::QMainWindow <|-- ChartWindow
-Qt::Chart::QChart --* "1" ChartWindow
-Qt::Chart::QChartView --* "1" ChartWindow
-Qt::Chart::QValueAxis --* "1" ChartWindow
-Qt::Chart::QDateTimeAxis --* "1" ChartWindow
-ChartWindow --* "1" MainWindow
+Qt::Chart::QChart --*  ChartWindow
+Qt::Chart::QChartView --*  ChartWindow
+Qt::Chart::QValueAxis --*  ChartWindow
+Qt::Chart::QDateTimeAxis --*  ChartWindow
+ChartWindow --*  MainWindow
 
 class CounterWindow {
     -Ui::CounterWindow *ui;
@@ -70,8 +70,8 @@ __ private slots__
 }
 
 Qt::QMainWindow <|-- CounterWindow
-Qt::Sql::QSqlQueryModel --* "1" CounterWindow
-CounterWindow --* "1" MainWindow
+Qt::Sql::QSqlQueryModel --*  CounterWindow
+CounterWindow --*  MainWindow
 
 class SummaryWindow {
     -Ui::SummaryWindow *ui
@@ -80,7 +80,7 @@ __ private slots __
 }
 
 Qt::QMainWindow <|-- SummaryWindow
-SummaryWindow --* "1" MainWindow
+SummaryWindow --*  MainWindow
 
 class CheckWindow {
     -Ui::CheckWindow *ui
@@ -89,4 +89,4 @@ __ private slots __
 }
 
 Qt::QMainWindow <|-- CheckWindow
-CheckWindow --* "1" MainWindow
+CheckWindow --*  MainWindow
