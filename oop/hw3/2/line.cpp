@@ -1,9 +1,16 @@
 #include "line.h"
 
-QVector<QPoint> Line::getPoints()
+
+QPainterPath Line::getPath()
 {
-  return {
-    QPoint(1,0),
-    QPoint(1,2)
-  };
+  QPainterPath path;
+  path.moveTo(2,3);
+  path.lineTo(2,1);
+
+  return path;
+}
+
+QPointF Line::rotatePoint()
+{
+  return QPointF(2,1);
 }

@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "compas.h"
+#include "pendulum.h"
 #include "line.h"
-#include "triangle.h"
+#include "dblpendulum.h"
 
 #include <QMainWindow>
 
@@ -26,8 +26,8 @@ private:
   QTimer *ticker;
 
   Line *line;
-  Triangle *triangle;
-  Compas *compass;
+  DblPendulum *dblpendulum;
+  Pendulum *pendulum;
 
 };
 #endif // MAINWINDOW_H

@@ -8,9 +8,10 @@ class Line : public Figure
 
   Q_OBJECT
 public:
-  explicit Line(QWidget *parent = nullptr, float speed = 0) : Figure(parent,speed, 2) {};
+  explicit Line(QWidget *parent = nullptr, float speed = 0, float amplitude = 0) : Figure(parent, speed, amplitude, 4) {};
 protected:
-  QVector<QPoint> getPoints();
+  QPainterPath getPath() override;
+  QPointF rotatePoint() override;
 };
 
 #endif // LINE_H

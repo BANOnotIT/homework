@@ -17,18 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     animatedpainer.cpp \
-    compas.cpp \
+    dblpendulum.cpp \
     line.cpp \
     main.cpp \
     mainwindow.cpp \
-    triangle.cpp
+    pendulum.cpp
 
 HEADERS += \
     animatedpainer.h \
-    compas.h \
+    dblpendulum.h \
     line.h \
     mainwindow.h \
-    triangle.h
+    pendulum.h
 
 FORMS += \
     mainwindow.ui

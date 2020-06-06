@@ -5,20 +5,18 @@
 #include <QtMath>
 #include <QDebug>
 
-Figure::Figure(QWidget *parent, float speed, float ssize)
+Figure::Figure(QWidget *parent, float speed,float amplitude, float ssize)
   : QWidget(parent)
   , ssize(ssize)
   , speed(speed)
+  , amplitude(amplitude)
   , start( QTime::currentTime().msecsSinceStartOfDay()) { }
 
 void Figure::setup()
 {
-  auto points = this->getPoints();
-  path.moveTo(points[0]);
-  for (auto point : points)
-      path.lineTo(point);
-  path.lineTo(points[0]);
-  auto toOrigin = QTransform::fromTranslate(-ssize/2,-ssize/2);
+  path = this->getPath();
+  auto p = this->rotatePoint();
+  auto toOrigin = QTransform::fromTranslate(-p.rx(),-p.ry());
   path = toOrigin.map(path);
 }
 
@@ -30,13 +28,17 @@ void Figure::paintEvent(QPaintEvent *)
   float ms = qMin(currentSize.height(),currentSize.width());
   auto cur = QTime::currentTime().msecsSinceStartOfDay();
 
+  auto O = this->rotatePoint();
+
   float ratio = ms / ssize / M_SQRT2;
   auto globalTransform = QTransform()
-      .rotate((float)((cur - start)) / M_PI * speed)
+      .rotate(amplitude * qSin((float)(cur - start) / 1000. * speed))
+      .translate(O.rx(),O.ry())
+      .translate(-ssize/2,-ssize/2)
       .scale(ratio,ratio);
 
   p.fillRect(0,0, currentSize.width(),currentSize.height(),QColorConstants::White);
-  p.setTransform(QTransform::fromTranslate(currentSize.width()/2,currentSize.height()/2));
+  p.setTransform(QTransform::fromTranslate(currentSize.width()/2,currentSize.height()/3));
 
   p.setPen(QPen(Qt::black,2,Qt::SolidLine));
   p.drawPath(globalTransform.map(path));

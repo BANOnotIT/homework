@@ -7,17 +7,19 @@ class Figure : public QWidget
 {
   Q_OBJECT
 public:
-  explicit Figure(QWidget *parent = nullptr, float speed = 0, float ssize = 0);
+  explicit Figure(QWidget *parent = nullptr, float speed = 0, float amplitude = 0, float ssize = 0);
   void setup();
   void paintEvent(QPaintEvent *event) override;
 
 protected:
-  virtual QVector<QPoint> getPoints() = 0;
+  virtual QPainterPath getPath() = 0;
+  virtual QPointF rotatePoint() = 0;
   float ssize;
 
 private:
   QPainterPath path;
   float speed;
+  float amplitude;
   int start;
 
 };
