@@ -1,0 +1,8 @@
+:group-id: ИУ1-21
+:student: Иванов И. И.
+:discipline: ИиДУ
+:examiner: Петров П. П.
+:start-time: 9:00
+:end-time: __:__
+:ticket-number: 1
+:mark: ____

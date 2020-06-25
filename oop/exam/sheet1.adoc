@@ -1,0 +1,7 @@
+include::exam-attrs.adoc[]
+:ticket-number: 12
+
+include::header.part.adoc[]
+
+
+== Задание 1
