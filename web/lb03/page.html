@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tree Resolver</title>
+</head>
+<body>
+
+<pre id="output"></pre>
+
+<div class="test another-test" id="id1">
+    <div class="tester" id="id2"></div>
+    <input id="id3" type="text">
+    <p><span></span></p>
+    <!--    tester -->
+</div>
+<button onclick="output.innerText=''; resolve(document, output)">Print</button>
+<script src="./resolver.js"></script>
+</body>
+</html>
