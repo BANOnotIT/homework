@@ -20,7 +20,7 @@
 .recepie.html
 [source,html]
 ----
-include::recepie.html[]
+include::checkout.html[]
 ----
 
 .Пример тестирования программы
