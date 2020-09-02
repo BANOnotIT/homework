@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <style>
+        form {
+            margin: 0 auto;
+            max-width: 300px;
+            font-family: monospace;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+        }
+
+        #login-btn {
+            margin: 1em auto 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<form action="/login.php" method="POST">
+    <h3>Login to My.com</h3>
+    <fieldset>
+        <label for="email">Email</label>
+        <input id='email' name="email" required type="email">
+    </fieldset>
+    <fieldset>
+        <label for="password">Password</label>
+        <input id='password' minlength="6" name='password' required type="password">
+    </fieldset>
+
+    <button id='login-btn'>Login</button>
+</form>
+</body>
+
+</html>
