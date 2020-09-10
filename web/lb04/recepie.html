@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe</title>
+    <style>
+      td:last-child,
+      th:last-child {
+        text-align: right;
+      }
+
+      td:last-child:hover {
+        background: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Цена</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="output"></tbody>
+    </table>
+    <form name="goods">
+      <label for="title">Товар</label>
+      <input id="title" name="title" type="text" />
+      <label for="cost">Цена</label>
+      <input id="cost" min="1" name="cost" step="1" type="number" />
+      <input type="submit" value="Добавить" />
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Цена</th>
+        </tr>
+      </thead>
+      <tbody id="cart"></tbody>
+    </table>
+
+    <div>
+      <button id="calculate" onclick="sumup()">Рассчитать</button>
+      <strong id="sum"></strong>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
