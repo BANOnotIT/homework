@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICS6 Bootstrap</title>
+    <link
+      href="http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        margin-bottom: 40px;
+      }
+      main {
+        margin-top: 15px;
+      }
+      footer {
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .my-primary {
+        background-color: #222433;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li></li>
+          <li class="nav-item">
+            <!-- потому что nav-link блок и 59 вылезает на одну строку и всё ломает. а делать inline-block лень -->
+            <a class="nav-link" href="#"> 59 Link </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-4">
+          <img
+            src=" http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/avatar.jpg"
+            alt="avatar"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="col-8">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <a href="#" class="btn btn-success">test</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form action="/login.php" method="POST">
+            <h3>Login to My.com</h3>
+            <fieldset class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                class="form-control form-control-lg"
+                name="email"
+                required
+                type="email"
+              />
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                class="form-control form-control-lg"
+                minlength="6"
+                name="password"
+                required
+                type="password"
+              />
+            </fieldset>
+
+            <div class="row">
+              <button class="btn btn-primary mx-auto col-4">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="col">
+          <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>День</th>
+                <th>Предмет</th>
+                <th>Кабинет</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">ПН</td>
+                <td>(лек) Языки программирования</td>
+                <td rowspan="2">501ю</td>
+              </tr>
+              <tr>
+                <td>(лек) Электротехника</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col">
+          <h2 class="text-capitalize">Some ryba-text</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eos
+            fuga nesciunt,
+            <strong>necessitatibus</strong>
+            praesentium dicta, magnam asperiores
+            <strong>recusandae</strong> perspiciatis iure atque. Dolor accusamus
+            rem reiciendis fuga tenetur! Ullam, recusandae. in.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="my-primary">
+      <div class="container">
+        <p class="footer-text">Footer</p>
+      </div>
+    </footer>
+  </body>
+</html>
