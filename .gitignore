@@ -8,3 +8,14 @@ lib/
 build-**/
 **/diag-*.png
 **/.asciidoctor/
+
+# LaTeX-specific output
+*.aux
+*.log
+*.toc
+*.pdf
+*_temp.tex
+
+# node
+node_modules/
+yarn.lock
