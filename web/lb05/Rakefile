@@ -1,9 +1,0 @@
-require 'rake/testtask'
-
-TEST_FILES = FileList["*/test.rb"]
-
-task "default" => ["test"]
-
-Rake::TestTask.new "test" do |t|
-  t.test_files = TEST_FILES
-end

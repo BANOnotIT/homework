@@ -5,7 +5,7 @@ require 'asciidoctor'
 require 'asciidoctor-pdf'
 require 'asciidoctor-diagram'
 require 'logger'
-require 'rake/clean'
+require 'rake/testtask'
 
 # @param [String] str
 def secure_latex(str)
@@ -70,3 +70,8 @@ task :report do
 end
 
 task default: [:report]
+
+Rake::TestTask.new 'test' do |t|
+  Dir.chdir Rake.original_dir
+  t.test_files = FileList['*/test.rb']
+end
