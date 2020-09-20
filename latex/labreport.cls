@@ -33,8 +33,8 @@
 \newcommand*{\faculcy}[1]{\gdef\@faculcy{#1}}
 \newcommand*{\@faculcy}{Информатика и системы управления}
 
-\newcommand*{\descipline}[1]{\gdef\@descipline{#1}}
-\newcommand*{\@descipline}{\#descipline\#}
+\newcommand*{\discipline}[1]{\gdef\@discipline{#1}}
+\newcommand*{\@discipline}{\#discipline\#}
 
 \newcommand*{\cathedra}[1]{\gdef\@cathedra{#1}}
 \newcommand*{\@cathedra}{Компьютерные системы и сети}
@@ -96,7 +96,7 @@
     \textbf{\@subtitle}
   \end{center}
 
-  \textbf{Дисциплина:} \@descipline
+  \textbf{Дисциплина:} \@discipline
 
   \textbf{Название лабораторной работы:} \@title
 
