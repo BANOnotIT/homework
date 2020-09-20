@@ -19,8 +19,8 @@
 .recepie.html
 [source,html]
 ----
-include::checkout.html[]
+include::recepie.html[]
 ----
 
 .Пример тестирования программы
-image::result[]
+image::result.png[]
