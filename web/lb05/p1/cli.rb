@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'logic'
 
-puts "Enter x:"
+puts 'Enter x:'
 x = gets.to_f
-puts "Enter z:"
+puts 'Enter z:'
 z = gets.to_f
 
 puts "Result is: #{y_from x, z}"

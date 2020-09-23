@@ -4,5 +4,5 @@
 def transform_word(word)
   word = word.gsub(/[еоё]нок$/, '')
 
-  word.match?(/[шщжч]$/i) ? word + 'ата' : word + 'ята'
+  word + (word.match?(/[шщжч]$/i) ? 'ата' : 'ята')
 end
