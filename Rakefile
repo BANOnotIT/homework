@@ -34,7 +34,7 @@ end
 
 task :report do
   call_dir = Rake.original_dir
-  root_dir = Dir.pwd
+  root_dir = __dir__
 
   Dir.chdir call_dir
   puts "[.] Reading #{call_dir + '/README.adoc'} ..."
