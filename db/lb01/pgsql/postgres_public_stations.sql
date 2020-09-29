@@ -13,4 +13,5 @@ create table stations
             on update set null
 );
 
-INSERT INTO public.stations (name, line_color, date, lines_count, id, depo_id) VALUES ('Щёлковская', 'blue', '1963-07-22', 2, 1, 3);
+INSERT INTO public.stations (name, line_color, date, lines_count, id, depo_id)
+VALUES ('Щёлковская', 'blue', '1963-07-22', 2, 1, 3);
