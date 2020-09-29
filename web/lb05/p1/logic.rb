@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# require 'math'
-
 # @param [Numeric] z
 # @param [Numeric] x
 def y_from(x, z)

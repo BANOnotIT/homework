@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'minitest/autorun'
 require 'minitest/assertions'
 require_relative 'logic'
@@ -21,7 +19,7 @@ class TestPart2 < Minitest::Test
 
   def test_hissing
     20.times do
-      assert (transform_word gen_word(true)).end_with? 'ата'
+      assert (transform_word gen_word(hissing: true)).end_with? 'ата'
     end
   end
 end
