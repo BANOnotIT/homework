@@ -66,7 +66,7 @@ task :report do
 
   Dir.chdir call_dir
 
-  sh 'gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=README.pdf title.pdf content.pdf'
+  sh 'gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -dPrinted=false -sDEVICE=pdfwrite -sOutputFile=README.pdf title.pdf content.pdf'
 end
 
 task default: [:report]
