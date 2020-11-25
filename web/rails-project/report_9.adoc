@@ -1,0 +1,62 @@
+= AJAX
+:lab: 9
+
+== Задание
+
+. При помощи Javascript модифицировать код ЛР 8 таким образом, чтобы для отображения результатов вычисления браузер не выполнял полную перезагрузку страницы.
+. Сформировать тесты для проверки работы программы при помощи Katalon Recorder / Selenium Webdriver.
+
+=== Текст задания
+
+Написать программу, определяющую, сколько из чисел в диапазоне от 0 до n (n вводится с клавиатуры), сами являясь палиндромами, при возведении в квадрат, образуют палиндромы.
+Например: 22 ^2^ → 484 . Вывести на печать числа, квадраты и их количество.
+
+== Результат
+
+.app/controllers/welcome_controller.rb
+[source,ruby]
+----
+include::app/controllers/welcome_controller.rb[]
+----
+
+.app/views/welcome/result.html.erb
+[source,erb]
+----
+include::app/views/welcome/result.html.erb[]
+----
+
+.app/views/welcome/index.html.erb
+[source,erb]
+----
+include::app/views/welcome/index.html.erb[]
+----
+
+.test/controllers/welcome_controller_test.rb
+[source,ruby]
+----
+include::test/controllers/welcome_controller_test.rb[]
+----
+
+.config/routes.rb
+[source,ruby]
+----
+include::config/routes.rb[]
+----
+
+.test/system/welcome_ajax_test.rb
+[source,ruby]
+----
+include::test/system/welcome_ajax_test.rb[]
+----
+
+.app/javascript/packs/welcome.js
+[source,javascript]
+----
+include::app/javascript/packs/welcome.js[]
+----
+
+.package.json
+[source,json]
+----
+include::package.json[]
+----
