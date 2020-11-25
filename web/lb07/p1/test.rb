@@ -4,27 +4,31 @@ require 'minitest/autorun'
 require 'minitest/assertions'
 require_relative 'logic'
 
+F = 'F.test'
+G = 'G.test'
+
 class FileGeneration < Minitest::Test
   def setup
     super
-    File.delete('F.test') if File.exist? 'F.test'
+    File.delete(F) if File.exist? F
   end
 
   alias teardown setup
 
   def test_file_creation
-    generate_file_with_numbers 'F.test'
-    assert File.exist? 'F.test'
+
+    generate_file_with_numbers F
+    assert File.exist? F
   end
 
   def test_file_lines
-    generate_file_with_numbers 'F.test', 20
-    assert_equal 21, File.open('F.test', 'r', &:count)
+    generate_file_with_numbers F, 20
+    assert_equal 21, File.open(F, 'r', &:count)
   end
 
   def test_max_number
-    generate_file_with_numbers 'F.test', 1000, 23
-    assert File.open('F.test', 'r') { |f| f.map(&:to_i).max } < 23
+    generate_file_with_numbers F, 1000, 23
+    assert File.open(F, 'r') { |f| f.map(&:to_i).max } < 23
   end
 end
 
@@ -32,14 +36,14 @@ class FileTransformation < Minitest::Test
   def setup
     super
 
-    generate_file_with_numbers 'F.test', 20
-    @source_numbers = File.open('F.test', 'r') { |f| f.map(&:to_i) }
+    generate_file_with_numbers F, 20
+    @source_numbers = File.open(F, 'r') { |f| f.map(&:to_i) }
 
-    unique_numbers_from_file_into_file 'F.test', 'G.test'
-    @result_numbers = File.open('G.test', 'r') { |f| f.map(&:to_i) }
+    unique_numbers_from_file_into_file F, G
+    @result_numbers = File.open(G, 'r') { |f| f.map(&:to_i) }
 
-    File.delete('F.test')
-    File.delete('G.test')
+    File.delete(F)
+    File.delete(G)
   end
 
   def test_result_is_not_empty
