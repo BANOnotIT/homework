@@ -6,9 +6,13 @@
   вести на печать числа, квадраты и их количество.
 </p>
 
-<%= form_with url: welcome_result_url, method: 'get', local: true do |f| %>
+<%= form_with id: :form, format: :json, url: welcome_result_path, method: 'get' do |f| %>
   <%= f.label :n, :N %>
   <%= f.number_field :n, required: true, min: 1, value: '5' %>
 
-  <%= f.submit %>
+  <%= f.submit 'Посчитать' %>
 <% end %>
+
+<div id="result"></div>
+
+<%= javascript_pack_tag 'welcome' %>
