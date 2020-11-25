@@ -32,12 +32,16 @@ def generate_title(props)
 )
 end
 
-task :report do
+task :report, [:src] do |t, args|
+  p args
+  args.with_defaults :src => :README
+  filename = args[:src]
+
   call_dir = Rake.original_dir
   root_dir = __dir__
 
   Dir.chdir call_dir
-  puts "[.] Reading #{call_dir + '/README.adoc'} ..."
+  puts "[.] Reading #{call_dir + '/' + filename.to_s + '.adoc'} ..."
 
   # https://asciidoctor.org/docs/user-manual/#ruby-api-options
   prog_attributes = [
@@ -46,8 +50,8 @@ task :report do
     "pdf-theme=#{__dir__ + '/adoc_styles/my-theme.yml'}",
     'source-highlighter=rouge'
   ]
-  adoc = Asciidoctor.convert_file 'README.adoc', safe: :safe, backend: :pdf, attributes: prog_attributes
-  mv 'README.pdf', 'content.pdf'
+  adoc = Asciidoctor.convert_file "#{filename}.adoc", safe: :safe, backend: :pdf, attributes: prog_attributes
+  mv "#{filename}.pdf", 'content.pdf'
 
   vars = {
     title: adoc.title,
@@ -66,7 +70,7 @@ task :report do
 
   Dir.chdir call_dir
 
-  sh 'gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -dPrinted=false -sDEVICE=pdfwrite -sOutputFile=README.pdf title.pdf content.pdf'
+  sh "gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -dPrinted=false -sDEVICE=pdfwrite -sOutputFile=#{filename}.pdf title.pdf content.pdf"
 end
 
 task default: [:report]
