@@ -6,8 +6,14 @@ require_relative 'logic'
 
 class TestLambdaSyntax < Minitest::Test
   def test_true
-    assert neibr(0, 1, ->(_) { 1 })
-    assert neibr(1.0 / 0, 2, ->(_) { 2 })
+    assert neibr(0, 1, lambda { |x|
+      assert_equal x, 0
+      1
+    })
+    assert neibr(1.0 / 0, 2, lambda { |x|
+      assert_equal x, Float::INFINITY
+      2
+    })
   end
 
   def test_false
@@ -18,8 +24,14 @@ end
 
 class TestBlockSyntax < Minitest::Test
   def test_true
-    assert neibr_block(0, 1) { |_| 1 }
-    assert neibr_block(1.0 / 0, 2) { |_| 2 }
+    assert neibr_block(0, 1) { |x|
+      assert_equal x, 0
+      1
+    }
+    assert neibr_block(1.0 / 0, 2) { |x|
+      assert_equal x, Float::INFINITY
+      2
+    }
   end
 
   def test_false

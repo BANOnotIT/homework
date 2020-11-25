@@ -22,3 +22,9 @@ class TestSinEnumerator < Minitest::Test
     assert_in_delta compute_with_enum(10 ** -4)[0], Math.sin(3), 10 ** -4
   end
 end
+
+class TestSin < Minitest::Test
+  def test_methods_eql
+    assert_equal compute_with_enum(10 ** -3), compute(10 ** -3)
+  end
+end

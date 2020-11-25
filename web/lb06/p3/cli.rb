@@ -8,7 +8,7 @@ end
 
 10.times do
   x = get_cord
-  y = get_cord
+  y = Math.cos x
   belongs = neibr(x, y, ->(x1) { Math.cos x1 })
   puts "(#{x}, #{y}) is on y = cos x" if belongs
 
