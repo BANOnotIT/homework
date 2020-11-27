@@ -1,13 +1,16 @@
 # frozen_string_literal: true
+
 class WelcomeController < ApplicationController
   def result
     @result = (0..params[:n].to_i)
-                  .map { |a| [a, a ** 2] }
-                  .select { |a| a.all? { |x| is_palindrome x } }
-                  .to_a
+              .map { |a| { x: a, xsqr: a**2 } }
+              .select { |a| a.values.all? { |x| is_palindrome x } }
+              .to_a
     respond_to do |format|
       format.json { render json: @result }
       format.html { render }
+      format.xml { render xml: @result.to_xml }
+      format.rss { render xml: @result.to_xml }
     end
   end
 

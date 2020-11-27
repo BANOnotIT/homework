@@ -1,14 +1,16 @@
 import $ from 'jquery'
 
 function handleResult(event) {
+    console.log(event);
     const [data] = event.detail
+    console.log(data);
 
     const result = $('#result');
     result.empty()
 
     $('<table></table>')
         .append('<tr><th>X</th><th>X<sup>2</sup></th></tr>')
-        .append(data.map(a => `<tr><td>${a[0]}</td><td>${a[1]}</td></tr>`))
+        .append(data.map(a => `<tr><td>${a.x}</td><td>${a.xsqr}</td></tr>`))
         .appendTo(result)
 
     result.append(`<p>Count: <strong>${data.length}</strong></p>`)
