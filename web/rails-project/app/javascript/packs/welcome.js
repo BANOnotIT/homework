@@ -1,9 +1,7 @@
 import $ from 'jquery'
 
 function handleResult(event) {
-    console.log(event);
     const [data] = event.detail
-    console.log(data);
 
     const result = $('#result');
     result.empty()
