@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects type="array">
+  <object>
+    <x type="integer">0</x>
+    <xsqr type="integer">0</xsqr>
+  </object>
+  <object>
+    <x type="integer">1</x>
+    <xsqr type="integer">1</xsqr>
+  </object>
+  <object>
+    <x type="integer">2</x>
+    <xsqr type="integer">4</xsqr>
+  </object>
+  <object>
+    <x type="integer">3</x>
+    <xsqr type="integer">9</xsqr>
+  </object>
+  <object>
+    <x type="integer">11</x>
+    <xsqr type="integer">121</xsqr>
+  </object>
+  <object>
+    <x type="integer">22</x>
+    <xsqr type="integer">484</xsqr>
+  </object>
+  <object>
+    <x type="integer">101</x>
+    <xsqr type="integer">10201</xsqr>
+  </object>
+</objects>

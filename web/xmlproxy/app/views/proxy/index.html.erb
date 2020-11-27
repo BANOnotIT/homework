@@ -1,0 +1,17 @@
+<h1>Задание</h1>
+<p>
+  Написать программу, определяющую, сколько из чисел в диапазоне
+  от 0 до n (n вводится с клавиатуры), сами являясь палиндромами, при
+  возведении в квадрат, образуют палиндромы. Например: 22<sup>2</sup> → 484 . Вы-
+  вести на печать числа, квадраты и их количество.
+</p>
+
+<%= form_with id: :form, format: :json, url: proxy_output_path, method: 'get', local: true do |f| %>
+  <%= f.label :n, :N %>
+  <%= f.number_field :n, required: true, min: 1, value: '5' %>
+
+  <%= f.label :side, 'Формат ответа' %>
+  <%= f.select :side, %w[server browser xml] %>
+
+  <%= f.submit 'Посчитать' %>
+<% end %>
