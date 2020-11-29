@@ -104,7 +104,7 @@ INSERT INTO "cached_results" ("n", "result", "created_at", "updated_at") VALUES 
 ----
 
 .Состояние БД
-[source, sql]
+[source, xml]
 ----
 include::cached.xml[]
 ----
