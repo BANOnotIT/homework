@@ -102,3 +102,9 @@ SELECT 1 AS one FROM "cached_results" WHERE "cached_results"."n" = ? LIMIT ?
 ----
 INSERT INTO "cached_results" ("n", "result", "created_at", "updated_at") VALUES (?, ?, ?, ?)
 ----
+
+.Состояние БД
+[source, sql]
+----
+include::cached.xml[]
+----

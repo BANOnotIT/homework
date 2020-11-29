@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects type="array">
+  <object>
+    <n type="integer">5</n>
+    <result type="array">
+      <result>
+        <x type="integer">0</x>
+        <xsqr type="integer">0</xsqr>
+      </result>
+      <result>
+        <x type="integer">1</x>
+        <xsqr type="integer">1</xsqr>
+      </result>
+      <result>
+        <x type="integer">2</x>
+        <xsqr type="integer">4</xsqr>
+      </result>
+      <result>
+        <x type="integer">3</x>
+        <xsqr type="integer">9</xsqr>
+      </result>
+    </result>
+  </object>
+  <object>
+    <n type="integer">6</n>
+    <result type="array">
+      <result>
+        <x type="integer">0</x>
+        <xsqr type="integer">0</xsqr>
+      </result>
+      <result>
+        <x type="integer">1</x>
+        <xsqr type="integer">1</xsqr>
+      </result>
+      <result>
+        <x type="integer">2</x>
+        <xsqr type="integer">4</xsqr>
+      </result>
+      <result>
+        <x type="integer">3</x>
+        <xsqr type="integer">9</xsqr>
+      </result>
+    </result>
+  </object>
+  <object>
+    <n type="integer">2</n>
+    <result type="array">
+      <result>
+        <x type="integer">0</x>
+        <xsqr type="integer">0</xsqr>
+      </result>
+      <result>
+        <x type="integer">1</x>
+        <xsqr type="integer">1</xsqr>
+      </result>
+      <result>
+        <x type="integer">2</x>
+        <xsqr type="integer">4</xsqr>
+      </result>
+    </result>
+  </object>
+</objects>
