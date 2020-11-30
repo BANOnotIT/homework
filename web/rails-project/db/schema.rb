@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_173057) do
+ActiveRecord::Schema.define(version: 2020_11_30_184755) do
 
   create_table "cached_results", force: :cascade do |t|
     t.integer "n"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_173057) do
 
   create_table "users", force: :cascade do |t|
     t.string "login"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["login"], name: "index_users_on_login", unique: true
