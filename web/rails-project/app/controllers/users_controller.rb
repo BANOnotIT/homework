@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: %i[show edit update destroy]
+  skip_before_action :require_auth, only: %i[new create login]
 
   # GET /users
   # GET /users.json
@@ -9,8 +12,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
-  def show
-  end
+  def show; end
 
   # GET /users/new
   def new
@@ -18,8 +20,7 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /users
   # POST /users.json
@@ -59,6 +60,25 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def login
+    return redirect_to welcome_index_path if @current_user
+
+    return render unless request.method == 'POST'
+
+    @user = User.find_by(login: params[:login])
+    flash[:notice] = 'Invalid credentials'
+
+    return if @user.nil? || !@user.authenticate(params[:password])
+
+    cookies[:user_id] = auth_verifier.generate(@user.id, expires_in: 1.hour, purpose: :auth)
+    redirect_to welcome_index_path
+  end
+
+  def logout
+    cookies.delete :user_id
+    redirect_to login_path
   end
 
   private
