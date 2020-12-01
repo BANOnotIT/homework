@@ -3,7 +3,13 @@
 require 'test_helper'
 require 'json'
 
+
 class WelcomeControllerTest < ActionDispatch::IntegrationTest
+  setup do
+    user = users(:valid)
+    post login_path, params: { login: user[:login], password: VALID_PASSWORD }
+  end
+
   test 'should get index' do
     get welcome_index_url
     assert_response :success
@@ -32,11 +38,9 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should cache result in db' do
-    before = CachedResult.count
-    get welcome_result_url, params: { n: 1000 }
-    after = CachedResult.count
-
-    assert_equal before + 1, after
+    assert_changes 'CachedResult.count' do
+      get welcome_result_url, params: { n: 1000 }
+    end
   end
 
   test 'should respond with different results' do
