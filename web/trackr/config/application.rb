@@ -15,6 +15,7 @@ module Trackr
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    #config.default_locale = :ru
+    # config.default_locale = :ru
+    config.i18n.default_locale = :ru
   end
 end

@@ -1,0 +1,17 @@
+ru:
+  activerecord:
+    models:
+      time_entry: Время
+    attributes:
+      time_entry:
+        title: Название
+        end: Конец
+        start: Начало
+        user: Владелец
+
+  time_entry:
+    no_title: Без описания
+  today: Сегодня
+  delete_conformation: Точно удалить?
+
+

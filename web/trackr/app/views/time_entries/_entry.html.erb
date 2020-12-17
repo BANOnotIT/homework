@@ -1,0 +1,40 @@
+<div class="time-entry js-time-entry" data-entry='<%= time_entry.to_json %>'>
+  <% if group %>
+    <div class="group">
+      <% if group.is_a? Integer %>
+        <div class="btn btn-outline-secondary js-group-btn">
+          <%= group %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="title">
+    <% if time_entry.title.empty? %>
+      <span class="text-semi"><%= t 'time_entry.no_title' %></span>
+    <% else %>
+      <%= time_entry.title %>
+    <% end %>
+  </div>
+
+  <div class="times">
+    <span class="empty">
+      <%= time_entry.start.strftime('%k:%M') %> - <%= time_entry.end.strftime('%k:%M') %>
+    </span>
+    <%= Time.at(duration).utc.strftime('%k:%M:%S') %>
+  </div>
+
+  <div class="buttons btn-group">
+    <button class="btn btn-outline-primary">
+      <i class="bi bi-play-fill"></i>
+    </button>
+    <% unless time_entry.new_record? %>
+      <a href="<%= edit_time_entry_path(time_entry) %>" class="btn btn-outline-secondary js-start-btn">
+        <i class="bi bi-pencil-square"></i>
+      </a>
+      <a href="<%= time_entry_path time_entry %>" class="btn btn-outline-danger" data-confirm="<%= t('delete_conformation') %>" data-method="delete">
+        <i class="bi bi-trash"></i>
+      </a>
+    <% end %>
+  </div>
+</div>
