@@ -9,6 +9,7 @@ class TimeEntriesController < ApplicationController
     @time_groups = TimeEntry.order(start: :desc)
                             .limit(100)
                             .where(user_id: current_user.id)
+                            .where.not(end: nil)
                             .group_by { |a| a.start.beginning_of_day }
   end
 
@@ -34,10 +35,11 @@ class TimeEntriesController < ApplicationController
   # POST /time_entries.json
   def create
     @time_entry = TimeEntry.new(time_entry_params)
+    @time_entry.user_id = current_user.id
 
     respond_to do |format|
       if @time_entry.save
-        format.html { redirect_to time_entries_path , notice: 'Time entry was successfully created.' }
+        format.html { redirect_to time_entries_path, notice: 'Time entry was successfully created.' }
         format.json { render :show, status: :created, location: @time_entry }
       else
         format.html { render :new }
