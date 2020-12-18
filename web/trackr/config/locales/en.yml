@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  delete_conformation: Are you shure about that?
+  time_entry:
+    no_title: No title
+
