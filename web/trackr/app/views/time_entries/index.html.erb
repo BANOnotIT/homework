@@ -1,32 +1,41 @@
-<%= link_to 'New Time Entry', new_time_entry_path %>
+<%#= link_to 'New Time Entry', new_time_entry_path %>
+
+<div class="mb-4">
+  <%= render 'new_form' %>
+</div>
 
 <% @time_groups.each do |date, time_entries| %>
-  <h3>
-    <%= t 'today' if date.today? %>
-    <%= l date.to_date, format: :short unless date.today? %>
-  </h3>
-  <% time_entries.group_by { |a| a.title }.each do |title, time_entries| %>
+  <div class="mb-4">
+    <h3>
+      <%= t 'today' if date.today? %>
+      <%= l date.to_date, format: :short unless date.today? %>
+    </h3>
+    <% time_entries.group_by { |a| a.title }.each do |title, time_entries| %>
 
-    <% if time_entries.size == 1 %>
-      <% time_entry = time_entries.first %>
-      <%= render 'entry', time_entry: time_entry, group: false, duration: time_entry.duration %>
-    <% else %>
-      <% sum_entry = TimeEntry.new %>
-      <% sum_entry.id = time_entries.first.id %>
-      <% sum_entry.title = title %>
-      <% sum_entry.start = time_entries.map(&:start).min %>
-      <% sum_entry.end = time_entries.map(&:end).max %>
+      <% if time_entries.size == 1 %>
 
-      <% duration = time_entries.map(&:duration).sum %>
+        <% time_entry = time_entries.first %>
+        <%= render 'entry', time_entry: time_entry, group: false, duration: time_entry.duration %>
 
-      <%= render 'entry', time_entry: sum_entry, group: time_entries.size, duration: duration %>
-      <div style="display: none">
-        <% time_entries.each do |time_entry| %>
-          <%= render 'entry', time_entry: time_entry, group: true, duration: time_entry.duration %>
-        <% end %>
-      </div>
+      <% else %>
+
+        <% sum_entry = TimeEntry.new %>
+        <% sum_entry.id = time_entries.first.id %>
+        <% sum_entry.title = title %>
+        <% sum_entry.start = time_entries.map(&:start).min %>
+        <% sum_entry.end = time_entries.map(&:end).max %>
+
+        <% duration = time_entries.map(&:duration).sum %>
+
+        <%= render 'entry', time_entry: sum_entry, group: time_entries.size, duration: duration %>
+        <div style="display: none">
+          <% time_entries.each do |time_entry| %>
+            <%= render 'entry', time_entry: time_entry, group: true, duration: time_entry.duration %>
+          <% end %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 <% end %>
 
 <%= javascript_pack_tag :timetracker %>
