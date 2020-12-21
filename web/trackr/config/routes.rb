@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :time_entries
-  get 'time_entries/current(.:format)'
-  resources :time_entries, except: %i[new edit]
+  get 'time_entries/active(.:format)', to: 'time_entries#active', as: :active_time_entry
+  resources :time_entries, except: %i[new]
   devise_for :users
 
   root 'time_entries#index'
