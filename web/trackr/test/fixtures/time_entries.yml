@@ -1,13 +1,17 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: MyString
+  title: My entry 1
   start: 2020-12-17 22:04:40
-  end: 2020-12-17 22:04:40
-  user: one
+  end: 2020-12-17 22:04:50
+  user: asdf
 
 two:
   title: MyString
-  start: 2020-12-17 22:04:40
-  end: 2020-12-17 22:04:40
-  user: two
+  start: 2020-12-17 22:05:40
+  end: 2020-12-17 22:06:40
+  user: asdf
+
+continuing:
+  title: continuing
+  start: 2020-12-17 22:05:40
+  end:
+  user: asdf
