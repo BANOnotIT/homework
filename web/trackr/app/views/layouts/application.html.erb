@@ -14,17 +14,15 @@
 
 <body>
 <div>
-  <!--  <div class="navbar bg-dark navbar-expand">-->
-
-  <!--  </div>-->
   <div class="container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= yield %>
 
     <div class="mt-5">
       <button class="btn btn-link js-switch-locale" data-locale="ru">Ru</button>
       <button class="btn btn-link js-switch-locale" data-locale="en">En</button>
+      <% if user_signed_in? %>
+        <%= link_to t('sign_out'), destroy_user_session_path, method: :delete, class: 'btn btn-link', data:{testid: :logout} %>
+      <% end %>
     </div>
   </div>
 </div>
