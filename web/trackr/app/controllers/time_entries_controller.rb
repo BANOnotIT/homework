@@ -24,8 +24,13 @@ class TimeEntriesController < ApplicationController
 
   # GET /time_entries/active
   def active
-    @time_entry = TimeEntry.find(end: nil).where(user_id: current_user.id)
-    render :show
+    respond_to :json
+    @time_entry = TimeEntry.where(user_id: current_user.id, end: nil).first
+    if @time_entry
+      render :show
+    else
+      render json: nil
+    end
   end
 
   # GET /time_entries/1/edit
