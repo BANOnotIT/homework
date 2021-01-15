@@ -60,3 +60,7 @@ include::app/javascript/packs/welcome.js[]
 ----
 include::package.json[]
 ----
+
+
+== Вывод
+Были получены практические навыки работы с XHR и JSON.

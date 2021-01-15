@@ -46,3 +46,6 @@ include::test/controllers/welcome_controller_test.rb[]
 ----
 include::config/routes.rb[]
 ----
+
+== Вывод
+Были получены практические навыки работы с Ruby on Rails.
