@@ -39,6 +39,9 @@
 \newcommand*{\cathedra}[1]{\gdef\@cathedra{#1}}
 \newcommand*{\@cathedra}{Компьютерные системы и сети}
 
+\newcommand*{\course}[1]{\gdef\@course{#1}}
+\newcommand*{\@course}{09.03.01 Информатика и вычислительная техника}
+
 \newcommand*{\labRef}[1]{\gdef\@labRef{#1}}
 \newcommand*{\@labRef}{\texttt{\#labRef\#}}
 
@@ -81,11 +84,13 @@
 
   \vspace{.5cm}
 
-  \begin{center}
+ % \begin{center}
     ФАКУЛЬТЕТ: \@faculcy
 
     КАФЕДРА: \@cathedra
-  \end{center}
+
+    НАПРАВЛЕНИЕ ПОДГОТОВКИ: \@course 
+ % \end{center}
 
 
   \vfill
