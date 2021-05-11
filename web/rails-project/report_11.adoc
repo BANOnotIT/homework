@@ -109,5 +109,12 @@ INSERT INTO "cached_results" ("n", "result", "created_at", "updated_at") VALUES 
 include::cached.xml[]
 ----
 
+.Форма ввода
+image::docs/lb9.input.png[]
+
+.Форма вывода
+image::docs/lb9.output.png[]
+
+
 == Вывод
 Были получены практические навыки работы с базой данных и Active Record

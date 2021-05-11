@@ -1,6 +1,8 @@
 = AJAX
 :lab: 9
 
+include::docs/attributes-ru.adoc[]
+
 == Задание
 
 . При помощи Javascript модифицировать код ЛР 8 таким образом, чтобы для отображения результатов вычисления браузер не выполнял полную перезагрузку страницы.
@@ -61,6 +63,11 @@ include::app/javascript/packs/welcome.js[]
 include::package.json[]
 ----
 
+.Форма ввода
+image::docs/lb9.input.png[]
+
+.Форма вывода
+image::docs/lb9.output.png[]
 
 == Вывод
 Были получены практические навыки работы с XHR и JSON.
