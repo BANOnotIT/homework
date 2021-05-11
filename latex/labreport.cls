@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{labreport}[2020/09/09 BMST lab report]
+\ProvidesClass{labreport}[2021/05/09 BMST lab report]
 
-\LoadClass[fontsize=14pt]{scrbook}
+\LoadClass[fontsize=14pt,openany]{scrbook}
 
 
 % Поддержка русского языка
@@ -33,22 +33,23 @@
 \newcommand*{\faculcy}[1]{\gdef\@faculcy{#1}}
 \newcommand*{\@faculcy}{Информатика и системы управления}
 
-\newcommand*{\discipline}[1]{\gdef\@discipline{#1}}
-\newcommand*{\@discipline}{\#discipline\#}
+\newcommand*{\descipline}[1]{\gdef\@descipline{#1}}
+\newcommand*{\@descipline}{\#descipline\#}
+
+\newcommand*{\professor}[1]{\gdef\@professor{#1}}
+\newcommand*{\@professor}{\#professor\#}
 
 \newcommand*{\cathedra}[1]{\gdef\@cathedra{#1}}
 \newcommand*{\@cathedra}{Компьютерные системы и сети}
 
-\newcommand*{\course}[1]{\gdef\@course{#1}}
-\newcommand*{\@course}{09.03.01 Информатика и вычислительная техника}
-
-\newcommand*{\labRef}[1]{\gdef\@labRef{#1}}
-\newcommand*{\@labRef}{\texttt{\#labRef\#}}
-
 \newcommand*{\group}[1]{\gdef\@group{#1}}
 \newcommand*{\@group}{\#group\#}
 
-\subtitle{по лабораторной работе № \@labRef}
+
+\newcommand*{\uptitle}[1]{\gdef\@uptitle{#1}}
+\newcommand*{\@uptitle}{Отчёт}
+
+\subtitle{по лабораторной работе}
 
 \author{\#author\#}
 
@@ -84,26 +85,24 @@
 
   \vspace{.5cm}
 
- % \begin{center}
+  \begin{center}
     ФАКУЛЬТЕТ: \@faculcy
 
     КАФЕДРА: \@cathedra
-
-    НАПРАВЛЕНИЕ ПОДГОТОВКИ: \@course 
- % \end{center}
+  \end{center}
 
 
   \vfill
 
 
   \begin{center}
-    \textbf{\huge Отчёт}\\
+    \textbf{\huge \@uptitle}\\
     \textbf{\@subtitle}
   \end{center}
 
-  \textbf{Дисциплина:} \@discipline
+  \textbf{Название:} \@title
 
-  \textbf{Название лабораторной работы:} \@title
+  \textbf{Дисциплина:} \@descipline
 
 
   \vfill
@@ -114,7 +113,7 @@
     Студент гр. \@group & \fillSpace & \@author \\
     & {\footnotesize (Подпись, дата)} & {\footnotesize (И.О. Фамилия)} \\
 
-    Преподаватель & \fillSpace & \fillSpace \\
+    Преподаватель & \fillSpace & \@professor \\
     & {\footnotesize (Подпись, дата)} & {\footnotesize (И.О. Фамилия)} \\
   \end{tabularx}
 
